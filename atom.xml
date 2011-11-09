@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Kyle Hayes]]></title>
-  <link href="http://kylehayes.info/atom.xml" rel="self"/>
-  <link href="http://kylehayes.info/"/>
-  <updated>2011-11-08T08:45:31-08:00</updated>
-  <id>http://kylehayes.info/</id>
+  <link href="http://kylehayes.github.com/atom.xml" rel="self"/>
+  <link href="http://kylehayes.github.com/"/>
+  <updated>2011-11-08T20:41:17-08:00</updated>
+  <id>http://kylehayes.github.com/</id>
   <author>
     <name><![CDATA[Kyle Hayes]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Switching to Octopress]]></title>
-    <link href="http://kylehayes.info/2011/11/08/switching-to-octopress/"/>
+    <link href="http://kylehayes.github.com/2011/11/08/switching-to-octopress/"/>
     <updated>2011-11-08T08:12:00-08:00</updated>
-    <id>http://kylehayes.info/2011/11/08/switching-to-octopress</id>
+    <id>http://kylehayes.github.com/2011/11/08/switching-to-octopress</id>
     <content type="html"><![CDATA[<p>Yes, at least for now, I&#8217;ve decided that I was tired of dealing with Wordpress. In an effort to lower my costs and headache for owning and operating a personal blog, Octopress paired with Jekyll seemed like an awesome alternative for someone who enjoys writing in plain text as much as myself.</p>
 
 <p>I was <a href="http://blog.rebeccamurphey.com/switching-to-octopress">inspired</a> by a couple of <a href="http://mattgemmell.com/2011/09/12/blogging-with-octopress/">folks</a> to make the switch. All in all, it was actually not too bad once I got the latest version of Ruby and RVM <a href="http://brandonbohling.com/2011/08/27/Installing-Jekyll-on-Mac/">setup on my Mac</a>.</p>
@@ -32,9 +32,9 @@
   
   <entry>
     <title type="html"><![CDATA[Lee, the Patriot]]></title>
-    <link href="http://kylehayes.info/2011/10/14/lee-the-patriot/"/>
+    <link href="http://kylehayes.github.com/2011/10/14/lee-the-patriot/"/>
     <updated>2011-10-14T01:46:10-07:00</updated>
-    <id>http://kylehayes.info/2011/10/14/lee-the-patriot</id>
+    <id>http://kylehayes.github.com/2011/10/14/lee-the-patriot</id>
     <content type="html"><![CDATA[<p>Today, as I looked upon the new resting place of my dear great Uncle Lee, I
 had a revelation that left me distraught. Lee was a part of the World War II
 generation—specifically, he fought and was wounded in the Battle of Bulge.
@@ -72,9 +72,9 @@ taught us and how he inspired us.</p>
   
   <entry>
     <title type="html"><![CDATA[ReddPics Bookmarklet]]></title>
-    <link href="http://kylehayes.info/2011/10/11/reddpics-bookmarklet/"/>
+    <link href="http://kylehayes.github.com/2011/10/11/reddpics-bookmarklet/"/>
     <updated>2011-10-11T23:33:48-07:00</updated>
-    <id>http://kylehayes.info/2011/10/11/reddpics-bookmarklet</id>
+    <id>http://kylehayes.github.com/2011/10/11/reddpics-bookmarklet</id>
     <content type="html"><![CDATA[<p>If you didn&#8217;t know already, <a href="http://www.reddit.com/r/todayilearned/comments/ggjab/til_that_you_can_replace_redditcom_with/">you can replace reddit.com with reddpics.com on
 any subreddit to view it as an image gallery</a>. I was tired of doing the
 actual replacing so I created a bookmarklet to do it for me.</p>
@@ -85,9 +85,9 @@ actual replacing so I created a bookmarklet to do it for me.</p>
   
   <entry>
     <title type="html"><![CDATA[It's about the customer service]]></title>
-    <link href="http://kylehayes.info/2011/06/13/its-about-the-customer-service/"/>
+    <link href="http://kylehayes.github.com/2011/06/13/its-about-the-customer-service/"/>
     <updated>2011-06-13T15:22:26-07:00</updated>
-    <id>http://kylehayes.info/2011/06/13/its-about-the-customer-service</id>
+    <id>http://kylehayes.github.com/2011/06/13/its-about-the-customer-service</id>
     <content type="html"><![CDATA[<p>Some companies get it, some don&#8217;t; quality customer service <em>does</em> matter and
 <em>does</em> leave a lasting impression. From the time an individual first walks
 into a store, logs in online, or approaches the host/hostess at a restaurant,
@@ -345,9 +345,9 @@ work with you because they know you understand and appreciate them.</p>
   
   <entry>
     <title type="html"><![CDATA[Improve...don't prove]]></title>
-    <link href="http://kylehayes.info/2011/03/16/improve-dont-prove/"/>
+    <link href="http://kylehayes.github.com/2011/03/16/improve-dont-prove/"/>
     <updated>2011-03-16T01:14:01-07:00</updated>
-    <id>http://kylehayes.info/2011/03/16/improve-dont-prove</id>
+    <id>http://kylehayes.github.com/2011/03/16/improve-dont-prove</id>
     <content type="html"><![CDATA[<p>Whilst on the subway from work to Union Station in LA, I read an interesting
 and inspiring article in this month&#8217;s issue of <em>Outdoor Photographer</em>. It was
 an article titled <em>Don&#8217;t Prove&#8230;Improve!,</em> authored by nature photographer
@@ -412,9 +412,9 @@ help the team grow.</p>
   
   <entry>
     <title type="html"><![CDATA[When Should JavaScript be like Java?]]></title>
-    <link href="http://kylehayes.info/2011/03/08/when-should-javascript-be-like-java/"/>
+    <link href="http://kylehayes.github.com/2011/03/08/when-should-javascript-be-like-java/"/>
     <updated>2011-03-08T20:25:51-08:00</updated>
-    <id>http://kylehayes.info/2011/03/08/when-should-javascript-be-like-java</id>
+    <id>http://kylehayes.github.com/2011/03/08/when-should-javascript-be-like-java</id>
     <content type="html"><![CDATA[<p>I&#8217;m architecting a JavaScript architecture for a project I&#8217;m working on. A lot
 of the design patterns and methodologies I&#8217;m applying are from my experience
 with Java and other server-side, traditional strictly typed languages.
@@ -430,9 +430,9 @@ similar) application?</p>
   
   <entry>
     <title type="html"><![CDATA[Make a shell script wait for you]]></title>
-    <link href="http://kylehayes.info/2011/03/08/make-a-shell-script-wait-for-you/"/>
+    <link href="http://kylehayes.github.com/2011/03/08/make-a-shell-script-wait-for-you/"/>
     <updated>2011-03-08T14:34:54-08:00</updated>
-    <id>http://kylehayes.info/2011/03/08/make-a-shell-script-wait-for-you</id>
+    <id>http://kylehayes.github.com/2011/03/08/make-a-shell-script-wait-for-you</id>
     <content type="html"><![CDATA[<p>Ever want a loop to wait for you? <strong>read</strong> will read a line for you to use, or
 in this case just ignore.</p>
 
@@ -450,9 +450,9 @@ done
   
   <entry>
     <title type="html"><![CDATA[Blame it on the alcohol...really?]]></title>
-    <link href="http://kylehayes.info/2011/02/24/blame-it-on-the-alcohol-really/"/>
+    <link href="http://kylehayes.github.com/2011/02/24/blame-it-on-the-alcohol-really/"/>
     <updated>2011-02-24T04:03:00-08:00</updated>
-    <id>http://kylehayes.info/2011/02/24/blame-it-on-the-alcohol-really</id>
+    <id>http://kylehayes.github.com/2011/02/24/blame-it-on-the-alcohol-really</id>
     <content type="html"><![CDATA[<p>Glee&#8217;s &#8220;Blame it on the Alcohol&#8221; episode this week was a considerable
 disappointment. I speak, of course, to the influential alcohol consumption by
 the students of the high school. To be clear I don&#8217;t have a problem with
@@ -482,9 +482,9 @@ irresponsible hands.</p>
   
   <entry>
     <title type="html"><![CDATA[DIY Desktop Stand for Notebooks]]></title>
-    <link href="http://kylehayes.info/2011/01/22/diy-desktop-stand-for-notebooks/"/>
+    <link href="http://kylehayes.github.com/2011/01/22/diy-desktop-stand-for-notebooks/"/>
     <updated>2011-01-22T02:22:59-08:00</updated>
-    <id>http://kylehayes.info/2011/01/22/diy-desktop-stand-for-notebooks</id>
+    <id>http://kylehayes.github.com/2011/01/22/diy-desktop-stand-for-notebooks</id>
     <content type="html"><![CDATA[<p>After converting a white MacBook to our home media center, I decided the
 footprint was too large to lay flat with the clamshell closed on our TV stand.
 I came across the <a href="http://www.amazon.com/gp/product/B002LARBWM?ie=UTF8&amp;tag=cf0d-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B002LARBWM">Twelve South BookArc</a><img src="http://www.assoc-amazon.com/e/ir?t=cf0d-20&amp;l=as2&amp;o=1&amp;a=B002LARBWM" alt="" /> and thought it would be the
@@ -511,9 +511,9 @@ friction.</p>
   
   <entry>
     <title type="html"><![CDATA[Grep Git Log]]></title>
-    <link href="http://kylehayes.info/2010/11/17/grep-git-log/"/>
+    <link href="http://kylehayes.github.com/2010/11/17/grep-git-log/"/>
     <updated>2010-11-17T17:08:15-08:00</updated>
-    <id>http://kylehayes.info/2010/11/17/grep-git-log</id>
+    <id>http://kylehayes.github.com/2010/11/17/grep-git-log</id>
     <content type="html"><![CDATA[<p>We&#8217;ve recently switched one of our big projects at work over to Git from
 Perforce recently. Overall, its been good but has had quite the learning curve
 for all of us to shift to this new paradigm. One of the things we&#8217;ve struggled
@@ -549,9 +549,9 @@ eloquent output of a single (or shorter list) of commits:</p>
   
   <entry>
     <title type="html"><![CDATA[Giving Posterous a try]]></title>
-    <link href="http://kylehayes.info/2010/08/17/giving-posterous-a-try/"/>
+    <link href="http://kylehayes.github.com/2010/08/17/giving-posterous-a-try/"/>
     <updated>2010-08-17T16:49:21-07:00</updated>
-    <id>http://kylehayes.info/2010/08/17/giving-posterous-a-try</id>
+    <id>http://kylehayes.github.com/2010/08/17/giving-posterous-a-try</id>
     <content type="html"><![CDATA[<p>I know it is cliché to write a post about trying a new service that posts but
 I gotta do it to give it a swing! I used to be a very frequent blogger over at
 kylehayes.info in my ColdFusion days, but haven&#8217;t touched it much lately
@@ -566,9 +566,9 @@ we&#8217;ll see!</p>
   
   <entry>
     <title type="html"><![CDATA[New Free JavaScript Tips Newsletter]]></title>
-    <link href="http://kylehayes.info/2010/06/16/new-free-javascript-tips-newsletter/"/>
+    <link href="http://kylehayes.github.com/2010/06/16/new-free-javascript-tips-newsletter/"/>
     <updated>2010-06-16T14:44:47-07:00</updated>
-    <id>http://kylehayes.info/2010/06/16/new-free-javascript-tips-newsletter</id>
+    <id>http://kylehayes.github.com/2010/06/16/new-free-javascript-tips-newsletter</id>
     <content type="html"><![CDATA[<p>It&#8217;s no surprise that I&#8217;m a huge advocate and fan of the <a href="http://www.dojotoolkit.org" title="DojoToolkit.org">Dojo toolkit</a>
 when it comes to quality JavaScript development. It consistently delivers
 quality results in my websites and web applications while also helping to keep
@@ -589,9 +589,9 @@ techniques as well as up-to-date industry news.</p>
   
   <entry>
     <title type="html"><![CDATA[Things about JavaScript I wish I knew earlier]]></title>
-    <link href="http://kylehayes.info/2010/04/20/things-about-javascript-i-wish-i-knew-earlier/"/>
+    <link href="http://kylehayes.github.com/2010/04/20/things-about-javascript-i-wish-i-knew-earlier/"/>
     <updated>2010-04-20T19:37:44-07:00</updated>
-    <id>http://kylehayes.info/2010/04/20/things-about-javascript-i-wish-i-knew-earlier</id>
+    <id>http://kylehayes.github.com/2010/04/20/things-about-javascript-i-wish-i-knew-earlier</id>
     <content type="html"><![CDATA[<p>Christian Hellman wrote another excellent JavaScript article over at <a href="http://www.smashingmagazine.com/">Smashing
 Magazine</a>. This time he addresses styles and techniques of coding that is
 widely supported, accepted, and expected by good JavaScript developers. If
@@ -649,9 +649,9 @@ Magazine below:</p>
   
   <entry>
     <title type="html"><![CDATA[HTML5 Forms]]></title>
-    <link href="http://kylehayes.info/2010/04/13/html5-forms/"/>
+    <link href="http://kylehayes.github.com/2010/04/13/html5-forms/"/>
     <updated>2010-04-13T15:06:21-07:00</updated>
-    <id>http://kylehayes.info/2010/04/13/html5-forms</id>
+    <id>http://kylehayes.github.com/2010/04/13/html5-forms</id>
     <content type="html"><![CDATA[<p>With all the buzz of HTML5, most of it has been centered around the new video
 and canvas tags, however, so much more is being added and spec’ed out. One
 particular area that has been given some much needed love is forms.</p>
@@ -679,9 +679,9 @@ functionality? Check out the litmus tests here: <a href="http://cl.ly/4Bq">http:
   
   <entry>
     <title type="html"><![CDATA[Debate on Automated Acceptance Testing]]></title>
-    <link href="http://kylehayes.info/2010/04/09/debate-on-automated-acceptance-testing/"/>
+    <link href="http://kylehayes.github.com/2010/04/09/debate-on-automated-acceptance-testing/"/>
     <updated>2010-04-09T14:02:33-07:00</updated>
-    <id>http://kylehayes.info/2010/04/09/debate-on-automated-acceptance-testing</id>
+    <id>http://kylehayes.github.com/2010/04/09/debate-on-automated-acceptance-testing</id>
     <content type="html"><![CDATA[<p>Part of agile software development is the practice of acceptance testing to
 ensure the appropriate business requirements, use cases, and ensure confidence
 in the delivered product. This process is commonly recommended to be automated
@@ -714,9 +714,9 @@ has a <a href="http://jbrains.ca/category/named/integrated-tests-are-a-scam">gr
   
   <entry>
     <title type="html"><![CDATA[Easily Generate Placeholder Images in Designs and Web Pages]]></title>
-    <link href="http://kylehayes.info/2010/01/27/easily-generate-placeholder-images-in-designs-and-web-pages/"/>
+    <link href="http://kylehayes.github.com/2010/01/27/easily-generate-placeholder-images-in-designs-and-web-pages/"/>
     <updated>2010-01-27T15:26:10-08:00</updated>
-    <id>http://kylehayes.info/2010/01/27/easily-generate-placeholder-images-in-designs-and-web-pages</id>
+    <id>http://kylehayes.github.com/2010/01/27/easily-generate-placeholder-images-in-designs-and-web-pages</id>
     <content type="html"><![CDATA[<p>I came across a neat site called dummyimage.com that allows you to append an
 image size to it&#8217;s URL as so: <a href="http://dummyimage.com/300x250">http://dummyimage.com/300x250</a>. However,
 what I didn&#8217;t like about it, is that I could not add text to the image to
@@ -752,9 +752,9 @@ as well so as not to crash the server.</p>
   
   <entry>
     <title type="html"><![CDATA[Getting StartED with Dojo now available!]]></title>
-    <link href="http://kylehayes.info/2009/12/30/getting-started-with-dojo-now-available/"/>
+    <link href="http://kylehayes.github.com/2009/12/30/getting-started-with-dojo-now-available/"/>
     <updated>2009-12-30T15:38:01-08:00</updated>
-    <id>http://kylehayes.info/2009/12/30/getting-started-with-dojo-now-available</id>
+    <id>http://kylehayes.github.com/2009/12/30/getting-started-with-dojo-now-available</id>
     <content type="html"><![CDATA[<p>The book that I&#8217;ve been writing for the past nine months is finally published
 and available for purchase. Below are the details as posted on the companion
 site, <a href="http://startdojo.com" title="Go to startdojo.com">startdojo.com</a>:</p>
@@ -783,9 +783,9 @@ this book and I hope you enjoy it.</p>
   
   <entry>
     <title type="html"><![CDATA[Amazon.com's Black Friday Deals Available Now]]></title>
-    <link href="http://kylehayes.info/2009/11/23/amazon-coms-black-friday-deals-available-now/"/>
+    <link href="http://kylehayes.github.com/2009/11/23/amazon-coms-black-friday-deals-available-now/"/>
     <updated>2009-11-23T14:45:33-08:00</updated>
-    <id>http://kylehayes.info/2009/11/23/amazon-coms-black-friday-deals-available-now</id>
+    <id>http://kylehayes.github.com/2009/11/23/amazon-coms-black-friday-deals-available-now</id>
     <content type="html"><![CDATA[<p>Every year Amazon.com has some <a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2FBlack-Friday-After-Thanksgiving-Sale%2Fb%3Fie%3DUTF8%26node%3D384082011%26ref_%3Dpe%255F67050%255F13524000%255Fpe%255Fbtn&amp;tag=cf0d-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=390957" title="Amazon.com's Black Friday Deals">incredible deals</a> on some of their
 merchandise. This year, they&#8217;ve started even earlier to get you in the holiday
 shopping spirit by starting to offer their <a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2FBlack-Friday-After-Thanksgiving-Sale%2Fb%3Fie%3DUTF8%26node%3D384082011%26ref_%3Dpe%255F67050%255F13524000%255Fpe%255Fbtn&amp;tag=cf0d-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=390957" title="Amazon.com's Black Friday Deals">deals TODAY</a>.</p>
@@ -801,9 +801,9 @@ new items after they sell out throughout the day.</p>
   
   <entry>
     <title type="html"><![CDATA[Is Your Kid the Next Face of Gap?]]></title>
-    <link href="http://kylehayes.info/2009/10/01/is-your-kid-the-next-face-of-gap/"/>
+    <link href="http://kylehayes.github.com/2009/10/01/is-your-kid-the-next-face-of-gap/"/>
     <updated>2009-10-01T02:22:01-07:00</updated>
-    <id>http://kylehayes.info/2009/10/01/is-your-kid-the-next-face-of-gap</id>
+    <id>http://kylehayes.github.com/2009/10/01/is-your-kid-the-next-face-of-gap</id>
     <content type="html"><![CDATA[<p>It&#8217;s been a long time since I&#8217;ve posted, I know it, but I have good excuses!
 The first is still an excuse as I&#8217;m still working on it, but, I was asked by
 <a href="http://www.apress.com">Apress</a> / <a href="http://www.friendsofed.com">Friends of ED</a> to write a <a href="http://www.amazon.com/gp/product/1430225211?ie=UTF8&amp;tag=cf0d-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1430225211">book</a> on the <a href="http://www.dojotoolkit.org">Dojo JavaScript
@@ -828,9 +828,9 @@ sorry it has been so long since I&#8217;ve posted.</p>
   
   <entry>
     <title type="html"><![CDATA[OOP + CF Debate Response]]></title>
-    <link href="http://kylehayes.info/2009/05/27/oop-cf-debate-response/"/>
+    <link href="http://kylehayes.github.com/2009/05/27/oop-cf-debate-response/"/>
     <updated>2009-05-27T15:40:14-07:00</updated>
-    <id>http://kylehayes.info/2009/05/27/oop-cf-debate-response</id>
+    <id>http://kylehayes.github.com/2009/05/27/oop-cf-debate-response</id>
     <content type="html"><![CDATA[<p>Reading <a href="https://twitter.com/remotesynth/status/1935994201">Brian&#8217;s tweet</a> this morning, I decided to read more about this
 whole OOP Debate. Unfortunately, I didn&#8217;t really have time, nor the interest
 to read Marc&#8217;s <a href="http://www.advantexllc.com/blog/post.cfm/how-oo-almost-destroyed-my-business">entire post</a>. But I read as far to the point where he comes
