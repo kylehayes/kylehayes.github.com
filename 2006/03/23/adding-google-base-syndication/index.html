@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Adding Google Base syndication - Kyle Hayes</title>
+  <meta name="author" content="Kyle Hayes">
+
+  
+  <meta name="description" content="I wanted to list the items that I had for sale on Google Base on the front
+page of the site. Knowing already that Google offered RSS feeds for many &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://kylehayes.info/2006/03/23/adding-google-base-syndication">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/cfwise" rel="alternate" title="Kyle Hayes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1427925-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Kyle Hayes</a></h1>
+  
+    <h2>Tech, Musings, Life</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/cfwise" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:kylehayes.info" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Adding Google Base Syndication</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-03-23T16:03:00-08:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2006</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I wanted to list the items that I had for sale on Google Base on the front
+page of the site. Knowing already that Google offered RSS feeds for many other
+services they offer, I checked the list that displays only my items. I was sad
+to see there wasn&#8217;t any syndication links.</p>
+
+<p>Perturbed by this obstacle, I was determined to discover a way to do this. I
+immediately began thinking how I could program it myself. Once I realized the
+complications of doing so I decided against it. Then I remembered a post that
+I had seen about a website that converted any website with news items or
+repeating regions into a news feed xml file. This is of course for sites
+without a syndication file.</p>
+
+<p>The site is called <a href="http://www.feed43.com">Feed 43</a>. The way it works is you input the URL of the
+page that you want to extract the news items from (can by any repeating
+region, not just news). After it fetches the page, it shows you the source of
+the webpage in a textbox. It then gives you a set of simple rules on how to
+parse the information you need for your feed, such as title, link and
+description of each item. Once you understand how the rules work, you can have
+it test the rules which will tell you how many items it found and what the
+text values are for each of the attributes. I am not going to go into too much
+detail about how the rules work. The ruleset I used to create my syndication
+file, which should work for any Google Base list is:</p>
+
+<p>Global search value:</p>
+
+<p><code>{%}</code></p>
+
+<p>Item (repeatable) Search Pattern:</p>
+
+<p>`</p>
+
+<p>{<em>} href=&#8221;{%}&#8221;{</em>} >{%}{*} {%}** `</p>
+
+<p>Finally, once you have tweaked it the way you want, you tell it which rule
+applies to which attribute and hit Preview. It will show you a preview of your
+XML file as it may appear in an RSS reader.</p>
+
+<p>From there, I now had an XML file to work with for use in ColdFusion and
+formatting it for my page.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">khayes</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-03-23T16:03:00-08:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2006</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://kylehayes.info/2006/03/23/adding-google-base-syndication/" data-via="kylehayes" data-counturl="http://kylehayes.info/2006/03/23/adding-google-base-syndication/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2006/03/23/well-here-it-is/" title="Previous Post: Well here it is!">&laquo; Well here it is!</a>
+      
+      
+        <a class="basic-alignment right" href="/2006/03/25/adding-grub-after-installing-linux-on-a-second-drive/" title="next Post: Installing GRUB after installing Linux on a second drive">Installing GRUB after installing Linux on a second drive &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2011/11/08/switching-to-octopress/">Switching to Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/14/lee-the-patriot/">Lee, the Patriot</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/11/reddpics-bookmarklet/">ReddPics Bookmarklet</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/06/13/its-about-the-customer-service/">It's about the customer service</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/03/16/improve-dont-prove/">Improve...don't prove</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Github Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/kylehayes">@kylehayes</a> on Github
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'kylehayes',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("kylehayes", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/kylehayes" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @kylehayes</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Kyle Hayes -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'kylehayes';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://kylehayes.info/2006/03/23/adding-google-base-syndication/';
+        var disqus_url = 'http://kylehayes.info/2006/03/23/adding-google-base-syndication/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

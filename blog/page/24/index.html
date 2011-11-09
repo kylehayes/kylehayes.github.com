@@ -1,0 +1,652 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Kyle Hayes</title>
+  <meta name="author" content="Kyle Hayes">
+
+  
+  <meta name="description" content="It is as simple as browsing to the following directory: C:\Documents and Settings\[username]\Local Settings\Application
+Data\Google\Google Talk\ &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://kylehayes.info/blog/page/24">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/cfwise" rel="alternate" title="Kyle Hayes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1427925-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Kyle Hayes</a></h1>
+  
+    <h2>Tech, Musings, Life</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/cfwise" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:kylehayes.info" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/04/01/hacking-google-talk-themes/">Hacking Google Talk Themes</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-04-01T23:04:00-08:00" pubdate data-updated="true">Apr 1<span>st</span>, 2006</time>
+        
+         | <a href="/2006/04/01/hacking-google-talk-themes/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>It is as simple as browsing to the following directory:</p>
+
+<p><code>C:\Documents and Settings\[username]\Local Settings\Application
+Data\Google\Google Talk\themes\system\chat\[nameOfTheme]\Contents\Resources</code></p>
+
+<p>and you will see a &#8220;main.css&#8221; file. When you open that file you can change any
+of the CSS tags to change or create your own Google Talk theme.</p>
+
+<p>A little explanation on the different classes. Look for the &#8220;DIV.out&#8221; tag.
+This is the container in which the text that you type shows up in. The filter
+property allows you to change the gradient that shows up behind your text
+after you type. The startcolorStr is the top color of the gradient, and the
+endColorStr is the bottom color.</p>
+
+<p>That takes care of the background of the box. But you will still have to
+change the top and bottom padding color of the box. The top is taken care of
+with DIV.t-o. Change the background-color to the same one that you chose for
+startColorStr and for DIV.b-o change it to the same one as endColorStr.</p>
+
+<p>Also in the DIV.out class, you can add a &#8220;color:&#8221; attribute to change the
+color of the text. With these basic explanations you can figure out what the
+other classes in the file or for. The classes with an &#8220;in&#8221; prefix are for
+designing the text as it is coming from your buddy.</p>
+
+<p>You can download a theme that I made by clicking Download below. Simply
+extract the file to this directory:</p>
+
+<p><code>C:\Documents and Settings\[username]\Local Settings\Application
+Data\Google\Google Talk\themes\system\chat\</code></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/04/01/boeing/">Boeing</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-04-01T23:04:00-08:00" pubdate data-updated="true">Apr 1<span>st</span>, 2006</time>
+        
+         | <a href="/2006/04/01/boeing/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="/share/boeing.jpg" alt="" /> A little over a month ago, I saw a site called <a href="http://www.simplyhired.com">SimplyHired.com</a>
+featured on a Web 2.0 list. As I am always intrigued by new Web 2.0 services I
+checked it out. I typed in the search phrase &#8220;ColdFusion&#8221; and then I put in my
+zip code. Seconds after searching, the site returned many results for jobs
+that were related to ColdFusion. One specific job, however, caught my eye.
+&#8220;Computing Process Specialist&#8221; for Boeing.</p>
+
+<p>My fiancÃ© and I will be getting married this upcoming July on the 29th. We
+are going to be living in Orange County. However, I am still working at the
+church. I knew I needed to find a job at a real company. I have been casually
+looking around to see what&#8217;s out there while I finish up my final quarter at
+Cal Poly Pomona. The church hasn&#8217;t been making me all that happy with the way
+they run things.</p>
+
+<p>I clicked on the ad for the Boeing job position and signed up in ther job
+posting system. I filled in my rÃ©sumÃ© information on their website and
+waited. A couple of days later a received a call. They wanted me to come in
+for an interview. The interview went well but I was not totally satisfied with
+it. Over a month went by and I hadn&#8217;t heard anything from them, that is, until
+a couple of days ago.</p>
+
+<p>I received a call from the Staffing department of Boeing and they were pleased
+to announce to me that they would like to offer a position to me once I
+graduate from college in June. With utmost glee, I gladly and excitedly
+accepted the position in my head.</p>
+
+<p>I apologize for the way this entry was written but I wanted to make it brief
+and it is very late at night.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/03/30/boxnet/">BOX.net</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-03-30T16:03:00-08:00" pubdate data-updated="true">Mar 30<span>th</span>, 2006</time>
+        
+         | <a href="/2006/03/30/boxnet/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This website is so cool! It is basically another free online storage site,
+only it was done right! It has multiple file uploads via Flash with progress
+bars and speed tracking! You get 1.0 GB for free and can upgrade for more
+space additionally by paying a nominal fee. In addition if you refer up to 5
+people you get a free upgrade to next level up. Check it out by clicking the
+banner below. <a href="http://www.box.net/signup/invitation/mrkylehayes@gmail.com"><img src="http://www.box.net/img/refer_blue_big.gif" alt="" /></a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/03/27/flash-jpg-rotator-fixing-the-ie-problem/">Flash JPG Rotator - Fixing the IE Problem</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-03-27T10:03:00-08:00" pubdate data-updated="true">Mar 27<span>th</span>, 2006</time>
+        
+         | <a href="/2006/03/27/flash-jpg-rotator-fixing-the-ie-problem/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>After browsing for a good Flash JPG Roatator on the Internet, I finally found
+a great one that was created by <a href="http://www.jeroenwijering.com/?item=Flash_JPG_Rotator">Jeroen Wijering</a>. The rotator is great!
+That is until I got numerous reports by people using Internet Explorer that
+after the first round of rotations, the banner goes blank!</p>
+
+<p>Considering this banner is on a fairly high traffic site (www.calvarycch.org),
+I couldn&#8217;t allow this to be a problem. I went onto the <a href="http://www.jeroenwijering.com/?thread=No_pictures_after_1st_rotation">forums</a> for this
+project and many other people had a similar problem.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/03/25/adding-grub-after-installing-linux-on-a-second-drive/">Installing GRUB After Installing Linux on a Second Drive</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-03-25T15:03:00-08:00" pubdate data-updated="true">Mar 25<span>th</span>, 2006</time>
+        
+         | <a href="/2006/03/25/adding-grub-after-installing-linux-on-a-second-drive/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I finally got around to installing Linux on my desktop PC. I had problems
+installing it on the same physical harddrive as Windows, so I forked out $100
+for a new SATA 250GB drive.</p>
+
+<p>I got the drive a couple of days ago and started installing Fedora Core 5.
+About 45 minutes later, I rebooted the system and to my dismay it booted
+directly into Windows. I realized that I may have gone through the
+installation process a little to quickly and forgot to change the setting to
+put the bootloader on the first disc.</p>
+
+<p>I am considerably new to Linux and wasn&#8217;t sure how to install GRUB bootloader
+so that it started instead of Windows. All you have to do is use any bootable
+Linux disc, in this case I just used the same DVD I that installed Fedora
+with, and at the boot prompt before the installation begins you type the
+following:</p>
+
+<p><code>boot: linux rescue</code></p>
+
+<p>It then proceeds to ask you a couple of general localization questions. The
+installer will attempt to locate your partition that contains Linux. Once it
+does, it will mount it to the /mnt/sysimage directory. Once it does that, it
+will take you to a command prompt. Simply type the following at the prompt to
+change the root to your Linux install:</p>
+
+<p><code># chroot /mnt/sysimage</code></p>
+
+<p>Once you have done that you need to type the following. NOTE: I am using sda
+in this example because I have a serial ata drive. If you have an IDE drive
+then you would use hda:</p>
+
+<p><code># grub-install /dev/sda</code></p>
+
+<p>Unfortunately this did not work for me as I got this error:</p>
+
+<p><code>/dev/sdb1 does not have any corresponding BIOS drive</code></p>
+
+<p>After searching for the solution I found out I had to add a parameter to the
+install:</p>
+
+<p><code># grub-install --recheck /dev/sda</code></p>
+
+<p>Once I did that and rebooted, it showed me my GRUB bootloader which worked for
+both my Windows and Linux installations. It was perfect.</p>
+
+<p><strong>Related reading:</strong><br/>
+<a href="http://linuxhelp.blogspot.com/2005/11/how-to-repair-corrupt-mbr-and-boot.html">How to Repair a Corrupt MBR and boot into Linux</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/03/23/adding-google-base-syndication/">Adding Google Base Syndication</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-03-23T16:03:00-08:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2006</time>
+        
+         | <a href="/2006/03/23/adding-google-base-syndication/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I wanted to list the items that I had for sale on Google Base on the front
+page of the site. Knowing already that Google offered RSS feeds for many other
+services they offer, I checked the list that displays only my items. I was sad
+to see there wasn&#8217;t any syndication links.</p>
+
+<p>Perturbed by this obstacle, I was determined to discover a way to do this. I
+immediately began thinking how I could program it myself. Once I realized the
+complications of doing so I decided against it. Then I remembered a post that
+I had seen about a website that converted any website with news items or
+repeating regions into a news feed xml file. This is of course for sites
+without a syndication file.</p>
+
+<p>The site is called <a href="http://www.feed43.com">Feed 43</a>. The way it works is you input the URL of the
+page that you want to extract the news items from (can by any repeating
+region, not just news). After it fetches the page, it shows you the source of
+the webpage in a textbox. It then gives you a set of simple rules on how to
+parse the information you need for your feed, such as title, link and
+description of each item. Once you understand how the rules work, you can have
+it test the rules which will tell you how many items it found and what the
+text values are for each of the attributes. I am not going to go into too much
+detail about how the rules work. The ruleset I used to create my syndication
+file, which should work for any Google Base list is:</p>
+
+<p>Global search value:</p>
+
+<p><code>{%}</code></p>
+
+<p>Item (repeatable) Search Pattern:</p>
+
+<p>`</p>
+
+<p>{<em>} href=&#8221;{%}&#8221;{</em>} >{%}{*} {%}** `</p>
+
+<p>Finally, once you have tweaked it the way you want, you tell it which rule
+applies to which attribute and hit Preview. It will show you a preview of your
+XML file as it may appear in an RSS reader.</p>
+
+<p>From there, I now had an XML file to work with for use in ColdFusion and
+formatting it for my page.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/03/23/well-here-it-is/">Well Here It Is!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-03-23T14:03:00-08:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2006</time>
+        
+         | <a href="/2006/03/23/well-here-it-is/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>My implementation of BlogCFC (http://ray.camdenfamily.org) is finally here.
+Not that I was promising it or anything, but I was in my head I suppose.
+Nonetheless, I will be posting everything that I think the world would be
+interested in. Or not. You&#8217;ll see.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/23/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2011/11/08/switching-to-octopress/">Switching to Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/14/lee-the-patriot/">Lee, the Patriot</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/11/reddpics-bookmarklet/">ReddPics Bookmarklet</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/06/13/its-about-the-customer-service/">It&#8217;s about the customer service</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/03/16/improve-dont-prove/">Improve&#8230;don&#8217;t prove</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Github Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/kylehayes">@kylehayes</a> on Github
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'kylehayes',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("kylehayes", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/kylehayes" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @kylehayes</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Kyle Hayes -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'kylehayes';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://kylehayes.info/blog/page/24/index.html';
+        var disqus_url = 'http://kylehayes.info/blog/page/24/index.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

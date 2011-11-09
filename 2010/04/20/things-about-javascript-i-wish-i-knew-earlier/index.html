@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Things about JavaScript I wish I knew earlier - Kyle Hayes</title>
+  <meta name="author" content="Kyle Hayes">
+
+  
+  <meta name="description" content="Christian Hellman wrote another excellent JavaScript article over at Smashing
+Magazine. This time he addresses styles and techniques of coding that &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://kylehayes.info/2010/04/20/things-about-javascript-i-wish-i-knew-earlier">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/cfwise" rel="alternate" title="Kyle Hayes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1427925-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Kyle Hayes</a></h1>
+  
+    <h2>Tech, Musings, Life</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/cfwise" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:kylehayes.info" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Things About JavaScript I Wish I Knew Earlier</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-04-20T19:37:44-07:00" pubdate data-updated="true">Apr 20<span>th</span>, 2010</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Christian Hellman wrote another excellent JavaScript article over at <a href="http://www.smashingmagazine.com/">Smashing
+Magazine</a>. This time he addresses styles and techniques of coding that is
+widely supported, accepted, and expected by good JavaScript developers. If
+you’ve been programming JavaScript for awhile, you’ll notice much of the stuff
+is different now than it was less than a decade ago now that JavaScript has
+evolved and improved based on the  needs of the JavaScript community as well
+as the capabilities of modern-day browsers.</p>
+
+<p>Personally, the ones I’ve fallen victim to most recently are shortcut
+notations. Having a Java background, I always wanted to create new Objects and
+Arrays using the “new” keyword and constructing. During the writing of
+<a href="http://startdojo.com/buy">Getting Started with Dojo</a>, Peter Higgins (the technical reviewer) pounded
+in my head that today, objects are created like var foo = {} and arrays are
+created like var bar = []. Christian discusses this in the article (and a bit
+more in detail).</p>
+
+<p>Using JSON as a data format is another one I can strongly relate to,
+especially with his mention of using arrays and delimited strings in the past.
+Today, there will not be a project that goes by where I need data brought in
+and I will always choose JSON if it’s available due to its native support in
+modern day JavaScript.</p>
+
+<p>I personally am always looking for ways to make my JavaScript run faster. As
+developers, we so often get caught up in the moment of getting something to
+work and simply implement a solution in a way that just came natural and was
+easy, we don’t go back to see if we can make it more efficient—especially in
+terms of browser memory usage. There have been many times I’ve seen a simple
+for loop accessing data in a way that is calling another method to fetch the
+data, instead of caching the data once and accessing the local cache.
+Christian brought up another way to make your page more efficient in terms of
+events that I had not thought of. His example perfectly illustrates a
+situation in which you want to listen for the click event on a set of list
+items inside an unordered list. Instead of looping through each list item and
+adding an event handler, you can simply add an event handler to the parent of
+this list (the ul). From here you can determine which li was clicked. This
+assuming that you understand that events in the DOM roll up from the bottom
+when an event occurs. This means that if you click an li,if that click is not
+handled on the li, it will roll up to the ul and so forth.</p>
+
+<p>Finally the last few points on anonymous functions with the module pattern,
+configuration, interacting with the back end, and browser specific code, I
+cannot stress enough to read and understand these the best you can. These four
+points that he clearly makes are utterly important in ensuring you are an
+efficient JavaScript developer. This will set you apart from being a good
+JavaScript dev, to an excellent JavaScript dev—proving you know how the
+language works and how to best control it and use it as it should be used.</p>
+
+<p>I highly respect Christian’s articles and his advice and I recommend you head
+his comments where you see fit. You can read the full article on Smashing
+Magazine below:</p>
+
+<p><a href="http://bit.ly/amJ8sj">http://bit.ly/amJ8sj</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">khayes</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-04-20T19:37:44-07:00" pubdate data-updated="true">Apr 20<span>th</span>, 2010</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://kylehayes.info/2010/04/20/things-about-javascript-i-wish-i-knew-earlier/" data-via="kylehayes" data-counturl="http://kylehayes.info/2010/04/20/things-about-javascript-i-wish-i-knew-earlier/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2010/04/13/html5-forms/" title="Previous Post: HTML5 Forms">&laquo; HTML5 Forms</a>
+      
+      
+        <a class="basic-alignment right" href="/2010/06/16/new-free-javascript-tips-newsletter/" title="next Post: New Free JavaScript Tips Newsletter">New Free JavaScript Tips Newsletter &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2011/11/08/switching-to-octopress/">Switching to Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/14/lee-the-patriot/">Lee, the Patriot</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/11/reddpics-bookmarklet/">ReddPics Bookmarklet</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/06/13/its-about-the-customer-service/">It's about the customer service</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/03/16/improve-dont-prove/">Improve...don't prove</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Github Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/kylehayes">@kylehayes</a> on Github
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'kylehayes',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("kylehayes", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/kylehayes" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @kylehayes</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Kyle Hayes -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'kylehayes';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://kylehayes.info/2010/04/20/things-about-javascript-i-wish-i-knew-earlier/';
+        var disqus_url = 'http://kylehayes.info/2010/04/20/things-about-javascript-i-wish-i-knew-earlier/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

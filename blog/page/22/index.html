@@ -1,0 +1,786 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Kyle Hayes</title>
+  <meta name="author" content="Kyle Hayes">
+
+  
+  <meta name="description" content="I submitted my prior post as a recipe for the ColdFusion Cookbook. It was
+my first submission and it made it successfully into the cookbook. You may &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://kylehayes.info/blog/page/22">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/cfwise" rel="alternate" title="Kyle Hayes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1427925-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Kyle Hayes</a></h1>
+  
+    <h2>Tech, Musings, Life</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/cfwise" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:kylehayes.info" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/10/12/my-first-coldfusion-cookbook-recipe/">My First ColdFusion Cookbook Recipe</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-10-12T13:10:00-07:00" pubdate data-updated="true">Oct 12<span>th</span>, 2006</time>
+        
+         | <a href="/2006/10/12/my-first-coldfusion-cookbook-recipe/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I submitted my prior post as a recipe for the <a href="http://www.coldfusioncookbook.com">ColdFusion Cookbook</a>. It was
+my first submission and it made it successfully into the cookbook.</p>
+
+<p>You may check out the recipe here:
+<a href="http://www.coldfusioncookbook.com/entry/114/How-do-I-return-a-query-from-an-Excel-file">http://www.coldfusioncookbook.com/entry/114/How-do-I-return-a-query-from-an-
+Excel-file</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/10/12/creating-a-query-from-an-excel-file/">Creating a Query From an Excel File</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-10-12T10:10:00-07:00" pubdate data-updated="true">Oct 12<span>th</span>, 2006</time>
+        
+         | <a href="/2006/10/12/creating-a-query-from-an-excel-file/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Today at work I had the need to retrieve the data from a sheet in a Microsoft
+Excel file. ColdFusion does not provide this functionality natively. <strong>Before
+reading on, please note that to use the below syntax, you must be allowed to
+create Java objects on your ColdFusion server.</strong> If this has been restricted
+because you are on a shared host, than this solution will not work for you.</p>
+
+<p>I have created a ready-made function that will take care of the dirty work
+associated with getting a query from an Excel file. All you have to do is
+provide the relative file name of the Excel file you would like to read, and
+the name of a sheet within the Excel file that you would eventually like to
+query.</p>
+
+<p>`</p>
+
+<p>var c = &#8220;&#8221;; var stmnt = &#8220;&#8221;; var rs = &#8220;&#8221;; var sql = &#8220;Select * from
+[#sheetName#$]&#8221;; var myQuery = &#8220;&#8221;; arguments.filename =
+expandPath(arguments.filename);</p>
+
+<p>if(len(trim(arguments.filename)) and fileExists(arguments.filename)) { try { C
+reateObject(&#8220;java&#8221;,&#8221;java.lang.Class&#8221;).forName(&#8220;sun.jdbc.odbc.JdbcOdbcDriver&#8221;);
+c = CreateObject(&#8220;java&#8221;,&#8221;java.sql.DriverManager&#8221;).getConnection(&#8220;jdbc:odbc:Dri
+ver={Microsoft Excel Driver (*.xls)};DBQ=&#8221; &amp; arguments.filename ); stmnt =
+c.createStatement(); rs = stmnt.executeQuery(sql); myQuery =
+CreateObject(&#8216;java&#8217;,&#8217;coldfusion.sql.QueryTable&#8217;).init(rs); } catch(any e) { //
+error-handling code } } } return myQuery;</p>
+
+<p>`</p>
+
+<p>To execute the above code, you would simply call the function with the
+appropriate information as so:</p>
+
+<p><code>myQuery = getExcelSheet("/mydocs/foobar.xls","customers");</code></p>
+
+<p>As you can see I had to delve into create a few Java objects. The JDBC ODBC
+driver has support for reading Excel files which is what makes this all
+possible. The rest is fairly self-explainable. If you need further
+explanation, feel free to post a comment.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/10/12/blingo/">Bling Bling Google (AKA Blingo)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-10-12T07:10:00-07:00" pubdate data-updated="true">Oct 12<span>th</span>, 2006</time>
+        
+         | <a href="/2006/10/12/blingo/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Apparently people really are winning while searching on the Google-powered
+search-engine <a href="http://www.blingo.com/friends?ref=0qicunAt-PQh-OE5I5Tyvc3T_PQ">Blingo</a>. After reading a little about it yesterday I decided
+to sign-up and give it a whirl. It is pretty easy to sign-up since all you
+have to do is provide your email address. In addition, the site was created by
+the Publisher&#8217;s Clearing House and they said that they will not spam you or
+sell your email address. So I said, what the heck do I have to lose. I can
+deal with a few more ads on a page for the chance of winning something.</p>
+
+<p>I am sure it will pass as I always end up going back to plain ol&#8217; Google at
+some point. But, what difference does it make.</p>
+
+<p><a href="http://www.blingo.com/friends?ref=0qicunAt-PQh-OE5I5Tyvc3T_PQ">Check it Out!</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/10/10/google-is-mac-happy/">Google Is Mac Happy</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-10-10T06:10:00-07:00" pubdate data-updated="true">Oct 10<span>th</span>, 2006</time>
+        
+         | <a href="/2006/10/10/google-is-mac-happy/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.google.com/mac"><img src="http://www.google.com/sitesearch/mac.png" alt="" /></a>In an effort to become more &#8220;universally accessible and useful&#8221;,
+Google hired a team of Mac developers not too long ago to take on the
+challenge of bringing what Google has to offer and ensuring it is also
+compatible with the Macintosh platform.</p>
+
+<p>In the past, Google Earth, calendar, and Picasa related uploading was only
+available on the PC. Since Google hired it&#8217;s Mac engineers, us Mac folks can
+enjoy some more fun Google toys as well. First off, they have finally given
+update to <a href="http://www.google.com/mac">http://www.google.com/mac</a>. For quite some time now (as long as
+I can remember), this page was simply setup with a iMac insipired Google logo
+and search engine that searched Mac-related web pages and sites. Now it sports
+a newly inspired Google logo with mac-esqe like styling and also links to the
+6 Google software downloads for the Mac:</p>
+
+<ul>
+<li>Google Notifier</li>
+<li>Google Toolbar</li>
+<li>Google Sketchup</li>
+<li>Picasa Web Albums Uploader</li>
+<li>Google Earth</li>
+<li>Google Widgets (for Dashboard)</li>
+</ul>
+
+
+<p>Now, you will notice one interesting thing about one of the items on this
+list, and that is Google Notifier. <em>Google</em> Notifier? Ah yes, not Gmail
+notifier&#8230;the Mac version of this popular mini app that is also available on
+the PC includes an upcoming event notififier for Google Calendar. A feature
+only available to the Mac crowd.</p>
+
+<p>I would like to applaud Google for following their missions statement strong
+and true. Oh yes, and I almost forgot. Google also now has a Mac blog:
+<a href="http://googlemac.blogspot.com/">http://googlemac.blogspot.com/</a>.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/10/09/upgrading/">Upgrading</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-10-09T07:10:00-07:00" pubdate data-updated="true">Oct 9<span>th</span>, 2006</time>
+        
+         | <a href="/2006/10/09/upgrading/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I apologize for the ugliness that is my blog at this point. I am in the
+process of updating to BlogCFC 5.5. I should have it ready today or tomorrow.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/10/03/griffith-observatory-reopens-finally/">Griffith Observatory Re-Opens (Finally)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-10-03T11:10:00-07:00" pubdate data-updated="true">Oct 3<span>rd</span>, 2006</time>
+        
+         | <a href="/2006/10/03/griffith-observatory-reopens-finally/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>After quite a few years of being renovated and practically rebuilt, the
+Griffith Observatory in Los Angeles has finally announced its re-opening on
+November 3, 2006.</p>
+
+<p>http://www.griffithobservatory.org</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/09/11/microsoft-access-encourages-developer-carelessness/">Microsoft Access Encourages Developer Carelessness</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-09-11T18:09:00-07:00" pubdate data-updated="true">Sep 11<span>th</span>, 2006</time>
+        
+         | <a href="/2006/09/11/microsoft-access-encourages-developer-carelessness/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>After evaluating a problem that a teammate at work was having today with
+regards to importing data from a Microsoft Access database to a Microsoft SQL
+Server database, I came to the conclusion after solving that problem that
+Access allows a user to do things that may not be Kosher when it comes to
+proper programming.</p>
+
+<p>I will admit, that when I first started out in dynamic web development, an
+Access database is all I had access to (please mind the unintentional pun). As
+most young developers, I did not have the money/knowledge/resources to develop
+using a higher end database. Microsoft Access was designed for the basic user
+in mind, and though it is capable of working with web applications I would not
+suggest using it for an application that is larger than the scope of your
+personal database needs ( i.e. DVD Catalog, Pet&#8217;s Medical history etc.).</p>
+
+<p>The issue at hand is my teammate has been recently converting an application
+within our organization to the new CLAF (Common Look and Feel). Our
+organization has also been converting all of the Access databases that are
+owned by its customers into SQL Server databases. With this, he was attempting
+to import the old Access database to a new Sql Server 2000 database. He ended
+up calling me because he was having so many problems. The application is a
+time tracking application that notifies the rest of the team when people are
+logged in. The original developer of the application created three columns In,
+Out, and TodaysDate. The In and Out fields are TimeDate datatypes but they
+only stored time data, not the date. The date of the entry was stored in
+TodaysDate which was the same datatypes as In and Out. Normally I leave well
+enough alone when it comes to the way people design their applications. But
+the issue was that my teammate spent a lot of time trying to figure out why
+the database was not transferring over. He gave me a call and I eventually
+figured out that the problem was that SQL Server was trying to import the In /
+Out data into the SQL Server database. In and Out only has time data and SQL
+Server does not allow for only the time data to be imported. What should have
+been done was that the date and time data should have been included in the In
+and Out columns and not had the TodaysDate column at all. Then the developer
+should have received the date information by parsing it from the In and Out
+fields. This also makes more sense because in the old way, if someone logged
+out the next it would break the application.</p>
+
+<p>My point in all this ranting is that Access if at all possible should not be
+used for Internet application development. If you do choose to use, make sure
+you use it wisely. Again, I am not saying don&#8217;t use Access cause if you don&#8217;t
+have the resources to use Microsoft SQL Server or similar solution it is a
+decent solution.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/08/23/coldfusion-reactor-snapshots/">ColdFusion Reactor Snapshots</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-08-23T06:08:00-07:00" pubdate data-updated="true">Aug 23<span>rd</span>, 2006</time>
+        
+         | <a href="/2006/08/23/coldfusion-reactor-snapshots/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>After much discussion on the <a href="http://www.mail-archive.com/reactor%40doughughes.net/">Reactor for ColdFusion mailing list</a> about a
+simple request for a snapshot build of Reactor, <a href="http://www.falkensweb.com/"> Tom Chiverton</a>, has been
+generous enough to supply the resources for this. You may view the snapshot
+page at the location below: <a href="http://www.falkensweb.com/reactor.html">http://www.falkensweb.com/reactor.html</a></p>
+
+<p>For those of you unsure of what a snapshot is, it is the view of a source code
+repository as it was at a particular time for the purpose of <a href="http://en.wikipedia.org/wiki/Revision_control">revision
+control</a> (From Wikipedia).</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/07/10/multiple-sql-statements/">Multiple SQL Statements</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-07-10T10:07:00-07:00" pubdate data-updated="true">Jul 10<span>th</span>, 2006</time>
+        
+         | <a href="/2006/07/10/multiple-sql-statements/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If you are interested in executing multiple SQL statements inside a single
+cfquery block and posting them to a SQL Server database, then you are in luck.
+While attempting to create an install file for an application I am working on
+for work, I went into Sql Server Enterprise Manager to have it create the SQL
+for creating the various tables that my application needs. After copying the
+code directly from the file that Enterprise Manager created and copying it
+into my cfquery block, the page failed to execute.</p>
+
+<p>Much searching produced no results on why this was happening. What I finally
+figured out by process of elimination is that you cannot use the GO keyword
+that SQL Server uses in its SQL statements to combine multiple statements,
+instead, simply replace all GO keywords with a semi-colon at the end of each
+of your statements and you will be good to go.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/07/04/javascript-documentcreateelement-alternative/">JavaScript document.createElement() Alternative</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-07-04T10:07:00-07:00" pubdate data-updated="true">Jul 4<span>th</span>, 2006</time>
+        
+         | <a href="/2006/07/04/javascript-documentcreateelement-alternative/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I haven&#8217;t blogged in a while because I have been so busy getting ready for the
+wedding and things with my new job at Boeing as well. Which is partially the
+reason why I am blogging about this. I working on a project that I would like
+to add dynamic type functions into. After learning about creating DOM objects
+dynamically, I realized that the createElement and setAttribute functions
+should have been combined to make it easier.Â</p>
+
+<p>I am by no means a Javascript guru so if anybody would like to explain the
+disadvantages to my function then please elaborate in the comments. The
+function I created is simply called createElement and it shouldn&#8217;t interfere
+with the other one as the other is part of the document class. An example of
+how the function can be used is as follows:</p>
+
+<p><code>var txtbox = createElement('input','name=myTextBox','type=text','value=Your
+Text Here');</code></p>
+
+<p>which would return the following tag element:</p>
+
+<p>`</p>
+
+<p>`</p>
+
+<p>Download the code using the download link below.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/23/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/21/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2011/11/08/switching-to-octopress/">Switching to Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/14/lee-the-patriot/">Lee, the Patriot</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/11/reddpics-bookmarklet/">ReddPics Bookmarklet</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/06/13/its-about-the-customer-service/">It&#8217;s about the customer service</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/03/16/improve-dont-prove/">Improve&#8230;don&#8217;t prove</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Github Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/kylehayes">@kylehayes</a> on Github
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'kylehayes',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("kylehayes", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/kylehayes" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @kylehayes</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Kyle Hayes -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'kylehayes';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://kylehayes.info/blog/page/22/index.html';
+        var disqus_url = 'http://kylehayes.info/blog/page/22/index.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

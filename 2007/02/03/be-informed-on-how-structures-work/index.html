@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>ColdFusion Structures are Passed By Reference - Kyle Hayes</title>
+  <meta name="author" content="Kyle Hayes">
+
+  
+  <meta name="description" content="ColdFusion makes it quite easy to work with what is known in many other
+languages as associative arrays; ColdFusion calls them structs or structures &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://kylehayes.info/2007/02/03/be-informed-on-how-structures-work">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/cfwise" rel="alternate" title="Kyle Hayes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1427925-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Kyle Hayes</a></h1>
+  
+    <h2>Tech, Musings, Life</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/cfwise" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:kylehayes.info" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">ColdFusion Structures Are Passed by Reference</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-02-03T14:02:00-08:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2007</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>ColdFusion makes it quite easy to work with what is known in many other
+languages as associative arrays; ColdFusion calls them structs or structures.
+A structure is a great datatype to work with as long as you know how to use
+it.</p>
+
+<p>One of the things that you must remember about this special datatype is
+something that I ran into today when building a Validation CFC for a form I am
+working on for a client.</p>
+
+<p>First a little background&#8230;</p>
+
+<p>In this component, I call a function called <strong>getData()</strong>. It is called after
+the instantiation of the component when supplied with a <strong>formStruct</strong> which
+contains all the form elements and values that were submitted.</p>
+
+<p>During the course of the Validation process for a given form, I want to store
+a little more information about each form element other than the <strong>name</strong> and
+<strong>value</strong> (which is all that is provided when a user submits a form). My
+getData() function extracts each form element and it&#8217;s value from the
+structure and creates a new structure with attributes <strong>fieldName</strong>, <strong>data</strong>,
+<strong>isValidEntry</strong>. The first two are self-explanatory, however, the third
+attribute is a flag that specifies whether the form element is valid for it&#8217;s
+specified data type (e.g. email, phone number, credit card etc.). This
+attribute is initially set to <strong>true</strong> as it has not been validated just yet.</p>
+
+<p>After the function extracts each form field into a separte structure, it
+places them into an array that will contain all the form element structures.
+This makes it quite easy to loop through all the data and validate it based on
+the form element name.</p>
+
+<p>Now that I have thoroughly introduced my situation, I will tell you about the
+problem I came across. The following code is what my <strong>getData()</strong> function
+looked like inside my Validation component:</p>
+
+<p>`</p>
+
+<p>`</p>
+
+<p>This appears that it would be correct and wouldn&#8217;t have any issues. Indeed
+when I gave it a test, it did not error out, however, when I CFDUMP&#8217;ed the
+array that was created, every single structure contained the EXACT same
+information. In fact, it contained the data for my submit button. But &#8220;Why?&#8221;,
+I asked.</p>
+
+<p>Going back and looking at my code, I saw the line that read:</p>
+
+<p>`</p>
+
+<p>`</p>
+
+<p>It was at this point that it clicked. ColdFusion structures are passed to
+functions <strong>BY REFERENCE</strong>. That means regardless where that structure get&#8217;s
+passed, you are referring the actual structure in memory. No matter where it
+is changed, it changes the original data and all references to it are updated.
+Every time I was looping through each element in the array, I would change the
+data in the original structure. And because I was simply passing the name of
+structure in the arrayAppend function, only a reference to the structure was
+being passed.</p>
+
+<p>Naturally there a couple of ways around this. The first solution was the one I
+went with, I had to rewrite my code as follows, creating a new structure on
+each pass of the loop:</p>
+
+<p>`</p>
+
+<p>`</p>
+
+<p>Whilst writing this post, I realized that I probably could have just changed
+the arrayAppend function to read:</p>
+
+<p>`</p>
+
+<p>`</p>
+
+<p>This would have created a shallow copy (only simple variables and arrays) of
+the temporary structure. I may very well do this afterall.</p>
+
+<p>The lesson here is, be aware of how ColdFusion deals with various data types.
+Ensure that you know which data types are passed by reference and which are
+passed by value.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">khayes</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-02-03T14:02:00-08:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2007</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://kylehayes.info/2007/02/03/be-informed-on-how-structures-work/" data-via="kylehayes" data-counturl="http://kylehayes.info/2007/02/03/be-informed-on-how-structures-work/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2007/01/31/mark-drew-announces-codeshare-plugin-for-eclipse/" title="Previous Post: Mark Drew Announces CodeShare Plugin for Eclipse">&laquo; Mark Drew Announces CodeShare Plugin for Eclipse</a>
+      
+      
+        <a class="basic-alignment right" href="/2007/02/12/here-is-a-post-from-imified/" title="next Post: Here is a post from IMified">Here is a post from IMified &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2011/11/08/switching-to-octopress/">Switching to Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/14/lee-the-patriot/">Lee, the Patriot</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/11/reddpics-bookmarklet/">ReddPics Bookmarklet</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/06/13/its-about-the-customer-service/">It's about the customer service</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/03/16/improve-dont-prove/">Improve...don't prove</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Github Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/kylehayes">@kylehayes</a> on Github
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'kylehayes',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("kylehayes", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/kylehayes" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @kylehayes</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Kyle Hayes -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'kylehayes';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://kylehayes.info/2007/02/03/be-informed-on-how-structures-work/';
+        var disqus_url = 'http://kylehayes.info/2007/02/03/be-informed-on-how-structures-work/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

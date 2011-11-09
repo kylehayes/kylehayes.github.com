@@ -1,0 +1,1038 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Kyle Hayes</title>
+  <meta name="author" content="Kyle Hayes">
+
+  
+  <meta name="description" content="Dojo is incredibly fun to use and I finally enjoy programming JavaScript,
+again! I&#8217;m starting this series of posts to communicate the message &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://kylehayes.info/blog/page/3">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/cfwise" rel="alternate" title="Kyle Hayes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1427925-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Kyle Hayes</a></h1>
+  
+    <h2>Tech, Musings, Life</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/cfwise" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:kylehayes.info" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/04/22/dojo-fun-easy-intro/">Dojo, Fun & Easy: Intro</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-04-22T04:43:25-07:00" pubdate data-updated="true">Apr 22<span>nd</span>, 2009</time>
+        
+         | <a href="/2009/04/22/dojo-fun-easy-intro/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.dojotoolkit.org" title="The Dojo Toolkit website">Dojo</a> is incredibly fun to use and I finally enjoy programming JavaScript,
+again! I&#8217;m starting this series of posts to communicate the message that
+anyone not programming in Dojo, is missing out on an extremely, powerful, and
+<a href="http://dante.dojotoolkit.org/taskspeed/report/charts.html" title="TaskSpeed JavaScript library speed test results">lightning fast</a> toolkit. In addition, while many libraries provide only
+the DOM manipulation, animation, and CSS selector tools, etc. &#8211;  Dojo not
+only provides all of that, but so much more with it&#8217;s companion libraries,
+<a href="http://dojotoolkit.org/projects/dijit" title="Dijit homepage">Dijit</a> and <a href="http://dojotoolkit.org/projects/dojox" title="DojoX homepage">DojoX</a>. <em>&#8220;a fresh new start&#8221;</em><a href="http://dojotoolkit.org/projects/dijit" title="Dijit homepage">Dijit</a>, which encompasses
+a complete library of themed, skinnable UI widgets that have full support for
+accessibility and localization baked right in, but also provides a full
+framework to build your own custom widgets in the same manner. <a href="http://dojotoolkit.org/projects/dojox" title="DojoX homepage">DojoX</a> is a
+library of &#8220;inventive &amp; innovative code and widgets&#8221;. Build complex charting
+applications and vector drawings alongside with making your HTML applications
+available to users offline. DojoX is the future of JavaScript available to you
+today.</p>
+
+<p>I want this series to be eye-opening for all the JavaScript developers who
+think Dojo died a few years back with it&#8217;s pre 0.9 days. The 0.9 release of
+Dojo brought fourth a fresh new start that provided huge increases in speed
+and stability. Since then, Dojo has blossomed into a full-fledged enterprise
+ready toolkit that is backed by an awesome community. If the last time you
+looked at Dojo was back in the pre 0.9 days (early 2007 and before), stop and
+<a href="http://demos.dojotoolkit.org/demos/" title="Dojo demos">check it out</a>. Follow this series of posts to see for yourself the power
+that you can harness in your websites and applications.<em>&#8220;these top quality
+developers know the ins and outs of JavaScript&#8221;</em></p>
+
+<p>Dojo&#8217;s community is a special one. Drop by the #dojo IRC channel at
+irc.freenode.net to be greeted by a group of people who are there to welcome
+you and answer any questions you have. The best part is, they really know what
+they are talking about. These top quality developers know the ins and outs of
+JavaScript incredibly well and prove it when approached with questions. They
+are quick to provide examples, offer advice, and never talk down to anybody
+that drops by, seeking help. The developers of the toolkit are often on the
+channel to provide direct support but everyone else is also excellent and will
+help you out anyway they can.</p>
+
+<p>In the coming weeks as this series progresses, you&#8217;ll see so many more aspects
+that make Dojo an excellent choice when considering your JavaScript library /
+toolkit of choice. This is only the beginning.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/04/08/5-easy-tutorials-for-advanced-javascript-using-dojo/">5 Easy Tutorials for Advanced JavaScript Using Dojo</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-04-08T02:49:30-07:00" pubdate data-updated="true">Apr 8<span>th</span>, 2009</time>
+        
+         | <a href="/2009/04/08/5-easy-tutorials-for-advanced-javascript-using-dojo/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;ve been using Dojo a lot lately and have really gotten knee deep in
+development with it. Best of all, it is so easy to do so. The number one thing
+I&#8217;ve noticed is that the community is great&#8211;very approachable and they really
+know what they are talking about. These are true programmers who love what
+they do, and it shows in this toolkit.</p>
+
+<p>The <a href="http://www.dojocampus.org/" title="Dojo Campus">Dojo Campus</a> provides a wealth of documentation, <a href="http://dojocampus.org/content/category/tutorials/" title="Dojo tutorials">tutorials</a> for
+all levels, <a href="http://dojocampus.org/content/category/dojo-cookies/" title="Dojo Cookies">Dojo Cookies (kind of like recipes)</a>, and <a href="http://dojocampus.org/explorer/" title="Cool features of Dojo">demos of cool
+features.</a></p>
+
+<p>Below are just a handful of tutorials that are available to beginners in Dojo
+that really help you get started.</p>
+
+<ol>
+<li><strong><a href="http://dojocampus.org/content/2008/04/02/dojo-on-air-a-fancy-file-uploader/" title="Dojo and Air, a fancy file uploader">Dojo and Air, a fancy file uploader</a></strong> How many times have you had trouble uploading files to your favorite CMS? How many times did a client say “I am not happy with uploading one file at a time”? And last but not least, how many times did you implement a third party plugin/software/piece of magic to implement efficient file uploading? <a href="http://dojocampus.org/content/2008/04/02/dojo-on-air-a-fancy-file-uploader/" title="Dojo and Air, a fancy file uploader">View tutorial >></a></li>
+<li><strong><a href="http://dojocampus.org/content/2008/03/21/no-end-to-rounded-corners/" title="Fancy rounded corners">Fancy Rounded Corners</a></strong> Make great looking rounded corners on your elements using only a single image. <a href="http://dojocampus.org/content/2008/03/21/no-end-to-rounded-corners/" title="Fancy rounded corners">View tutorial >></a></li>
+<li><a href="http://dojocampus.org/content/2008/02/29/preface-to-dnd-topics/" title="Easily listen for events"><strong>Easily listen for events</strong></a> Custom events and Dom Events are all well and good for method-to-method functionality. It is a really common use case to connect some event happening to call another function, but when you get into really ambiguous, large applications, you need some mechanism to just say “hey, something has happened, act accordingly” … dojo.publish and dojo.subscribe provide just that mechanism. <a href="http://dojocampus.org/content/2008/02/29/preface-to-dnd-topics/" title="Easily listen for events">View tutorial >></a></li>
+<li><strong><a href="http://dojocampus.org/content/2008/02/22/make-your-own-rounded-tabs-with-dijit-theming/" title="Rounded tabs with themes">Rounded tabs with themes</a></strong> Everybody likes rounded buttons, rounded page elements and last but not least, rounded tabs. Fortunately dijit comes with great theming possibilities, so I will show you how you can make your own fancy rounded tabs using a simple image sprite and a couple of CSS classes. <a href="http://dojocampus.org/content/2008/02/22/make-your-own-rounded-tabs-with-dijit-theming/" title="Rounded tabs with themes">View tutorial >></a></li>
+<li><strong><a href="http://dojocampus.org/content/2008/06/18/separating-content-from-presentation-ajax/" title="Separating Content from Presentation">Separating Content from Presentation</a></strong> One of the cool things about Dojo is the dojo.xhrGet() function. It’s powerful because it makes transparent the browser dependent transports that make AJAX possible. In this cookie, we’re going to explore a simple use case in Dojo to separate content from the presentation of a page. <a href="http://dojocampus.org/content/2008/06/18/separating-content-from-presentation-ajax/" title="Separating Content from Presentation">View tutorial >></a></li>
+</ol>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/04/01/dojo-13-base-api-cheat-sheet/">Dojo 1.3 Base API Cheat Sheet</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-04-01T19:04:00-07:00" pubdate data-updated="true">Apr 1<span>st</span>, 2009</time>
+        
+         | <a href="/2009/04/01/dojo-13-base-api-cheat-sheet/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>For those of you who have been asking (and I suppose those of you who haven&#8217;t)
+a cheat sheet is finally available, designed by yours truly but with full API
+generation by phiggins over at #dojo and much input from the other folks on
+that channel! And as a special bonus, it&#8217;s fully compatible with Dojo 1.3
+(<a href="http://www.dojotoolkit.org/2009/03/31/dojo-1-3-now-available">just released</a>)!</p>
+
+<p><a href="http://download.dojotoolkit.org/release-1.3.0/cheat.pdf">Download your copy today</a> and distribute it to all your friends!</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/03/29/survey-results-javascript-frameworks/">Survey Results: JavaScript Frameworks</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-03-29T07:03:00-07:00" pubdate data-updated="true">Mar 29<span>th</span>, 2009</time>
+        
+         | <a href="/2009/03/29/survey-results-javascript-frameworks/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>Introduction</h3>
+
+<p>Initially when I started this survey, I had a half and half desire to test out
+Google&#8217;s Spreadsheet Form capabilities but to also get an inkling of what
+other developer&#8217;s thought about the JavaScript framework / toolkit they use.
+When I launched the survey and blogged, tweeted and emailed it to some folks,
+my best hope was to get about 100 submissions. I was delightfully surprised
+that when I closed it two weeks later, I had just a little over 600
+submissions!</p>
+
+<p>Read on&#8230;</p>
+
+<p>This was a great learning experience for me in so many ways. First off, I
+never planned on this being a professional survey that would give me extremely
+valuable data. I knew that because of the methods I was using to gain
+submissions were going to be skewed based on the communities I sent it to. In
+addition, I provided no incentive for people to take the survey. I had to lure
+them in on the notion that it would be anonymous, very short, and I would be
+sharing the results later on.</p>
+
+<p>As I watched the results come in the first week and I started to read some of
+the comments and suggestions, folks suggested a couple of ideas for the
+survey. With that, I added those changes immediately. Obviously, that is going
+to change my results slightly and I also won&#8217;t get quite as valuable of data
+had a left it alone from the beginning. But the suggestions were good enough
+that I implemented them. Also, any changes to the survey were made before it
+had reached a 200 response level. The majority of the respondents were
+submitting the final draft of the survey.</p>
+
+<p>Another key point that I learned through this process was that I may not have
+been comparing apples to apples. A few respondents wrote in their notes that
+the &#8220;frameworks&#8221; I had put in the list were not all the same type of
+JavaScript frameworks. One respondent replied with the following:</p>
+
+<blockquote><p>IMHO it doesn&#8217;t make much sense to compare JavaScript libraries with such a
+different focus and feature set:</p></blockquote>
+
+<ol>
+<li><p>&#8220;JavaScript Libraries&#8221; <a href="http://www.prototypejs.org/">Prototype</a>, <a href="http://www.jquery.com">jQuery</a> and <a href="http://mootools.net/">MooTools</a> are
+merely cross-browser abstraction layers for DOM-oriented low-level tasks, e.g.
+for enhancing a traditional website.</p></li>
+<li><p>&#8220;RIA Frameworks&#8221; <a href="http://developer.yahoo.com/yui/">YUI</a>, <a href="http://www.dojotoolkit.org">Dojo</a> and <a href="http://qooxdoo.org/">qooxdoo</a> are much more
+comprehensive, include widgets, a GUI toolkit and come with development tools
+like code compressors.</p></li>
+</ol>
+
+
+<p>Once I read this, I realized this individual was completely correct. <a href="http://developer.yahoo.com/yui/">YUI</a>,
+<a href="http://www.dojotoolkit.org">Dojo</a>, and <a href="http://qooxdoo.org/">qooxdoo</a> are quite a bit more expansive in their size,
+functionality, and overall support for building a &#8220;framework&#8221; for JavaScript.
+Right now is a good point to mention my underlying reason for conducting this
+survey. At work, I&#8217;ve been tasked to restructure the JavaScript architecture
+for the family of websites we operate. These are fairly large sites and are
+becoming very frontend heavy as we move to a static model employing RESTful
+requests to pull in dynamic data; our dependance on JavaScript will be
+increasing quite a bit over the coming months.</p>
+
+<p>The main requirements I was looking for to implement in the new architecture
+was a faster executing JavaScript library (we currently use YUI), integrated
+test-driven development, JavaScript templating, lazy-loading of JavaScript
+source files, and the library needs to be namespaced to reduce conflict in our
+existing code.</p>
+
+<h3>Analysis</h3>
+
+<p>The first question that I get asked about the survey is which library was most
+popular. The answer there is <a href="http://www.jquery.com">jQuery</a>. <a href="http://www.jquery.com">jQuery</a> has been gaining quite a
+bit of steam lately and has generated a lot of buzz as well. However, just
+because it appears to be the most popular doesn&#8217;t mean it is the best and I
+don&#8217;t want folks to read the below results in that manner. Each individual
+developer needs to research and understand the different components of every
+library and framework they are interested in, to understand which components
+are going to be most useful in their projects. In fact, some projects may be
+require one library, and other projects may be best suited for a different
+library.</p>
+
+<p>Many folks that read my blog are from the ColdFusion community and I felt that
+most of the respondents would be swayed towards <a href="http://www.jquery.com">jQuery</a>. With that, I
+submitted the survey to a Django forum, a Ruby on Rails forum, a very large
+PHP forum, and TheServerSide.com (namely a large following of Java folks). I
+wanted to get as wide of an audience as possible.</p>
+
+<p>Keep in mind when you read the responses below that the questions were all
+aimed at the developer&#8217;s feeling of the framework they used. While most
+responses are going to be biased, some developer&#8217;s were on the framework
+because they had adopted it early on and couldn&#8217;t switch or were forced to use
+it because of the project that they came on to.</p>
+
+<h4>Library Preference</h4>
+
+<p>The chart below illustrates the &#8220;Which JavaScript framework do you use the
+most in your projects?&#8221; question:</p>
+
+<p><img src="http://dl-client.getdropbox.com/u/102671/kylehayes.info/jsfw_results/libraryPreference.jpg" alt="Which JavaScript framework do you use the most in your projects?" /></p>
+
+<p>As I mentioned earlier, <a href="http://www.jquery.com">jQuery</a> clearly dominated this question. My
+opinion on why is that <a href="http://www.jquery.com">jQuery</a> is insanely easy to implement into your
+projects, it&#8217;s fast, it&#8217;s easy to pick up, and it is seems to be a buzzword
+among blogs. For a lot of developers, it is the clear choice as it does
+everything they need it to do.</p>
+
+<h4>Quality of Documentation</h4>
+
+<p>I felt that this question provided the most accurate results as documentation
+is something that developers have to be in tune with on a daily basis when
+working with a particular library. If the documentation consistently performs
+poorly then a developer is likely to stick with that toolkit.</p>
+
+<p>The chart below illustrates the following question, &#8220;In regards to the
+framework you chose above, rate the quality of the documentation provided by
+the creators.&#8221;:</p>
+
+<p><img src="http://dl-client.getdropbox.com/u/102671/kylehayes.info/jsfw_results/qualityOfDocs.jpg" alt="In regards to the framework you chose above, rate the quality of the
+documentation provided by the creators" /></p>
+
+<p>As someone who has worked with YUI in the past year, I would also agree that
+it has excellent documentation compared to other libraries I have worked with
+in the past.</p>
+
+<h4>Quality of Community Support</h4>
+
+<p>This was an interesting question. I am basically asking the developer to rate
+how they feel about the overall quality of the community support for the
+library. This can be just about anything such as a forum, newsgroup, IRC
+channel, blog, etc. While <a href="http://qooxdoo.org/">qooxdoo</a> did rank the highest, it also has a
+very small following, hence the data is not as sparse as it would be for one
+of the large libraries such as <a href="http://www.jquery.com">jQuery</a> and Prototype. However, it is still
+good to note that those who do use <a href="http://qooxdoo.org/">qooxdoo</a> seem to be a passionate group.</p>
+
+<p>The chart below illustrates the following question, &#8220;Rate the quality of
+support provided by the community.&#8221;:</p>
+
+<p><img src="http://dl-client.getdropbox.com/u/102671/kylehayes.info/jsfw_results/qualityOfComm.jpg" alt="Rate the quality of support provided by the community" /></p>
+
+<h4>Light-Duty / Heavy-Duty Performance</h4>
+
+<p>If I were to do conduct this survey again, I would leave these two questions
+out. Looking back, I realized that the information provided was pretty much
+useless for a few reasons. First of all, the question asks to the user to
+report how they <em>feel</em> the libraries perform under certain conditions, but I
+gave no specific cases in which for them to test these observations. Second of
+all, there is already much more valuable statistics available from
+<a href="http://selectors.turnwheel.com/slickspeed.php">SlickSpeed</a>.</p>
+
+<p><img src="http://dl-client.getdropbox.com/u/102671/kylehayes.info/jsfw_results/lightDuty.jpg" alt="" /></p>
+
+<p><img src="http://dl-client.getdropbox.com/u/102671/kylehayes.info/jsfw_results/heavyDuty.jpg" alt="" /></p>
+
+<h4>Ease of Implementation</h4>
+
+<p>In questioning about the ease of implementation, I was asking the developer to
+describe how easy they felt it was to not only install the framework into
+their page (whether the code was hosted on Google/Yahoo/AOL or whether they
+had to download it) but also to integrate the library functions into existing
+code/functions.</p>
+
+<p>Again, it does not surprise me that <a href="http://www.jquery.com">jQuery</a> sits on top for this one but I
+think it is due to it&#8217;s overwhelming popularity and the buzzword case I
+mentioned earlier. The problem with this question is that I am not asking the
+developer to compare the ease of implementation to their chosen library versus
+another one. The data has no relativity and is also pretty much useless. That
+data represented could contain many developer&#8217;s who have only ever tried
+<a href="http://www.jquery.com">jQuery</a> and the installation + integration was easy! But perhaps if they
+had tried something like Dojo or YUI, they may have found those even easier
+and rated <a href="http://www.jquery.com">jQuery</a> lower. It&#8217;s hard to determine from the data provided
+what exactly the developer is communicating for their chosen rating.</p>
+
+<p><img src="http://dl-client.getdropbox.com/u/102671/kylehayes.info/jsfw_results/easeOfImp.jpg" alt="" /></p>
+
+<h4>Perceived Popularity</h4>
+
+<p>This may sound like a funny question and that&#8217;s true, it is kind of a funny
+question. My motive for this question was to extract if the developer was
+using a framework like YUI, if they personally knew that it was not a very
+popular framework? And if so, it&#8217;s clear that they are going against the flow
+in using it. Most likely in this case, the developer&#8217;s using the &#8220;less
+popular&#8221; libraries are likely using them because they prefer the organizations
+that back them up, prefer the functionality, or are forced to use them.
+Nonetheless, I was very surprised to find the ZK framework come in 2nd for
+this. However, this goes back to the fact that a very small sample of the ZK
+community was captured in this survey.</p>
+
+<p>The chart below illustrates the following question, &#8220;Rate how popular you feel
+your chosen framework is above similar JavaScript frameworks&#8221;: <img src="http://dl-client.getdropbox.com/u/102671/kylehayes.info/jsfw_results/perceivedPopularity.jpg" alt="Rate how
+popular you feel your chosen framework is above similar JavaScript
+frameworks" /></p>
+
+<h4>3rd Party Plugin Quality</h4>
+
+<p>Plugins may or may not be important to developers. In my opinion, they should
+be very important. As a busy developer, you should always be on the lookout
+for the opportunity to use pre-written code to speed up your development.
+Granted, you should always inspect the code if you can and test it to make
+sure it will not only suit your needs, but it is implemented the way you would
+do it and that it is well-designed. The latter is what I was trying to get at.
+I wanted to know how developer&#8217;s felt about any of the plugins that were not
+included along with the library itself.</p>
+
+<p>While a lot folks like the <a href="http://www.jquery.com">jQuery</a> library, I&#8217;ve also heard many say what
+they don&#8217;t like about it is how quickly their page can grow in size by pulling
+in more plugins. This definitely makes sense as when the user loads a page,
+their browser has to download all those external JavaScript files slowing down
+the page quite a bit. It would be different if the library contained a dynamic
+loading method that allowed the plugins only to be actually downloaded when
+they were being used such as the <a href="http://dojotoolkit.org/book/dojo-book-0-9/part-3-programmatic-dijit-and-dojo/modules-and-namespaces/what-does-dojo-require-">dojo.require()</a> method provided by the
+Dojo Toolkit.</p>
+
+<p>The chart below illustrates the following question, &#8220;If your framework
+supports 3rd party plugins, rate the average quality of those plugins in terms
+of documentation, stability, quality, and implementation&#8221;: <img src="http://dl-client.getdropbox.com/u/102671/kylehayes.info/jsfw_results/plugins.jpg" alt="If your framework
+supports 3rd party plugins, rate the average quality of those plugins in terms
+of documentation, stability, quality, and implementation" /></p>
+
+<h3>Conclusion</h3>
+
+<p>I felt that this was a great learning experience for me in a few ways. One, I
+learned that developing a survey needs to take some more time to come up with
+questions that are going to more accurately provide the type of data you are
+looking for. Two, broad results are difficult to achieve on your own. Three,
+<a href="http://docs.google.com">Google Docs</a> is pretty darn good at creating an easy solution for forms
+and data entry/input! Four, comments and suggestions entry boxes on surveys
+are one of the most useful questions. So often I don&#8217;t fill these out because
+I am too lazy, but I received the most valuable input in that question.</p>
+
+<p>When choosing a JavaScript library / toolkit / framework, do not choose the
+one that is most popular for the sake of it. Really dig deep and spend some
+time on it to find out the strengths and weakness of each one to ensure you
+choose the right tool for the right job.</p>
+
+<p>I hope the information above was useful if not just generally interesting. As
+promised, <a href="http://spreadsheets.google.com/pub?key=pMgX8gG1puHLFTZ5_Ss_7PA">here is the raw results</a> from Google Spreadsheets.</p>
+
+<p>In addition, please leave comments on what you thought about this experiment.
+Would you like to see another one focusing on different aspects and getting
+more comparisons in?</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/03/17/javascript-frameworks-survey-closed/">JavaScript Frameworks Survey Closed</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-03-17T08:03:00-07:00" pubdate data-updated="true">Mar 17<span>th</span>, 2009</time>
+        
+         | <a href="/2009/03/17/javascript-frameworks-survey-closed/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Thank you all who participated in my <a href="http://www.kylehayes.info/blog/index.cfm/2009/3/4/Short-JavaScript-Frameworks-Survey">Developer&#8217;s Insight: JavaScript
+Frameworks</a> survey. Topping out at 604 total responses in less than 2 weeks
+made this a huge success. It even made it to the frontpage of
+<a href="http://www.theserverside.com">TheServerSide.com</a>! The downside of this many responses is the analysis on
+all the data.</p>
+
+<p>Rest assured, I will begin looking at the data this week. I hope to have a
+summary post in the next two weeks along with a link to the raw data.</p>
+
+<p>Hang tight and thanks for your patience!</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/03/04/short-javascript-frameworks-survey/">Short JavaScript Frameworks Survey</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-03-04T08:03:00-08:00" pubdate data-updated="true">Mar 4<span>th</span>, 2009</time>
+        
+         | <a href="/2009/03/04/short-javascript-frameworks-survey/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>In an effort to better understand how developer&#8217;s feel about a particular
+JavaScript framework they use on a daily basis or in their projects, I have
+created a <a href="http://spreadsheets.google.com/viewform?formkey=cE1nWDhnRzFwdUhMRlRaNV9Tc183UEE6MA..">short survey</a>.</p>
+
+<p>I would be very grateful for you to <a href="http://spreadsheets.google.com/viewform?formkey=cE1nWDhnRzFwdUhMRlRaNV9Tc183UEE6MA..">take this survey</a> and to pass it on to
+others if you would be so kind.</p>
+
+<p>I understand that the data that I receive from this will most likely be skewed
+and extremely inaccurate on a broader level, nevertheless I am quite curious
+about the topic. In addition, I will most likely be spreading the word on the
+results of this survey. In addition, I&#8217;m also aware of the <a href="http://blog.creonfx.com/javascript/mootools-vs-jquery-vs-prototype-vs-yui-vs-dojo-comparison-revised">existing posts</a>
+available in regards to the measured speed of these frameworks.</p>
+
+<p>Thanks!</p>
+
+<p><a href="http://spreadsheets.google.com/viewform?formkey=cE1nWDhnRzFwdUhMRlRaNV9Tc183UEE6MA..">Please take this short survey on JavaScript Frameworks</a></p>
+
+<p>Alternatively you can fill out the form here: Loading&#8230;</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/11/25/be-careful-buying-gift-cards-this-season/">Be Careful Buying Gift Cards This Season</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-11-25T07:11:00-08:00" pubdate data-updated="true">Nov 25<span>th</span>, 2008</time>
+        
+         | <a href="/2008/11/25/be-careful-buying-gift-cards-this-season/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Here&#8217;s a heads up if you plan on giving gift cards around the holidays. You
+need to be careful that the cards will be honored after the holidays.</p>
+
+<p>Stores that are planning to close after Christmas are still selling the cards
+through the holidays even though the cards will be worthless January 1. There
+is no law preventing them from doing this. On the contrary, it is referred to
+as &#8216;Bankruptcy Planning.&#8217; Below is a partial list of stores that you need to
+be cautious about.</p>
+
+<p>It seems <a href="http://www.amazon.com/dp/B00067L6TQ?&amp;tag=hayesholiday2008-20&amp;camp=212333&amp;creative=380473&amp;linkCode=ur1&amp;adid=1C7J9JEA4F9EE8TA6T4V&amp;">Amazon.com gift cards</a> are probably the safest bet.</p>
+
+<ul>
+<li>Circuit City (filed Chapter 11)</li>
+<li>Ann Taylor 117 stores nationwide closing</li>
+<li>Lane Bryant, Fashion Bug and Catherine&#8217;s to close 150 stores nationwide</li>
+<li>Eddie Bauer to close stores 27 stores and more after January</li>
+<li>Cache will close all stores</li>
+<li>Talbots closing down specialty stores</li>
+<li>J. Jill closing all stores (owned by Talbots)&lt;/li</li>
+<li>Pacific Sunwear (also owned by Talbots)</li>
+<li>GAP closing 85 stores</li>
+<li>Footlocker closing 140 stores more to close after January</li>
+<li>Wickes Furniture closing down</li>
+<li>Levitz closing down remaining stores</li>
+<li>Bombay closing remaining stores</li>
+<li>Acorn closing down remaining 36 stores (owned by Christopher &amp; Banks / C.J. Banks)</li>
+<li>Zales closing down 82 stores and 105 after January</li>
+<li>Whitehall closing all stores</li>
+<li>Piercing Pagoda closing all stores</li>
+<li>Disney closing 98 stores and will close more after January</li>
+<li>Home Depot closing 15 stores</li>
+<li>Macys to close 9 stores after January</li>
+<li>Linens and Things closing all stores</li>
+<li>Movie Galley Closing all stores</li>
+<li>Pep Boys Closing 33 stores</li>
+<li>Sprint/Nextel closing 133 stores</li>
+<li>JC Penney closing a number of stores after January</li>
+<li>Ethan Allen closing down 12 stores</li>
+<li>Wilson Leather closing down all stores</li>
+<li>Sharper Image closing down all stores</li>
+<li>K B Toys closing 356 stores</li>
+<li>Lowe&#8217;s to close down some stores</li>
+<li>Dillard&#8217;s to close some stores</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/11/25/amazoncom-announces-early-black-friday-deals/">Amazon.com Announces Early Black Friday Deals</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-11-25T07:11:00-08:00" pubdate data-updated="true">Nov 25<span>th</span>, 2008</time>
+        
+         | <a href="/2008/11/25/amazoncom-announces-early-black-friday-deals/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.amazon.com/b/?node=384082011&amp;tag=cf0d-20"><img src="http://g-ecx.images-amazon.com/images/G/01/associates/2008/banners/black-friday_300._V240384502_.gif" alt="" /></a>Black Friday may not be here just yet, but that doesn&#8217;t mean you
+cannot get in on the action now (yes even before preparing that huge
+Thanksgiving meal). Why not get a good start on the <a href="http://www.amazon.com/b/?node=384082011&amp;tag=cf0d-20">incredible deals</a> that
+Amazon.com is offering from now until December 4th!</p>
+
+<p>Plus, get in on the hourly <a href="http://www.amazon.com/b/?node=384082011&amp;tag=cf0d-20">Gold Box deals</a> (also shown below) from
+midnight to 11pm on Black Friday.</p>
+
+<p>Finally, <a href="http://promotions.amazon.com/gp/cv?tag=cf0d-20">vote on the six products</a> with crazy deals you want to see on
+Black Friday by participating in the <a href="http://promotions.amazon.com/gp/cv?tag=cf0d-20">Amazon Customers Vote</a> end-of-year
+promotion.</p>
+
+<p>Bookmark this post so you can keep an eye on these Gold Box deals and
+lightning deals as they happen:</p>
+
+<p><a href="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&amp;MarketPlace=US&amp;ID=V20070822%2FUS%2Fcf0d-20%2F8009%2Fd8e6d348-5d20-4ee2-b0e7-f87932449fb1&amp;Operation=NoScript">Amazon.com Widgets</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/11/13/spry-empty-option-in-datasetcontrolled-select/">Spry: Empty Option in Dataset-controlled Select</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-11-13T21:11:00-08:00" pubdate data-updated="true">Nov 13<span>th</span>, 2008</time>
+        
+         | <a href="/2008/11/13/spry-empty-option-in-datasetcontrolled-select/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>With <a href="http://labs.adobe.com/technologies/spry/">Adobe Spry</a>, you can dynamically populate a select box (aka.
+dropdown) with a dataset very easily:</p>
+
+<p>`</p>
+
+<p>var ds = new Spry.Data.JSONDataSet(&#8220;/some/jsonobject.js&#8221;);</p>
+
+<p>{ds::name}</p>
+
+<p>`</p>
+
+<p>If you are familiar with Spry, than the above makes complete sense. I came
+across a problem this evening, however, when using very similar code as a
+filter mechanism for a separate dataset. The problem with the above code is
+that once it is populated, the select box will by default choose the first
+value as selected. If you are filtering data, you want the initial/reset state
+to be blank and not have any values.</p>
+
+<p>Since I am using spry:repeatchildren to repeat my option tags, I cannot simply
+drop in a blank option tag above the current one because than it would also
+repeat for all the other rows in the dataset.</p>
+
+<p>Thanks to the <a href="http://www.coldfusionjedi.com/index.cfm/2006/11/1/Spry-builtin-variables-for-Datasets">built in variables</a> for each dataset, we can get special
+information during the loop of the dataset rows. This is valuable information
+since we technically need to drop the blank option just above the first row of
+the dataset.</p>
+
+<p>We modify the above code to be the following instead:</p>
+
+<p>`</p>
+
+<p>var ds = new Spry.Data.JSONDataSet(&#8220;/some/jsonobject.js&#8221;);</p>
+
+<p>{ds::name}</p>
+
+<p>`</p>
+
+<p>The spry:if simply checks if the loop is on row number 0 and if it is, it will
+drop in that option tag. Otherwise, it gets left out on all of the other rows.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/11/05/100-awesome-air-apps-for-productivity/">100 Awesome AIR Apps for Productivity</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-11-05T07:11:00-08:00" pubdate data-updated="true">Nov 5<span>th</span>, 2008</time>
+        
+         | <a href="/2008/11/05/100-awesome-air-apps-for-productivity/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Adobe AIR not only makes developers more productive by allowing them to write
+a single code-base for multiple distribution platforms, but it also produces
+excellent productivity apps for the average computer user. Here is a lit of
+<a href="http://www.careeroverview.com/blog/2008/hack-your-work-day-100-awesome-adobe-air-apps-for-productivity/">100 Awesome AIR apps for Productivity</a>.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/4/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/2/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2011/11/08/switching-to-octopress/">Switching to Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/14/lee-the-patriot/">Lee, the Patriot</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/11/reddpics-bookmarklet/">ReddPics Bookmarklet</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/06/13/its-about-the-customer-service/">It&#8217;s about the customer service</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/03/16/improve-dont-prove/">Improve&#8230;don&#8217;t prove</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Github Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/kylehayes">@kylehayes</a> on Github
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'kylehayes',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("kylehayes", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/kylehayes" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @kylehayes</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Kyle Hayes -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'kylehayes';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://kylehayes.info/blog/page/3/index.html';
+        var disqus_url = 'http://kylehayes.info/blog/page/3/index.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,805 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Kyle Hayes</title>
+  <meta name="author" content="Kyle Hayes">
+
+  
+  <meta name="description" content="Great article on web standards and why you should transform your site from
+HTML to XHTML to prepare yourself for the future: HTML, XHTML, semantics &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://kylehayes.info/blog/page/19">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/cfwise" rel="alternate" title="Kyle Hayes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1427925-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Kyle Hayes</a></h1>
+  
+    <h2>Tech, Musings, Life</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/cfwise" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:kylehayes.info" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/03/04/html-xhtml-semantics-and-the-future-of-the-web/">HTML, XHTML, Semantics and the Future of the Web</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-03-04T16:03:00-08:00" pubdate data-updated="true">Mar 4<span>th</span>, 2007</time>
+        
+         | <a href="/2007/03/04/html-xhtml-semantics-and-the-future-of-the-web/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Great article on web standards and why you should transform your site from
+HTML to XHTML to prepare yourself for the future:</p>
+
+<p><a href="http://www.westciv.com/style_master/house/good_oil/xhtml/index.html">HTML, XHTML, semantics and the future of the web</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/02/22/passing-url-variables-to-flex/">Passing URL Variables to Flex</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-02-22T06:02:00-08:00" pubdate data-updated="true">Feb 22<span>nd</span>, 2007</time>
+        
+         | <a href="/2007/02/22/passing-url-variables-to-flex/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.thanksmister.com">Michael&#8217;s</a> post on <a href="http://thanksmister.com/wp-trackback.php?p=27">Passing variables to Flex 2 in the embed page (or URL
+string)</a> really helped shed some light on this issue.</p>
+
+<p>According to the docs, you <em>simply</em> pass the variable via the <strong>src</strong>
+attribute in the wrapper OBJECT or EMBED tags. Unfortunately, this simply
+isn&#8217;t true because if you open up the html-template file that Flex uses to
+generate the HTML wrapper page, you will notice that tag is only for
+&#8220;NOSCRIPT&#8221; browsers. If you want to change it for any modern browser, then you
+actually need to pass it in the JavaScript in the header that generates the
+Flash Object inside the function <strong>AC_FL_RunContent</strong>.</p>
+
+<p>Be mindful that there are actually two functions that do this, the first one
+is the object/embed tag for browsers that don&#8217;t have the latest Flash player.
+You actually want to append the URL into the function inside the <strong>Else</strong>
+statement. Simply append it to the <strong>FlashVars</strong> Name Value pair. Here is an
+example:</p>
+
+<p><code>"flashvars",'myVar=FOOBAR&amp;historyUrl=history.htm%3F&amp;lconid=' + lc_id + '',</code></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/02/19/standards-what-standards/">Standards? What Standards?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-02-19T18:02:55-08:00" pubdate data-updated="true">Feb 19<span>th</span>, 2007</time>
+        
+         | <a href="/2007/02/19/standards-what-standards/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>There is no stopping it, the unstandardized high definition video disc
+technologies have been released out into the open, with free reign and and
+with every intention to compete with one and another to see who will gain the
+largest market share as consumers eagerly jump on the 1080p advantage. With
+<a href="http://www.toshiba.com">Toshiba</a>, <a href="http://www.microsoft.com">Microsoft</a>, <a href="http://www.nec.com">NEC</a> and <a href="http://www.sanyo.com">Sanyo</a>, <a href="http://www.rca.com">RCA</a> and <a href="http://www.intel.com">Intel</a>
+backing the HD DVD format and <a href="http://www.sony.com">Sony</a>, <a href="http://www.hp.com">Hewlett-Packard</a>, <a href="http://www.apple.com">Apple
+Inc.</a>, <a href="http://www.dell.com">Dell</a>, and <a href="http://www.panasonic.com">Panasonic</a> supporting the Blue-ray disc, there
+is no telling what these technology giants have up their sleeves to joust the
+other off their high horse.</p>
+
+<p>Naturally, one would assume that the company with the bigger better product
+would win the battle. With this scenario, Sony&#8217;s Blue-ray disc (BD) would
+tower it&#8217;s rival in capacity as a single layer disc is only 5 gigabytes short
+of the dual-layer option of HD DVD and the BD&#8217;s double-layer option is a
+capacious 50 gigabytes. With this advantage alone the Blue-ray disc has a
+tremendous lead. It would be one thing if the HD DVD technology could play on
+existing DVD players. Unfortunately, this is not the case and for a consumer
+who wants to upgrade to the new high definition home movie technology, either
+format forces them to buy new proprietary equipment.</p>
+
+<p>The next major item to compare is what major movie studios are supporting the
+two formats. As of right now four Hollywood studios are exclusively supporting
+the Blue-ray Disc: Columbia Pictures, MGM, Disney and 20th Century Fox. Three
+Hollywood studios are supporting both formats: Paramount Pictures, Warner
+Bros. and New Line Cinema. Finally, two hollywood studios exclusively support
+HD DVD: Universal Studios and Weinstein Company. A layman&#8217;s tally would show
+Blue-ray having the support of seven major Hollywood studios and HD DVD having
+only five.</p>
+
+<p>A trend will and has already started to occur and it is only a matter of time
+that the exponential curve will take form. The issue here is not what format
+will win and what technology leader will claim the throne of the high
+definition optical disc standard, the issue is, what consumers are they going
+to step on in the process. When the war is over, what are those consumers to
+do that bet on the losing horse but to either stick with their undeveloped
+movie collection and obsolete player or to once again rebuild and provide
+money to the victorious challenger.</p>
+
+<p>To the high definition home theater shopper, take heed when approaching this
+war. It is quite a mess right now. It will phase out soon enough. My bid is on
+the Blue-ray disc and <a href="http://www.highdefdigest.com/news/show/Industry_Trends/Disc_Sales/Sonys_New_Blu-ray_Marketing_Message:_Format_War_is_Over/468">other&#8217;s may agree</a>.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/02/19/virtual-pc-2007-releasedand-its-free/">Virtual PC 2007 Released&#8230; And It&#8217;s Free</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-02-19T13:02:00-08:00" pubdate data-updated="true">Feb 19<span>th</span>, 2007</time>
+        
+         | <a href="/2007/02/19/virtual-pc-2007-releasedand-its-free/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>In keeping with the trend of Microsoft changing the license for Virtual PC
+2004 to a free license, it announced today the release of <a href="http://www.microsoft.com/windows/products/winfamily/virtualpc/default.mspx">Virtual PC 2007</a>
+for free as well.</p>
+
+<p>In the past, many looked at solutions such as VMWare as being a better
+alternative to Virtual PC. This was due to VMWare&#8217;s optimized approach of
+processing computational instructions. For instance, VMWare workstation will
+work directly with the CPU&#8217;s processor when possible as opposed to
+conventional emulators which only simulate the function of the CPU
+instruction. This allows for a much speedier performance.</p>
+
+<p>Now, according to <a href="http://www.betanews.com">BetaNews.com</a>, the newest version of Virtual PC &#8220;takes
+advantage of new hardware virtualization technology from both Intel and AMD.&#8221;</p>
+
+<p>Finally with this release being a free license product, Microsoft duels
+competing software companies such as <a href="http://www.vmware.com">VMWare</a> and <a href="http://www.parallels.com">Parallels</a>.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/02/19/adobe-photoshop-lightroom-released/">Adobe Photoshop Lightroom Released</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-02-19T06:02:00-08:00" pubdate data-updated="true">Feb 19<span>th</span>, 2007</time>
+        
+         | <a href="/2007/02/19/adobe-photoshop-lightroom-released/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://weblogs.macromedia.com/labs/archives/2007/02/adobe_photoshop_1.cfm">Adobe</a> announced today that one of the first products to hit Adobe Labs,
+<a href="http://www.adobe.com/products/photoshoplightroom/">Adobe Photoshop Lightroom</a>, is now shipping and is available for
+<a href="http://www.adobe.com/go/buylightroom">purchase</a> on Adobe&#8217;s online store.</p>
+
+<p>I am not an avid photographer so I have not used this software in great
+length. However, the little bit that I did use it, I was only slightly
+impressed. In comparison with Apple&#8217;s Aperture software, it was rather slow
+and clunky. But then again, I used it a couple of versions ago, so hard to say
+if they improved it or not.</p>
+
+<p>Some of its nice features it the ability to handle RAW image formats from many
+popular cameras. Although, recently my buddy who has one of the new <a href="http://www.dpreview.com/reviews/canoneos400d/">Canon
+XLTi</a> said that when he dumped his CR2 RAW image files into Lightroom that
+it failed in showing any images, rather it showed only red in place of the
+photo.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/02/17/new-site-launches/">New Site Launches</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-02-17T22:02:00-08:00" pubdate data-updated="true">Feb 17<span>th</span>, 2007</time>
+        
+         | <a href="/2007/02/17/new-site-launches/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I have finally launched my new site design and layout. I hope all of it is as
+pleasing as it ought to be. My old site design was&#8230;well&#8230;old. Time for a
+remodel. I am still working on the &#8220;Home&#8221; page but the blog is the most
+important part right now which is why it shows up first. Anyway, enjoy and
+feel free to leave comments :-).</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/02/12/imified-has-me-mystified/">IMified Has Me Mystified!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-02-12T16:02:00-08:00" pubdate data-updated="true">Feb 12<span>th</span>, 2007</time>
+        
+         | <a href="/2007/02/12/imified-has-me-mystified/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.forta.com">Ben Forta</a> <a href="http://www.forta.com/blog/index.cfm/2007/2/12/ColdFusion-IM-Gateways-Power-IMified">posted</a> something really cool today! He posted a link and
+description to <a href="http://www.imified.com">IMified</a>, a new website that enables you to access isntant
+ToDos and Notes, Google Calendar, and some other cool stuff without ever
+opening the browser! Simply through the interface of instance messaging.</p>
+
+<p>The really cool thing about this service is that it runs completely off of
+ColdFusion MX 7 using the powerful built in feature of event gateways to
+provide IM functionality. According to Ben, despite the large load of users
+that has piled on to their system sinnce the launch of the site on February 5,
+the service is running very smooth. In the words of partners Anthony Webb and
+Dave Hoff, &#8220;we&#8217;ve brought to market a really slick and useful service and
+couldn&#8217;t have done it, or at least as fast, without CF.&#8221;</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/02/12/here-is-a-post-from-imified/">Here Is a Post From IMified</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-02-12T16:02:00-08:00" pubdate data-updated="true">Feb 12<span>th</span>, 2007</time>
+        
+         | <a href="/2007/02/12/here-is-a-post-from-imified/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This is very cool, I think I am the first one to post a blog entry to a
+BlogCFC powered blog via the really slick interface of IMified!</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/02/03/be-informed-on-how-structures-work/">ColdFusion Structures Are Passed by Reference</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-02-03T14:02:00-08:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2007</time>
+        
+         | <a href="/2007/02/03/be-informed-on-how-structures-work/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>ColdFusion makes it quite easy to work with what is known in many other
+languages as associative arrays; ColdFusion calls them structs or structures.
+A structure is a great datatype to work with as long as you know how to use
+it.</p>
+
+<p>One of the things that you must remember about this special datatype is
+something that I ran into today when building a Validation CFC for a form I am
+working on for a client.</p>
+
+<p>First a little background&#8230;</p>
+
+<p>In this component, I call a function called <strong>getData()</strong>. It is called after
+the instantiation of the component when supplied with a <strong>formStruct</strong> which
+contains all the form elements and values that were submitted.</p>
+
+<p>During the course of the Validation process for a given form, I want to store
+a little more information about each form element other than the <strong>name</strong> and
+<strong>value</strong> (which is all that is provided when a user submits a form). My
+getData() function extracts each form element and it&#8217;s value from the
+structure and creates a new structure with attributes <strong>fieldName</strong>, <strong>data</strong>,
+<strong>isValidEntry</strong>. The first two are self-explanatory, however, the third
+attribute is a flag that specifies whether the form element is valid for it&#8217;s
+specified data type (e.g. email, phone number, credit card etc.). This
+attribute is initially set to <strong>true</strong> as it has not been validated just yet.</p>
+
+<p>After the function extracts each form field into a separte structure, it
+places them into an array that will contain all the form element structures.
+This makes it quite easy to loop through all the data and validate it based on
+the form element name.</p>
+
+<p>Now that I have thoroughly introduced my situation, I will tell you about the
+problem I came across. The following code is what my <strong>getData()</strong> function
+looked like inside my Validation component:</p>
+
+<p>`</p>
+
+<p>`</p>
+
+<p>This appears that it would be correct and wouldn&#8217;t have any issues. Indeed
+when I gave it a test, it did not error out, however, when I CFDUMP&#8217;ed the
+array that was created, every single structure contained the EXACT same
+information. In fact, it contained the data for my submit button. But &#8220;Why?&#8221;,
+I asked.</p>
+
+<p>Going back and looking at my code, I saw the line that read:</p>
+
+<p>`</p>
+
+<p>`</p>
+
+<p>It was at this point that it clicked. ColdFusion structures are passed to
+functions <strong>BY REFERENCE</strong>. That means regardless where that structure get&#8217;s
+passed, you are referring the actual structure in memory. No matter where it
+is changed, it changes the original data and all references to it are updated.
+Every time I was looping through each element in the array, I would change the
+data in the original structure. And because I was simply passing the name of
+structure in the arrayAppend function, only a reference to the structure was
+being passed.</p>
+
+<p>Naturally there a couple of ways around this. The first solution was the one I
+went with, I had to rewrite my code as follows, creating a new structure on
+each pass of the loop:</p>
+
+<p>`</p>
+
+<p>`</p>
+
+<p>Whilst writing this post, I realized that I probably could have just changed
+the arrayAppend function to read:</p>
+
+<p>`</p>
+
+<p>`</p>
+
+<p>This would have created a shallow copy (only simple variables and arrays) of
+the temporary structure. I may very well do this afterall.</p>
+
+<p>The lesson here is, be aware of how ColdFusion deals with various data types.
+Ensure that you know which data types are passed by reference and which are
+passed by value.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/01/31/mark-drew-announces-codeshare-plugin-for-eclipse/">Mark Drew Announces CodeShare Plugin for Eclipse</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-01-31T09:01:00-08:00" pubdate data-updated="true">Jan 31<span>st</span>, 2007</time>
+        
+         | <a href="/2007/01/31/mark-drew-announces-codeshare-plugin-for-eclipse/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.markdrew.co.uk/blog/index.cfm">Mark Drew</a> just <a href="http://www.markdrew.co.uk/blog/index.cfm/2007/1/31/Announcing-codeShare">announced</a> he has created a <a href="http://code.google.com/p/codeshareplugin/">plugin</a> for Eclipse to
+interact with the CodeShare service.</p>
+
+<p><a href="http://codeshare.ulatu.com/">CodeShare</a> is a service that allows you to share code with another
+developer via a private URL. Each party can then submit comments.</p>
+
+<p>With Mark&#8217;s plugin, you can now do this straight from Eclipse.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/20/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/18/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2011/11/08/switching-to-octopress/">Switching to Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/14/lee-the-patriot/">Lee, the Patriot</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/11/reddpics-bookmarklet/">ReddPics Bookmarklet</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/06/13/its-about-the-customer-service/">It&#8217;s about the customer service</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/03/16/improve-dont-prove/">Improve&#8230;don&#8217;t prove</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Github Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/kylehayes">@kylehayes</a> on Github
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'kylehayes',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("kylehayes", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/kylehayes" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @kylehayes</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Kyle Hayes -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'kylehayes';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://kylehayes.info/blog/page/19/index.html';
+        var disqus_url = 'http://kylehayes.info/blog/page/19/index.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

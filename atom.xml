@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Kyle Hayes]]></title>
+  <link href="http://kylehayes.info/atom.xml" rel="self"/>
+  <link href="http://kylehayes.info/"/>
+  <updated>2011-11-08T08:45:31-08:00</updated>
+  <id>http://kylehayes.info/</id>
+  <author>
+    <name><![CDATA[Kyle Hayes]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Switching to Octopress]]></title>
+    <link href="http://kylehayes.info/2011/11/08/switching-to-octopress/"/>
+    <updated>2011-11-08T08:12:00-08:00</updated>
+    <id>http://kylehayes.info/2011/11/08/switching-to-octopress</id>
+    <content type="html"><![CDATA[<p>Yes, at least for now, I&#8217;ve decided that I was tired of dealing with Wordpress. In an effort to lower my costs and headache for owning and operating a personal blog, Octopress paired with Jekyll seemed like an awesome alternative for someone who enjoys writing in plain text as much as myself.</p>
+
+<p>I was <a href="http://blog.rebeccamurphey.com/switching-to-octopress">inspired</a> by a couple of <a href="http://mattgemmell.com/2011/09/12/blogging-with-octopress/">folks</a> to make the switch. All in all, it was actually not too bad once I got the latest version of Ruby and RVM <a href="http://brandonbohling.com/2011/08/27/Installing-Jekyll-on-Mac/">setup on my Mac</a>.</p>
+
+<p><em>EDIT</em></p>
+
+<p>It&#8217;s also worthy to note that I used <a href="https://github.com/thomasf/exitwp">exitwp</a> to migrate my wordpress content into markdown. I realize there are a few bugs that I need to iron out and will do that soon.</p>
+
+<p>Furthermore, check out <a href="http://pages.github.com/">http://pages.github.com/</a> if you are ever interested in free static stite hosting on github. Seems pretty good for a personal blog setup.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Lee, the Patriot]]></title>
+    <link href="http://kylehayes.info/2011/10/14/lee-the-patriot/"/>
+    <updated>2011-10-14T01:46:10-07:00</updated>
+    <id>http://kylehayes.info/2011/10/14/lee-the-patriot</id>
+    <content type="html"><![CDATA[<p>Today, as I looked upon the new resting place of my dear great Uncle Lee, I
+had a revelation that left me distraught. Lee was a part of the World War II
+generation—specifically, he fought and was wounded in the Battle of Bulge.
+That global conflict, the worst our world has seen, defines to me what the
+cost of freedom was for the United States we have today. As a citizen of this
+country, I was embarrassed and disappointed with myself when I realized how
+much my generation and I take this costly freedom for granted. I don&#8217;t think
+we can truly appreciate it since we have not suffered what the world suffered
+then.</p>
+
+<p>Lee&#8217;s generation knows the pain and suffering of what it means to be free—they
+understand patriotism on a different level from what my generation could ever
+imagine. I&#8217;m so thankful for the amazing patriot he was and his bold testament
+to the world as such a great, funny, and loving man to his family, first and
+foremost to his wife. Naturally, my first regret was that I did not know him
+better and did not visit with him more. His wartime generation could teach my
+generation a lot if we were so humble to listen.</p>
+
+<p>As I sit here and think about what patriotism means to me and consider what it
+must have meant to Lee, I can&#8217;t help but shed tears in the memory of what dies
+along with him—an understanding of what it means to be an American, a citizen
+of this great country.</p>
+
+<p>Funerals bring one to reflect on one’s own life. Lee’s passing encouraged me
+to have a more serious and solemn appreciation for all of the brave men and
+women of our nation who serve and have served us so dutifully.</p>
+
+<p>My deepest sympathy and compassion go out to my family in this sorrowful time.
+May we not dwell on what we&#8217;ve lost, but instead look forward to what he
+taught us and how he inspired us.</p>
+
+<p>Rest in peace, dear Lee.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ReddPics Bookmarklet]]></title>
+    <link href="http://kylehayes.info/2011/10/11/reddpics-bookmarklet/"/>
+    <updated>2011-10-11T23:33:48-07:00</updated>
+    <id>http://kylehayes.info/2011/10/11/reddpics-bookmarklet</id>
+    <content type="html"><![CDATA[<p>If you didn&#8217;t know already, <a href="http://www.reddit.com/r/todayilearned/comments/ggjab/til_that_you_can_replace_redditcom_with/">you can replace reddit.com with reddpics.com on
+any subreddit to view it as an image gallery</a>. I was tired of doing the
+actual replacing so I created a bookmarklet to do it for me.</p>
+
+<p>Drag the following link to your bookmarks bar: <a href="document.location=document.location.href.replace(%22reddit%22,%22reddpics%22);">ReddPics This</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[It's about the customer service]]></title>
+    <link href="http://kylehayes.info/2011/06/13/its-about-the-customer-service/"/>
+    <updated>2011-06-13T15:22:26-07:00</updated>
+    <id>http://kylehayes.info/2011/06/13/its-about-the-customer-service</id>
+    <content type="html"><![CDATA[<p>Some companies get it, some don&#8217;t; quality customer service <em>does</em> matter and
+<em>does</em> leave a lasting impression. From the time an individual first walks
+into a store, logs in online, or approaches the host/hostess at a restaurant,
+the subconscious evaluation of customer service begins. Akin to first
+impressions when meeting someone for the first time, immediately you begin
+making judgements about how you are treated, e.g., whether you were greeted in
+a courteous manner, asked if you need help, etc. From this point forward, it&#8217;s
+the company&#8217;s duty to draw you in, and give you reason to hand over your hard
+earned money in exchange for their product or service. You likely preconceived
+doing this anyway otherwise you would not have approached them in the first
+place. However, there are many alternatives and you could change your mind and
+go somewhere else if you&#8217;ve not found what you&#8217;re looking for or you&#8217;ve not
+received the service you expect.</p>
+
+<p>I am constantly on the lookout for companies and organizations who treat their
+customers well. In many cases, I&#8217;m likely to pay more for a product or service
+to receive such quality treatment. Some of the companies who top my list are
+those whom offer great customer service that may not be known for it or may be
+less expected to are Zappos.com, Apple, Amazon.com, and Costco. They have no
+particular obligation as say Nordstrom does in offering the best service in
+their industry. Yet, they understand the value. I&#8217;ve had a couple of
+interactions with each of these recently and would like to lay them out
+beginning with Apple.</p>
+
+<h2>Apple</h2>
+
+<p>One evening when making spiced apple cider last autumn, I received a phone
+call. I went to pick up my iPhone and unlocked it—as I did, the phone some how
+slipped out of my hand and plopped, fully submerged into the large bowl of hot
+apple cider (slightly ironic). I don&#8217;t think I&#8217;ve ever reacted to something so
+quickly! I reached into the bowl to save the life of my iPhone, wiped it down
+and took a can of compressed air to try and get as much liquid out as
+possible. All seemed fine and it appeared to have been saved—until the next
+day. Unfortunately whatever damage had been done had set into the electronics
+of the phone and I was not able to hear the person on the other line very well
+when listening to the earpiece. Naturally, I was quite bummed.</p>
+
+<p>After much consideration, I decided I was going to take it to the Genius Bar
+at my local Apple Store to see how much it was going to cost to repair. For
+all my mobile Apple products, I always buy AppleCare as I&#8217;ve found it&#8217;s
+usually pretty good insurance. Unfortunately, one of the things AppleCare does
+not cover is liquid damage. Nonetheless, I committed to myself I was going to
+tell the truth and not try to be like some of those people that I&#8217;ve seen go
+in and claim that the phone was not dropped in water even though the genius
+can clearly see that the liquid sensors in the iPhone have been activated.</p>
+
+<p>When I arrived at the Apple store, I told the genius exactly what had
+happened. She was very understanding and asked to look at the iPhone to see if
+the liquid sensors had been damaged. After about five minutes, she came back
+and said the liquid sensors were not activated and questioned tongue-in-cheek,
+&#8220;so, you&#8217;re having trouble with your speaker, huh? Well, geez, that&#8217;s
+unfortunate, we need to get a replacement iPhone for you to see if that
+resolves the issue.&#8221; I was thrilled as she had just finished telling me it was
+going to be something in the range of $250 to get it replaced. <em>This</em> is
+customer service.</p>
+
+<h2>Amazon.com</h2>
+
+<p>I&#8217;ve long been a customer of Amazon.com and am a strong advocate of their
+retail philosophies. There are many things that I love about their shopping
+experience, from their breadth of product offerings, to their Prime shipping
+service. However, I would like to focus on their Subscribe &amp; Save service. If
+you have not had the pleasure of ordering a product with Subscribe &amp; Save, I
+highly recommend you find something of interest and give it a try, it really
+is worth it.</p>
+
+<p>Offered on a limited set of products that you would likely purchase routinely,
+Subscribe &amp; Save allows you to opt-in to receive a designated item or usually
+a multi-pack of items every so often. For example, one of the things I have
+subscribed to is three packages of cat litter for our automatic litterbox. I
+receive these three cartons of litter every three months and it is
+automatically shipped. The advantages are for the customer is 1) you can
+cancel any time so you are not obligated to a pre-determined number of
+shipments, 2) you get free shipping on the item, 3) you get a 15% discount off
+the purchase price and 4) you get to choose the delivery frequency. Pretty
+sweet deal if you ask me. One might think that this is one of those marketing
+ploys where they make the offer look attractive by getting you to sign up and
+making it difficult to unsubscribe or they don&#8217;t warn you when a shipment is
+about to go out to give you enough time to cancel. I&#8217;m happy to report it is
+not at all like this. In fact, Amazon sends you an email a few days before the
+shipment leaves the warehouse to give you time to cancel. <em>This</em> is customer
+service.</p>
+
+<h2>Costco</h2>
+
+<p>I&#8217;ve been a member of Costco for quite some time as they consistently offer
+quality products. I find the small membership fee to be well worth the value
+and service I get from this retailer. If you are familiar with Costco, you are
+probably also familiar with their lifetime unconditional guarantee they offer
+on most of their products (&#8220;most?&#8221;, yes, unfortunately customers began abusing
+the system on things like computers, televisions, and cell phones, so they had
+to limit some items to a three month guarantee). This incredible guarantee
+states that if you are ever dissatisfied with any product or purchase you
+make, you can return the item(s) for a full refund, no questions asked.</p>
+
+<p>I have known about this little perk for some time now, but never had the
+oppotunity to utilize it—until recently. A year and a half ago, I purchased an
+HP inkjet printer from Costco. I&#8217;ve been a long time fan of HP, until the past
+couple of printers and ink supplies I&#8217;ve purchased. This printer worked pretty
+well for the first six months. However, the next six months it got really bad
+with paper jams so much so that only about 10% of our print jobs were
+successful. I was really bummed, until I realized that this was an opportunity
+to take advantage of the Costco guarantee. I called them up and asked if I
+could bring the printer in for a refund, they responded that as long as I had
+the receipt as well as the cables and such that came with it, it was not an
+issue. I did just that. The process was very simple and was a very normal
+return process—I didn&#8217;t even have the original box. <em>This</em> is customer
+service.</p>
+
+<h2>Zappos.com</h2>
+
+<p>Finally, I would like to describe my most recent act of quality customer
+service which was with Zappos.com. As someone who rarely has time to visit a
+brick and mortar store to shop, especially for shoes, Zappos.com has become an
+excellent convenience. While their prices seem to be standard and aren&#8217;t much
+cheaper if I bought them in person some where, their service is incredible and
+their model is second-to-none. For starters, they offer free shipping to you
+<em>and</em> free shipping back to them if you decide to return your purchase. For
+VIP members (which is no extra cost to become one), that shipping is
+automatically upgraded to overnight. They take the baton even further by
+offering a very user-friendly site that is clear, fast, and offers an
+excellent alternative to in person shoe shopping—by providing pictures and
+video of all angles of the shoe. Finally, to top it off, I had a specific
+scenario that really made this company stand out.</p>
+
+<p>While I&#8217;ve only ever purchased shoes from them, I decided to take a look at
+the options they had for other clothes. I found a safe bet in a pair of jeans
+that appeared to fit the bill and were at a good price point. I made the
+purchase and went about my business. The next day I had the following email in
+my inbox:</p>
+
+<blockquote><p>Hello Kyle,</p></blockquote>
+
+<p>We were unable to process your order for the Nautica Relaxed Fit Jean on order
+number Order #[removed]. Please accept our sincerest apologies. Regrettably,
+the merchandise did not pass our quality inspection and we do not have a
+replacement available in stock in the size and color you requested.</p>
+
+<p>Since the item is unavailable, we have canceled your order and voided the
+authorization on your credit card. Please be advised that it could take your
+bank 2-10 business days to release the authorization placed on your account
+for this order.</p>
+
+<p>We have conducted a search of other internet retailers and were unable to find
+the item available elsewhere. In case you&#8217;d like to wait and see if we get
+this item back in stock, we have added you to our &#8220;notify me&#8221; list. Being
+placed on the &#8220;notify me&#8221; list does not require any obligation on your part.
+Please review the link below for more information about our Notification List
+and how it works:</p>
+
+<p>http://www.zappos.com/general-questions#out-of-stock</p>
+
+<p>This order is not indicative of the high quality of service and products we
+strive to provide our customers. As a gesture of goodwill, we have issued a
+$10.00 coupon which you may use toward your next purchase at Zappos.com. Below
+is the coupon code you will need to receive your discount&#8230;.</p>
+
+<p>I was astounded. How could an online retailer give me such joy after informing
+they were not able to complete my order. Let&#8217;s point out a few items of
+interest here.</p>
+
+<p>First, I received this email the day after I made the purchase. In cases where
+I have had back orders in the past with other retailers, the company has
+notified me no less than a week later and they apologize then simply say it
+will be in when it will be in.</p>
+
+<p>The next point of good service is the very first point in the letter; they
+inspected the item and it did not pass their standards of quality. When
+ordering from an online retailer, this step is imperative yet so many miss it.
+Zappos.com understands that the quality of the product is important and that
+there is a chance that you will return it anyway if it is defective so they
+might as well take an extra moment for this inspection to save everyone the
+hassle later.</p>
+
+<p>Following the inspection, they took the initiative to try and find the item
+from a nearby supplier. Since they were not able to and instead of leaving me
+in limbo indefinitely, they canceled my order to alive me of the burden of
+having to do so myself and going somewhere else.</p>
+
+<p>Honestly, getting this far in the letter, I&#8217;m already a very happy customer
+(yes, even though I don&#8217;t have my product). To top things off even further,
+Zappos.com assured me that this was not a normal occurrence for them and as a
+nice gesture, they provided a $10 coupon to incentivize me to come back and to
+help alleviate any inconvenience this may have caused. I can&#8217;t say enough how
+important this one little letter is. <em>This</em> is customer service.</p>
+
+<h2>It&#8217;s not all good</h2>
+
+<p>The four previous examples are just a tiny fraction of stories out there about
+quality customer service. There is also the flip side of the coin, those
+companies who have <em>poor</em> customer service. I&#8217;m sure we could all name quite a
+few companies that we consistently have bad service from and eventually you
+learn just to avoid them where you can. I would only like to discuss a recent
+scenario I had with the single-cup coffee manufacturer, Tassimo.</p>
+
+<p>Up until this past winter, when I switched to Nespresso for a far superior
+homemade espresso, I was a heavy consumer of Tassimo coffee and also a large
+proponent of their brand. It did what it claimed and did it decently—well
+enough for me to maintain a Tassimo Direct (a monthly subscription of coffee
+automatically shipped to your home) membership with them for three years. Last
+year, when I was evaluating alternatives to Tassimo, I put my Direct
+membership on a shipment hold for 6 months. Unfortunately, that 6 months was
+up recently. How did I know that? I was greeted by a lovely email yesterday
+saying I had a shipment of coffee on its way. I looked at the UPS tracking
+number and the shipment had actually gone out two days prior. Immediately
+irked that I did not receive any kind of email as a heads up that the shipment
+was going to occur, I picked up the phone to call their customer service.</p>
+
+<p>Once connected to a human service representative, I explained the scenario.
+I&#8217;m not sure where this person was from but she was very monotone, dry, and
+pseudo-sympathetic to my issue. She &#8220;apologized&#8221; (as that&#8217;s probably what her
+script told her to say), and explained that I could put my shipment on hold
+for another 6 months. I replied with a stern &#8220;no&#8221; and said that I wanted to
+cancel the subscription entirely and that it was poor service of them to send
+out a shipment after a 6 month hold without so much as a courtesy email to the
+customer giving them a heads up and providing a means of canceling. She
+apologized again and replied with saying that the maximum hold for shipments
+is 6 months and offered to put my shipments on hold for another 6 months.</p>
+
+<p>Obviously, she missed the point entirely because she wasn&#8217;t listening, or
+wasn&#8217;t comprehending the essence of the situation. I don&#8217;t blame her, English
+is likely not her native language and she&#8217;s just doing this job because it&#8217;s
+an income. I of course blame Tassimo. While they had lost a customer who was
+at one time loyal, they also lost someone who used to rave about their product
+and what a great alternative it was to other brands such as Keurig. If they
+continue to burn bridges, especially in terms of customer service, they will
+not be around much longer. As it is, it already seems they are not doing well
+with the rising popularity of Keurig and Nespresso systems.</p>
+
+<h2>Conclusion</h2>
+
+<p>I honestly don&#8217;t think I&#8217;m being unreasonable here to demand quality customer
+service from those whom I pay to provide me with a service or product. In my
+opinion, its a company&#8217;s responsibility to understand <em>and</em> sympathize with
+the needs of their customers. I&#8217;m not asking for monetary compensation every
+time they mess up, or provide a faulty product; all I ask from them is that
+they manage the situation in a courteous, efficient, and delightful manner
+(see the Zappos.com letter—even if you take out the $10 coupon, it is still is
+a great example of what I&#8217;m asking for).</p>
+
+<p>Oftentimes, I&#8217;ve had people say to me how passionate I am about things I own,
+especially in regards to recent purchases. I am passionate and proud most of
+the time about the purchases I make. I strongly feel that I choose products
+that are high-quality or provide excellent utility or entertainment to me.
+When I find something that fits the bill, I will verbally share and sell that
+item to friends and family (on a recent occassion, I sold three Nespresso
+machines because people could see it was a quality product).</p>
+
+<p>At the end of the day, I&#8217;ve not said anything that hasn&#8217;t been said before but
+it doesn&#8217;t hurt to bring it up again. In most cases, you do what you can to
+keep the customer happy. Do that, and you&#8217;ll win customers who will desire to
+work with you because they know you understand and appreciate them.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Improve...don't prove]]></title>
+    <link href="http://kylehayes.info/2011/03/16/improve-dont-prove/"/>
+    <updated>2011-03-16T01:14:01-07:00</updated>
+    <id>http://kylehayes.info/2011/03/16/improve-dont-prove</id>
+    <content type="html"><![CDATA[<p>Whilst on the subway from work to Union Station in LA, I read an interesting
+and inspiring article in this month&#8217;s issue of <em>Outdoor Photographer</em>. It was
+an article titled <em>Don&#8217;t Prove&#8230;Improve!,</em> authored by nature photographer
+Dewitt Jones. Jones narrated the story of his first published photo which was
+in <em>National Geographic</em> and the experience he had in gaining a position there
+as a photographer. The aspect he was highlighting the most was the discussion
+he had with Bob Gilka, head of photography at <em>National Geographic. </em>Gilka
+provided a bit of sound advice that can certainly be applied to the
+programming field. Gilka told Jones that he was going to be working with the
+best photographers in the world and that Jones didn&#8217;t need to prove himself to
+Gilka or any of the other photographers he worked with. But the one thing he
+did ask from Jones was to <em>improve</em> himself—always aspire to be a better
+photographer.</p>
+
+<p>This statement alone was enough to get me thinking about how relevant this was
+to me as a programmer, especially on a team of other programmers. I think it&#8217;s
+human nature for people to feel like they need to prove themselves to others
+and in some cases that&#8217;s true, but for day-to-day tasks and projects that you
+are collaborating with a team of people just like you, it&#8217;s pertinent to
+remember the advice Gilka so sincerely offered.</p>
+
+<p>Gilka went on to say that his photographers are expected to share and learn
+from the other photographers. In other words, if you know of a technique,
+share with your team; if you&#8217;re in need of critique, be humbled and let others
+share with you. As programmers, there is no reason why we shouldn&#8217;t follow
+this same mantra; we should be lifting each other up and providing
+encouragement.</p>
+
+<p>I work on a team where we get to work on some pretty great projects and so
+much of the time our pride can get in the way of great development,
+collaboration, and growth. This can cause issues from a few angles such as
+being protective of one&#8217;s code rather than looking at it as the team&#8217;s code
+and receiving feedback as a team to make it better. All in all it prevents the
+team from moving forward and progressing in terms of skills, technology,
+innovation, and team cohesion.</p>
+
+<p>Jones describes his interaction with one of the photographers he met as well
+as others he got to know with the following quote, &#8220;Technical help, honest
+criticism and enthusiastic encouragement came from many, and my learning curve
+went up with the trajectory of a space shuttle launch.&#8221; How many of you can
+say the same thing about where you work? If you can, that&#8217;s fantastic! I would
+guess that it&#8217;s not the case for many.</p>
+
+<p>He goes on to make another good point that over the years he has seen so many
+photographers waste time proving themselves to others that they missed the
+opportunities to spend those same hours &#8220;improving their technique and
+sharpening their eye&#8221;. How much better could we improve our development skills
+with this at the forefront of our minds?</p>
+
+<p>What&#8217;s the solution? How can you bring this into your team? For starters, you
+can encourage your team to be more open. Speak to them about the benefits of
+having an openness such as is described above. They likely won&#8217;t come around
+instantly, but over time, the more you encourage this type of behavior, the
+more it will become natural and easy. It&#8217;s also good to encourage community
+code reviews where everyone and anyone can see and review code in a non-
+demeaning manner. Again, it&#8217;s for everyone&#8217;s own good—to help them grow—to
+help the team grow.</p>
+
+<p>What are your thoughts? Can you relate to this?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[When Should JavaScript be like Java?]]></title>
+    <link href="http://kylehayes.info/2011/03/08/when-should-javascript-be-like-java/"/>
+    <updated>2011-03-08T20:25:51-08:00</updated>
+    <id>http://kylehayes.info/2011/03/08/when-should-javascript-be-like-java</id>
+    <content type="html"><![CDATA[<p>I&#8217;m architecting a JavaScript architecture for a project I&#8217;m working on. A lot
+of the design patterns and methodologies I&#8217;m applying are from my experience
+with Java and other server-side, traditional strictly typed languages.
+JavaScript is different from Java which is both a good and bad thing. It&#8217;s
+dynamic nature allows it to be light and extremely flexible—which comes at a
+cost making it easy to become highly tangled, unmanageable, and unstructured.</p>
+
+<p>Where do you draw the line? What are examples where you&#8217;ve done something
+different in a JavaScript application than you would have done in a Java (or
+similar) application?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Make a shell script wait for you]]></title>
+    <link href="http://kylehayes.info/2011/03/08/make-a-shell-script-wait-for-you/"/>
+    <updated>2011-03-08T14:34:54-08:00</updated>
+    <id>http://kylehayes.info/2011/03/08/make-a-shell-script-wait-for-you</id>
+    <content type="html"><![CDATA[<p>Ever want a loop to wait for you? <strong>read</strong> will read a line for you to use, or
+in this case just ignore.</p>
+
+<pre><code>for mod  in module-*.git ;
+    do echo $mod ;
+    cd $mod;
+    git diff */ivy.xml;
+    cd ..; echo "";
+**    read foo;**
+    echo "";
+done
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Blame it on the alcohol...really?]]></title>
+    <link href="http://kylehayes.info/2011/02/24/blame-it-on-the-alcohol-really/"/>
+    <updated>2011-02-24T04:03:00-08:00</updated>
+    <id>http://kylehayes.info/2011/02/24/blame-it-on-the-alcohol-really</id>
+    <content type="html"><![CDATA[<p>Glee&#8217;s &#8220;Blame it on the Alcohol&#8221; episode this week was a considerable
+disappointment. I speak, of course, to the influential alcohol consumption by
+the students of the high school. To be clear I don&#8217;t have a problem with
+enjoying alcoholic drinks when one is 1) at a legal drinking age and 2)
+responsible about it. This episode showcased that it&#8217;s ok to drink as long as
+you are safe regardless of the legality and it also said there&#8217;s a chance you
+could get a way with it and if you do, that makes it ok.</p>
+
+<p>I will be the first to say that I by no means expect Glee to preach a morale
+message on anything morale. However, alcohol is not something to joke about or
+even shed light on in a silly manner. The point is that underaged teens are
+not allowed to drink for reason—they are not responsible enough to consume a
+body altering agent at whim. The consequences for the students on Glee were
+only but a bit of humiliation on stage with a bunch of vomiting in front of
+their peers&#8230;big deal.</p>
+
+<p>It&#8217;s sad to me that shows that are as influential as Glee is harness their
+power in ways that are going to turn heads to the creators of the show for
+their own fame, glory, and preaching their personal agenda to the masses. Glee
+could do so much for its audience that would be good for everybody. It doesn&#8217;t
+need to have sex and alcohol to make a statement. I&#8217;ve been disappointed with
+a couple of other previous episodes of Glee but won&#8217;t comment on those, but
+this one really irked me due to the dangerous nature of alcohol in
+irresponsible hands.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[DIY Desktop Stand for Notebooks]]></title>
+    <link href="http://kylehayes.info/2011/01/22/diy-desktop-stand-for-notebooks/"/>
+    <updated>2011-01-22T02:22:59-08:00</updated>
+    <id>http://kylehayes.info/2011/01/22/diy-desktop-stand-for-notebooks</id>
+    <content type="html"><![CDATA[<p>After converting a white MacBook to our home media center, I decided the
+footprint was too large to lay flat with the clamshell closed on our TV stand.
+I came across the <a href="http://www.amazon.com/gp/product/B002LARBWM?ie=UTF8&amp;tag=cf0d-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B002LARBWM">Twelve South BookArc</a><img src="http://www.assoc-amazon.com/e/ir?t=cf0d-20&amp;l=as2&amp;o=1&amp;a=B002LARBWM" alt="" /> and thought it would be the
+perfect solution to stand the MacBook on end to take up less space. However,
+at $50, I felt the price was a bit steep.</p>
+
+<p><a href="http://kylehayes.info/files/2011/01/IMG_7929.jpg"><img src="http://kylehayes.net.kylehayes.info/files/2011/01/IMG_7929-150x150.jpg" alt="" /></a>Thinking how I could do something similar with items I already had
+around the house, I thought of using a pair of <a href="http://www.amazon.com/gp/product/B001E6CT8A?ie=UTF8&amp;tag=cf0d-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B001E6CT8A" title="Metal Economy Bookends">metal economy bookends</a>
+that I seem to have a plethora of in my home office. Note that I&#8217;m using a
+particular style of bookend that has a whole in the middle with the base bent
+down and out.</p>
+
+<p><a href="http://kylehayes.info/files/2011/01/IMG_7938.jpg"><img src="http://kylehayes.net.kylehayes.info/files/2011/01/IMG_7938-150x150.jpg" alt="" /></a>Place one bookend on top of the other&#8217;s base and slide them close
+together, leaving enough room to stand the MacBook up vertically between the
+two ends. Take the MacBook (or any notebook) and place it vertically between
+the two stands and slide them together to hold the notebook in place.</p>
+
+<p><a href="http://kylehayes.info/files/2011/01/IMG_7946.jpg"><img src="http://kylehayes.net.kylehayes.info/files/2011/01/IMG_7946-150x150.jpg" alt="" /></a>I used bookends that are about five inches in height which seem to
+hold the MacBook fairly efficiently. You could also get some black felt and
+glue it on the side of the bookends that touch the computer for better
+friction.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Grep Git Log]]></title>
+    <link href="http://kylehayes.info/2010/11/17/grep-git-log/"/>
+    <updated>2010-11-17T17:08:15-08:00</updated>
+    <id>http://kylehayes.info/2010/11/17/grep-git-log</id>
+    <content type="html"><![CDATA[<p>We&#8217;ve recently switched one of our big projects at work over to Git from
+Perforce recently. Overall, its been good but has had quite the learning curve
+for all of us to shift to this new paradigm. One of the things we&#8217;ve struggled
+with a lot is just being able to easily see what&#8217;s changed in our commits,
+comparing branch to branch etc. I&#8217;m always looking for ways to slice through
+the information that git will report back.</p>
+
+<p>I came across an interesting feature of git log yesterday. It allows you to
+pass a simple grep string to the git log command and only the commits that
+contain that string in their changeset description will be returned. This is
+handy for us since we label all of our descriptions with our Version One story
+or task ID.</p>
+
+<p>The command is straightforward in its usage:</p>
+
+<p>git log —grep=<grep_string></p>
+
+<p>This turns what could be an unwieldy output of git log commits to a simple
+eloquent output of a single (or shorter list) of commits:</p>
+
+<p>$ git log &#8211;grep=B-03725</p>
+
+<p>commit 938ec97072e6689a1065fe4aaf4ae6ae75352491</p>
+
+<p>Author: Kyle Hayes &lt; my_email ></p>
+
+<p>Date:   Mon Nov 15 08:42:15 2010 -0800</p>
+
+<pre><code>FE integration refs: B-03725
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Giving Posterous a try]]></title>
+    <link href="http://kylehayes.info/2010/08/17/giving-posterous-a-try/"/>
+    <updated>2010-08-17T16:49:21-07:00</updated>
+    <id>http://kylehayes.info/2010/08/17/giving-posterous-a-try</id>
+    <content type="html"><![CDATA[<p>I know it is cliché to write a post about trying a new service that posts but
+I gotta do it to give it a swing! I used to be a very frequent blogger over at
+kylehayes.info in my ColdFusion days, but haven&#8217;t touched it much lately
+because of how busy I&#8217;ve been. I figured if I can just send an email to write
+a post about something, I just might be more apt to blog more frequently.
+Although, that could mean that the quality of my content goes down, who knows,
+we&#8217;ll see!</p>
+
+<p>Cheers.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New Free JavaScript Tips Newsletter]]></title>
+    <link href="http://kylehayes.info/2010/06/16/new-free-javascript-tips-newsletter/"/>
+    <updated>2010-06-16T14:44:47-07:00</updated>
+    <id>http://kylehayes.info/2010/06/16/new-free-javascript-tips-newsletter</id>
+    <content type="html"><![CDATA[<p>It&#8217;s no surprise that I&#8217;m a huge advocate and fan of the <a href="http://www.dojotoolkit.org" title="DojoToolkit.org">Dojo toolkit</a>
+when it comes to quality JavaScript development. It consistently delivers
+quality results in my websites and web applications while also helping to keep
+my code very maintainable and reusable. However, it&#8217;s also no surprise that
+Dojo is not the most popular JavaScript toolkit. This is due to many factors,
+one of which is the lack of strong marketing. It&#8217;s my desire to help and
+support the Dojo team where I can especially in this area since it lacks so
+much by offering a free newsletter to subscribers over at <a href="http://startdojo.com/?cmp=khnlpromo" title="Sign up for the free newsletter at StartDojo.com">StartDojo.com</a>.
+Simply visit the site and register for free on the right-hand side.</p>
+
+<p>The first issue has not been sent out yet as I wait for my subscribers, but I
+promise to only provide useful, pragmatic JavaScript and Dojo programming
+techniques as well as up-to-date industry news.</p>
+
+<p><a href="http://startdojo.com/?cmp=khnlpromo" title="Sign up for the free newsletter at StartDojo.com">Sign up for free now!</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Things about JavaScript I wish I knew earlier]]></title>
+    <link href="http://kylehayes.info/2010/04/20/things-about-javascript-i-wish-i-knew-earlier/"/>
+    <updated>2010-04-20T19:37:44-07:00</updated>
+    <id>http://kylehayes.info/2010/04/20/things-about-javascript-i-wish-i-knew-earlier</id>
+    <content type="html"><![CDATA[<p>Christian Hellman wrote another excellent JavaScript article over at <a href="http://www.smashingmagazine.com/">Smashing
+Magazine</a>. This time he addresses styles and techniques of coding that is
+widely supported, accepted, and expected by good JavaScript developers. If
+you’ve been programming JavaScript for awhile, you’ll notice much of the stuff
+is different now than it was less than a decade ago now that JavaScript has
+evolved and improved based on the  needs of the JavaScript community as well
+as the capabilities of modern-day browsers.</p>
+
+<p>Personally, the ones I’ve fallen victim to most recently are shortcut
+notations. Having a Java background, I always wanted to create new Objects and
+Arrays using the “new” keyword and constructing. During the writing of
+<a href="http://startdojo.com/buy">Getting Started with Dojo</a>, Peter Higgins (the technical reviewer) pounded
+in my head that today, objects are created like var foo = {} and arrays are
+created like var bar = []. Christian discusses this in the article (and a bit
+more in detail).</p>
+
+<p>Using JSON as a data format is another one I can strongly relate to,
+especially with his mention of using arrays and delimited strings in the past.
+Today, there will not be a project that goes by where I need data brought in
+and I will always choose JSON if it’s available due to its native support in
+modern day JavaScript.</p>
+
+<p>I personally am always looking for ways to make my JavaScript run faster. As
+developers, we so often get caught up in the moment of getting something to
+work and simply implement a solution in a way that just came natural and was
+easy, we don’t go back to see if we can make it more efficient—especially in
+terms of browser memory usage. There have been many times I’ve seen a simple
+for loop accessing data in a way that is calling another method to fetch the
+data, instead of caching the data once and accessing the local cache.
+Christian brought up another way to make your page more efficient in terms of
+events that I had not thought of. His example perfectly illustrates a
+situation in which you want to listen for the click event on a set of list
+items inside an unordered list. Instead of looping through each list item and
+adding an event handler, you can simply add an event handler to the parent of
+this list (the ul). From here you can determine which li was clicked. This
+assuming that you understand that events in the DOM roll up from the bottom
+when an event occurs. This means that if you click an li,if that click is not
+handled on the li, it will roll up to the ul and so forth.</p>
+
+<p>Finally the last few points on anonymous functions with the module pattern,
+configuration, interacting with the back end, and browser specific code, I
+cannot stress enough to read and understand these the best you can. These four
+points that he clearly makes are utterly important in ensuring you are an
+efficient JavaScript developer. This will set you apart from being a good
+JavaScript dev, to an excellent JavaScript dev—proving you know how the
+language works and how to best control it and use it as it should be used.</p>
+
+<p>I highly respect Christian’s articles and his advice and I recommend you head
+his comments where you see fit. You can read the full article on Smashing
+Magazine below:</p>
+
+<p><a href="http://bit.ly/amJ8sj">http://bit.ly/amJ8sj</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[HTML5 Forms]]></title>
+    <link href="http://kylehayes.info/2010/04/13/html5-forms/"/>
+    <updated>2010-04-13T15:06:21-07:00</updated>
+    <id>http://kylehayes.info/2010/04/13/html5-forms</id>
+    <content type="html"><![CDATA[<p>With all the buzz of HTML5, most of it has been centered around the new video
+and canvas tags, however, so much more is being added and spec’ed out. One
+particular area that has been given some much needed love is forms.</p>
+
+<p>Some new form input types that we get are:</p>
+
+<ul>
+<li>search</li>
+<li>tel</li>
+<li>url</li>
+<li>email</li>
+<li>datetime, date, month, week, time, and datetime-local</li>
+<li>number</li>
+<li>range</li>
+<li>color</li>
+</ul>
+
+
+<p>Along with that, some validation. But what browsers are supporting this new
+functionality? Check out the litmus tests here: <a href="http://cl.ly/4Bq">http://cl.ly/4Bq</a></p>
+
+<p><strong>Update: </strong>See if your browser passes the HTML5 &#8220;Acid&#8221; test: <a href="http://html5test.com/">http://html5test.com/</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Debate on Automated Acceptance Testing]]></title>
+    <link href="http://kylehayes.info/2010/04/09/debate-on-automated-acceptance-testing/"/>
+    <updated>2010-04-09T14:02:33-07:00</updated>
+    <id>http://kylehayes.info/2010/04/09/debate-on-automated-acceptance-testing</id>
+    <content type="html"><![CDATA[<p>Part of agile software development is the practice of acceptance testing to
+ensure the appropriate business requirements, use cases, and ensure confidence
+in the delivered product. This process is commonly recommended to be automated
+so the tests can be easily run at a given time as well as be consistent. James
+Shore created and encouraged the agile community to use his automated testing
+framework (Fit) to create these tests.</p>
+
+<p>The problem is that it was meant for the business to be creating these tests,
+not the developers, however, it turns out that the developers were tasked with
+creating them instead which is a “maintenance burden”.</p>
+
+<p>Shore now believes that automating the acceptance testing is <em>not</em> a good
+idea, summarized by the following two points:</p>
+
+<p>1.       The real planned benefit of an automated acceptance tool, like Fit,
+was that the business folks (&#8220;customers&#8221;) would write executable examples
+themselves. History has shown that very rarely occurs. In a few cases testers
+do, but in the majority of cases these tests are written by the developers.</p>
+
+<p>2.       These tests often become a real maintenance burden, as they are slow
+and brittle, and often hard to refactor. On this point, that end-to-end
+&#8220;integration tests&#8221; present a higher cost than they are worth, JB Rainsberger
+has a <a href="http://jbrains.ca/category/named/integrated-tests-are-a-scam">great series of articles</a> explaining his rational why.</p>
+
+<p>What do you think?</p>
+
+<p>Full article on InfoQ: <a href="http://bit.ly/a2002q">http://bit.ly/a2002q</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Easily Generate Placeholder Images in Designs and Web Pages]]></title>
+    <link href="http://kylehayes.info/2010/01/27/easily-generate-placeholder-images-in-designs-and-web-pages/"/>
+    <updated>2010-01-27T15:26:10-08:00</updated>
+    <id>http://kylehayes.info/2010/01/27/easily-generate-placeholder-images-in-designs-and-web-pages</id>
+    <content type="html"><![CDATA[<p>I came across a neat site called dummyimage.com that allows you to append an
+image size to it&#8217;s URL as so: <a href="http://dummyimage.com/300x250">http://dummyimage.com/300x250</a>. However,
+what I didn&#8217;t like about it, is that I could not add text to the image to
+describe what the image is a placeholder for. I took upon myself to create my
+own service that does this and I plan on expanding it to do more as well.</p>
+
+<p>Last night I created <a href="http://fpoimg.com">fpoimg.com</a>. It works in very much the same way as
+dummyimage.com, only you can add text to your images. The next iteration of
+the site will allow you to change the colors of the background and foreground.
+Anyway, the way you use the site is if you want to create a basic placeholder
+or FPO (For Placement Only) image you simply go to
+<a href="http://fpoimg.com/345x480">http://fpoimg.com/345x480</a> and the image will be provided to you. You can
+save this image if you like, or you can refer to it directly in your code such
+as in an image tag: <code>&lt;img src="http://fpoimg.com/345x480"&gt;</code></p>
+
+<p>The first number is your width in pixels, the second is your height in pixels.
+Additionally, if you want to add some text to the image to describe it as a
+placeholder, you simply append that to the URL as so:
+<a href="http://fpoimg.com/200x200/Advertisement">http://fpoimg.com/345x480/Advertisement</a></p>
+
+<p>This will create the following image:</p>
+
+<p><img src="http://fpoimg.com/345x480/Advertisement" alt="" /></p>
+
+<p>It&#8217;s really that basic! Here are some more examples: <img src="http://fpoimg.com/300x250/MREC" alt="" /> <img src="http://fpoimg.com/728x90/Banner" alt="" /></p>
+
+<p>I of course do plan on tweaking this service as needed such as caching the
+images and providing the ability to change their colors. If the service
+becomes more popular, I have a feeling I&#8217;ll need to invoke some kind of limit
+as well so as not to crash the server.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Getting StartED with Dojo now available!]]></title>
+    <link href="http://kylehayes.info/2009/12/30/getting-started-with-dojo-now-available/"/>
+    <updated>2009-12-30T15:38:01-08:00</updated>
+    <id>http://kylehayes.info/2009/12/30/getting-started-with-dojo-now-available</id>
+    <content type="html"><![CDATA[<p>The book that I&#8217;ve been writing for the past nine months is finally published
+and available for purchase. Below are the details as posted on the companion
+site, <a href="http://startdojo.com" title="Go to startdojo.com">startdojo.com</a>:</p>
+
+<blockquote><p>Getting StartED with Dojo is finally available for <a href="http://www.amazon.com/gp/product/1430225211?ie=UTF8&amp;tag=startdojo-com-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1430225211">purchase</a><img src="http://www.assoc-amazon.com/e/ir?t=startdojo-com-200&amp;l=as2&amp;o=1&amp;a=1430225211" alt="" />!
+About nine months ago I was approached by Apress to author a book on the <a href="http://">Dojo
+toolkit</a>. After a long journey of authoring my first book, the final phase
+is complete as the book is now officially published and out in the wild. While
+the actual publish date was December 28th, I&#8217;m sure it will be a little while
+before you start seeing it on the shelves of popular brick and mortar
+bookstore shelves such as Borders and Barnes &amp; Noble. For now, you can
+certainly <a href="http://www.amazon.com/gp/product/1430225211?ie=UTF8&amp;tag=startdojo-com-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1430225211">order it on Amazon</a><img src="http://www.assoc-amazon.com/e/ir?t=startdojo-com-20&amp;l=as2&amp;o=1&amp;a=1430225211" alt="" />.</p></blockquote>
+
+<p>Getting StartED with Dojo has fan page on Facebook: <a href="http://www.facebook.com/pages/Getting-StartED-with-Dojo/224855113411" title="Getting StartED with Dojo">Getting StartED with
+Dojo</a> | <a href="http://www.facebook.com/business/dashboard/" title="Make your own badge!">Promote Your Page Too</a> <a href="http://www.facebook.com/pages/Getting-StartED-with-Dojo/224855113411" title="Getting StartED with Dojo"><img src="http://badge.facebook.com/badge/224855113411.2790.2105382221.png" alt="" /></a></p>
+
+<p>You may also <a href="http://twitter.com/startdojo" title="Follow @startdojo on Twitter!">follow @startdojo on Twitter</a> for up to date news and
+information relating to the Dojo toolkit and community.</p>
+
+<p>I will mostly be using this site for updates to the book such as corrections
+to the code and copy. In addition, I will be posting tips and resources for
+learning more about the Dojo toolkit. A lot of work went into the creation of
+this book and I hope you enjoy it.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Amazon.com's Black Friday Deals Available Now]]></title>
+    <link href="http://kylehayes.info/2009/11/23/amazon-coms-black-friday-deals-available-now/"/>
+    <updated>2009-11-23T14:45:33-08:00</updated>
+    <id>http://kylehayes.info/2009/11/23/amazon-coms-black-friday-deals-available-now</id>
+    <content type="html"><![CDATA[<p>Every year Amazon.com has some <a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2FBlack-Friday-After-Thanksgiving-Sale%2Fb%3Fie%3DUTF8%26node%3D384082011%26ref_%3Dpe%255F67050%255F13524000%255Fpe%255Fbtn&amp;tag=cf0d-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=390957" title="Amazon.com's Black Friday Deals">incredible deals</a> on some of their
+merchandise. This year, they&#8217;ve started even earlier to get you in the holiday
+shopping spirit by starting to offer their <a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2FBlack-Friday-After-Thanksgiving-Sale%2Fb%3Fie%3DUTF8%26node%3D384082011%26ref_%3Dpe%255F67050%255F13524000%255Fpe%255Fbtn&amp;tag=cf0d-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=390957" title="Amazon.com's Black Friday Deals">deals TODAY</a>.</p>
+
+<p>They&#8217;ve said that all of their deals are limited in quantity but will line up
+new items after they sell out throughout the day.</p>
+
+<p><a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2FBlack-Friday-After-Thanksgiving-Sale%2Fb%3Fie%3DUTF8%26node%3D384082011%26ref_%3Dpe%255F67050%255F13524000%255Fpe%255Fbtn&amp;tag=cf0d-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=390957" title="Amazon.com's Black Friday Deals">Visit Amazon.com&#8217;s Black Friday Deals</a></p>
+
+<p><a href="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&amp;MarketPlace=US&amp;ID=V20070822%2FUS%2Fcf0d-20%2F8001%2F8c30b9d4-988a-4a90-8d1b-88eee45f908e&amp;Operation=NoScript">Amazon.com Widgets</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Is Your Kid the Next Face of Gap?]]></title>
+    <link href="http://kylehayes.info/2009/10/01/is-your-kid-the-next-face-of-gap/"/>
+    <updated>2009-10-01T02:22:01-07:00</updated>
+    <id>http://kylehayes.info/2009/10/01/is-your-kid-the-next-face-of-gap</id>
+    <content type="html"><![CDATA[<p>It&#8217;s been a long time since I&#8217;ve posted, I know it, but I have good excuses!
+The first is still an excuse as I&#8217;m still working on it, but, I was asked by
+<a href="http://www.apress.com">Apress</a> / <a href="http://www.friendsofed.com">Friends of ED</a> to write a <a href="http://www.amazon.com/gp/product/1430225211?ie=UTF8&amp;tag=cf0d-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1430225211">book</a> on the <a href="http://www.dojotoolkit.org">Dojo JavaScript
+Toolkit</a>. It&#8217;s been quite the journey to say the least. It has been a
+desire of mine in the past few years to publish a technical book. When Apress
+approached me, I couldn&#8217;t resist. It&#8217;s been a lot of work but it&#8217;s almost
+done. You can check it out and pre-order it on Amazon.com! Needless to say
+I&#8217;ve had my head in Dojo quite a bit the past few months.</p>
+
+<p>With that, I&#8217;ve also been working on a very large project at work that I&#8217;m one
+of the technical leads on. That project is the <a href="http://family.go.com/gapcastingcall/">Gap Casting Call</a> which is
+a contest that Gap runs every year to find the next faces of BabyGap and
+GapKids. They partnered with us at Family.com to build and host the online
+photo contest. Enter your kids to get a chance at winning! There are a lot of
+great <a href="http://family.go.com/gapcastingcall/prizes/">prizes</a> and a lot of great <a href="http://family.go.com/gapcastingcall/galleries/">entries</a>!</p>
+
+<p>On to my next project at work where I get to learn and use GWT. More to come
+in the future I&#8217;m sure. Until then, thanks for staying up to date with me, and
+sorry it has been so long since I&#8217;ve posted.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[OOP + CF Debate Response]]></title>
+    <link href="http://kylehayes.info/2009/05/27/oop-cf-debate-response/"/>
+    <updated>2009-05-27T15:40:14-07:00</updated>
+    <id>http://kylehayes.info/2009/05/27/oop-cf-debate-response</id>
+    <content type="html"><![CDATA[<p>Reading <a href="https://twitter.com/remotesynth/status/1935994201">Brian&#8217;s tweet</a> this morning, I decided to read more about this
+whole OOP Debate. Unfortunately, I didn&#8217;t really have time, nor the interest
+to read Marc&#8217;s <a href="http://www.advantexllc.com/blog/post.cfm/how-oo-almost-destroyed-my-business">entire post</a>. But I read as far to the point where he comes
+to the epiphany that CF is not Java and that it can&#8217;t handle the same patterns
+the same way that Java can&#8230;um&#8230;duh! I thought this was a known fact about
+ColdFusion / CFML. Rewind many years to the creation of ColdFusion&#8211;that was
+the whole point of coming up with ColdFusion was to have a language that did
+not require the sheer complexity of languages like C and CGIs to connect to
+databases. I think for the most part, ColdFusion has always aimed to be easy
+or easier and less code etc. If you want to program more along the lines of
+what Java supports and the patterns it uses, then use Java. Seriously.
+ColdFusion is not Java and it shouldn&#8217;t be. It should be what it is and do it
+well.</p>
+
+<p>With that, here is my comment to <a href="http://www.remotesynthesis.com/post.cfm/this-oop-debate-isn-t-about-oop-at-all">Brian&#8217;s response</a> to this debate:</p>
+
+<blockquote><p>I agree with you, Brian, in that his post may have been partly about the
+aspect you allude to. However, I also feel there is a real frustration in what
+he is really expressing with OO and CF. I noticed this same type of demeanor
+with some folks over the years when I strongly worked with CF. I myself have a
+Java background and as such tried to make CF follow the patterns and paradigms
+in the way that Java did. At the same time, I also recognized where CF fell
+short and thus worked with CF in it&#8217;s capacity as opposed to trying to get it
+to fit into the same context that Java is in.</p></blockquote>
+
+<p>With that, I encouraged other folks who worked with me to learn the better
+structured concepts of OO and MVC patterns and using the right mix of
+frameworks, such as a MVC, ORM, and IOC framework. The problem is, if you
+don&#8217;t understand these concepts from a fundamental level from the beginning
+without ever mixing CF in, they can be very overwhelming and start to crush
+the positive attitude that a CFML programmer may have.</p>
+
+<p>Much of the time I also felt that parts of the community were pushing the use
+of so many patterns it was ridiculous and I think this is the storm that
+perhaps Marc was feeling.</p>
+
+<p>To reiterate, I do feel that what you mentioned could be an underlying tone
+and perhaps fueling of anger and frustration, but at the same time I know from
+other CFML developers that I used to work with, his feelings at that show on
+the surface are valid and understood.</p>
+
+<p>I think that most of the expert CFML developers in the community know and
+understand the limitations of the technology. Keep in mind, however,
+limitations is defined by what the requirements of a project are. Projects&#8217;
+requirements should be written around the technology being used. Perhaps
+ColdFusion doesn&#8217;t have limitations in the sense of the word when it comes to
+&#8220;industry standard patterns&#8221;. From it&#8217;s beginning, it has always defined it&#8217;s
+own set of patterns that work for the CFML workflow. Developer&#8217;s need to
+understand to not try to redefine something that doens&#8217;t need to be redefined.
+If they have different needs in a project that are strong enough to fully set
+the project&#8217;s scope outside the circle of ColdFusion, then they need to choose
+a different technology.</p>
+
+<p>CF continues to have a strong closely-knit community, something I have always
+enjoyed about it. Embrace the community, but don&#8217;t forget that at the end of
+the day, it&#8217;s up to you how you want to program your applications. And yes
+patterns are good, but don&#8217;t overdo it. Allow yourself to focus on the tasks
+at hand as well as having good design at the same time. True, not EVERYTHING
+needs to be &#8220;OO&#8221;.</p>
+
+<p>Finally, change rarely comes at the perfect time. As web developers, the past
+5 years or so have been changing very rapidly with new languages, patterns,
+frameworks, libraries coming out every day it seems. Don&#8217;t focus on being up
+to date on every single one and figure out how you can use each of them in
+your next project. Pick and choose what you want to learn and learn it well.
+In a time such as now, stick with what you know cause you need to hold on for
+a little bit longer, there are some rough winds up ahead.</p>
+
+<p>I&#8217;m serious when I say don&#8217;t redefine something that is not meant to be that
+in the first place. I always uphold innovation in it&#8217;s highest regards, but
+there is innovation and then there is redefinition. They are NOT the same
+thing, so stop!</p>
+
+<p>:-)</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: etc | Kyle Hayes]]></title>
+  <link href="http://kylehayes.info/blog/categories/etc/atom.xml" rel="self"/>
+  <link href="http://kylehayes.info/"/>
+  <updated>2011-11-08T08:45:31-08:00</updated>
+  <id>http://kylehayes.info/</id>
+  <author>
+    <name><![CDATA[Kyle Hayes]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Switching to Octopress]]></title>
+    <link href="http://kylehayes.info/2011/11/08/switching-to-octopress/"/>
+    <updated>2011-11-08T08:12:00-08:00</updated>
+    <id>http://kylehayes.info/2011/11/08/switching-to-octopress</id>
+    <content type="html"><![CDATA[<p>Yes, at least for now, I've decided that I was tired of dealing with Wordpress. In an effort to lower my costs and headache for owning and operating a personal blog, Octopress paired with Jekyll seemed like an awesome alternative for someone who enjoys writing in plain text as much as myself.</p>
+
+<p>I was <a href="http://blog.rebeccamurphey.com/switching-to-octopress">inspired</a> by a couple of <a href="http://mattgemmell.com/2011/09/12/blogging-with-octopress/">folks</a> to make the switch. All in all, it was actually not too bad once I got the latest version of Ruby and RVM <a href="http://brandonbohling.com/2011/08/27/Installing-Jekyll-on-Mac/">setup on my Mac</a>.</p>
+
+<p><em>EDIT</em></p>
+
+<p>It's also worthy to note that I used <a href="https://github.com/thomasf/exitwp">exitwp</a> to migrate my wordpress content into markdown. I realize there are a few bugs that I need to iron out and will do that soon.</p>
+
+<p>Furthermore, check out <a href="http://pages.github.com/">http://pages.github.com/</a> if you are ever interested in free static stite hosting on github. Seems pretty good for a personal blog setup.</p>
+]]></content>
+  </entry>
+  
+</feed>

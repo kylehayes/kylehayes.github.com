@@ -1,0 +1,884 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Kyle Hayes</title>
+  <meta name="author" content="Kyle Hayes">
+
+  
+  <meta name="description" content="Lately I have been using the Yahoo! Flex skin in a few of my interfaces as it
+greatly improves the overall standard look of the Flex widgets. It&# &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://kylehayes.info/blog/page/8">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/cfwise" rel="alternate" title="Kyle Hayes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1427925-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Kyle Hayes</a></h1>
+  
+    <h2>Tech, Musings, Life</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/cfwise" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:kylehayes.info" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/02/21/yahoo-flex-skin-buggy/">Yahoo! Flex Skin Buggy</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-02-21T10:02:00-08:00" pubdate data-updated="true">Feb 21<span>st</span>, 2008</time>
+        
+         | <a href="/2008/02/21/yahoo-flex-skin-buggy/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Lately I have been using the Yahoo! Flex skin in a few of my interfaces as it
+greatly improves the overall standard look of the Flex widgets. It&#8217;s very easy
+to implement (thanks to Adobe for creating a simple workflow for this).
+Recently, however, I have noticed a couple of bugs in the skin that are worth
+bringing up and should definitely be fixed. Suffice it to say that I am not
+sure if they are Adobe&#8217;s fault or Yahoo!&#8217;s fault.</p>
+
+<p><img src="/share/YahooFlexSkin_bug.jpg" alt="" /></p>
+
+<p>As you can see there is an issue on the bottom where a partial row of the
+datagrid is showing and the other part of it is hidden. It&#8217;s the hidden part
+that is causing the skin to appear invisible. Note that, as soon as I scroll
+the datagrid it goes away. However, if I move my mouse over that row it comes
+back. Same goes for the [+] button. You can see that it&#8217;s bounds are causing
+an anomaly on the control bar.</p>
+
+<p>Like I said, I am not sure if this is an Adobe issue or a Yahoo! issue, but it
+is annoying enough that I might be swapping the skin out. I don&#8217;t want to, but
+I may have to.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/02/20/xp-sp3-release-notes-reference-apple-computers/">XP SP3 Release Notes Reference &#8220;Apple Computers&#8221;</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-02-20T08:02:00-08:00" pubdate data-updated="true">Feb 20<span>th</span>, 2008</time>
+        
+         | <a href="/2008/02/20/xp-sp3-release-notes-reference-apple-computers/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>While reading through the <a href="http://download.microsoft.com/download/c/d/8/cd8cc719-7d5a-40d3-a802-e4057aa8c631/relnotes.htm">release notes</a> for Windows XP SP3, I was
+surprised to see a heading labeled &#8220;Apple computers.&#8221; Curious, I read further
+to see what it said:</p>
+
+<blockquote><p>Apple computers</p></blockquote>
+
+<p>This issue affects the Windows XP Home Edition and the Windows XP Professional
+operating systems.</p>
+
+<p>If you attempt to install this release candidate on an Intel-based Apple
+computer (Mac Pro, Mac Mini, MacBook, MacBook Air, MacBook Pro, or iMac) that
+is running Windows XP SP2, installation may fail with the error &#8220;Out of disk
+space.&#8221;</p>
+
+<p>To avoid this, manually create a necessary registry key as follows: To create
+the registry key</p>
+
+<blockquote><ol>
+<li><p>Click Start, click Run, type regedit, and then click OK.</p></li>
+<li><p>Locate and then click the following registry subkey:
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Setup</p></li>
+<li><p>On the Edit menu, point to New, and click String Value.</p></li>
+<li><p>In the text box under the Name column, type BootDir and press ENTER.</p></li>
+<li><p>Right-click the name BootDir, and then click Modify.</p></li>
+<li><p>In the Edit String Value dialog box, type the drive letter for your
+system drive, and then click OK. For example, if your system drive is C:, type
+C:.</p></li>
+<li><p>Close Registry Editor.</p></li>
+</ol>
+</blockquote>
+
+<p>After you have created this registry key (or if you created this key when you
+installed a previous version of this Service Pack), you can proceed with the
+installation.</p>
+
+<p>While this may not be terribly interesting to most people, I like it because
+it shows that enough people are using Windows on their Macs for Microsoft to
+test and debug it&#8217;s operating system on them (not to mention beta testers as
+well probably pushing for this). Of course, we all know the real reason why
+Microsoft would have Macs lying around the offices.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/02/13/copying-text-to-the-users-clipboard-in-flex/">Copying Text to the User&#8217;s Clipboard in Flex</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-02-13T14:02:00-08:00" pubdate data-updated="true">Feb 13<span>th</span>, 2008</time>
+        
+         | <a href="/2008/02/13/copying-text-to-the-users-clipboard-in-flex/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Sometimes there is a requirement or a desired usability enhancement for text
+to be placed on the user&#8217;s clipboard. This is a great little feature in an
+your application if you are able to provide it and have a good reason to. In
+Flex, it couldn&#8217;t be any easier. The <em>setClipboard()</em> function lives inside
+the System package. Simply call it like so: ` &#8230; import flash.system.System;
+import mx.controls.Alert;</p>
+
+<p>public function copyText(txt:String):void { System.setClipboard(txt);
+Alert.show(&#8220;&#8217;&#8221; + txt + &#8220;&#8217; has been copied to your clipboard&#8221;); } &#8230; `</p>
+
+<p>Simple as that.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/02/07/lean-out-your-actionscript-imports/">Lean Out Your ActionScript Imports</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-02-07T10:02:00-08:00" pubdate data-updated="true">Feb 7<span>th</span>, 2008</time>
+        
+         | <a href="/2008/02/07/lean-out-your-actionscript-imports/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I have been working on a new Flex application at work lately which I am pretty
+excited about. Not only has it received a lot of positive attention, but I
+also get to learn how to build a Flex application that is to be using a PHP
+middle-tier. Luckily for me, I do have experience with PHP, plus there seems
+to be <a href="http://www.adobe.com/devnet/flex/flex_php.html">some great resources</a> on the topic.</p>
+
+<p>Anyway, the application is being programmed with the help of the Cairngorm
+micro-architecture and as such, there is a lot of copying and pasting of files
+as I create new commands, events, and delegates. One thing that has bugged me
+in the past about doing this, is figuring out which import statements belong
+in the newly created class and which don&#8217;t. Many a times, I just didn&#8217;t even
+bother. That has now changed, now that I discovered an easy, automagic way of
+doing so.</p>
+
+<p>Knowing that Eclipse always has some gems hidden in the right-click context
+menus, I perused them to see if there was anything about import statements.
+<a href="http://www.merriam-webster.com/dictionary/lo+and+behold">Lo and behold</a>, if you right-click on any of the lines that contain import
+statements, and go to the submenu &#8220;Source&#8221;, there is an option called
+&#8220;Organize Imports&#8221; (Or my preference: [Mac] Command + Shift + O, [PC] Ctrl +
+Shift + O). Not only does it actually organize your import statements by
+package alphabetically (starting with the root package), but it also
+eliminates any import statements that you do not need in that class. Pretty
+neat!</p>
+
+<p>Some features I would like to see added to this:</p>
+
+<ol>
+<li>Add statements that are required</li>
+<li>Combine multiple import statements from the target package using wildcard (*) (Perhaps it could be defined in preferences, how many should be considered before it combines)</li>
+</ol>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/01/25/time-warners-effort-in-halting-technological-advances/">Time Warner&#8217;s Effort in Halting Technological Advances?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-01-25T13:01:00-08:00" pubdate data-updated="true">Jan 25<span>th</span>, 2008</time>
+        
+         | <a href="/2008/01/25/time-warners-effort-in-halting-technological-advances/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Many of you may have <a href="http://www.washingtonpost.com/wp-dyn/content/article/2008/01/18/AR2008011801335.html">heard about Time Warner&#8217;s recent decision</a> to start
+capping Internet bandwidth usage for it&#8217;s &#8220;customers&#8221; and charging overage
+fees for usage beyond the cap.</p>
+
+<p>While I can understand, from a business perspective, why a greedy corporation
+would do such a thing, besides customer satisfaction, this move will do a lot
+more than damage their popularity with their customers&#8211;they could potentially
+be responsible for reversing the Information revolution as we know it.</p>
+
+<p>When larger cable companies such as Time Warner create a market to charge for
+bandwidth usage on their network because of inevitable congestion that exists
+when stuffing a copper wire, other cable companies will likely hop on this
+bandwagon to source their dying profits. As customers of these companies are
+encouraged to use their Internet less, the market for Internet-enabled devices
+begins to shrink.</p>
+
+<p>When markets begin to shrink, the demand for research and development of new
+products and technologies begins to run dry. Companies like Apple, will not be
+able to push our us into a disc-less world where movies will be able to be
+rented and purchased with instant gratification at the push of the button. We
+will be stuck in attempting to find the next media that will hold our 100GB
+ultra high-def movies and interactive features.</p>
+
+<p>While this scenario may seem somewhat unlikely, it really is not when you
+think about it. If anything, cable companies need to be nice to their
+customers as the rise of fiber optic enabled Internet/Phone/TV begin to win
+homeowners hearts.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/01/17/cairngorm-onetoone-events-and-commands-doesnt-make-sense/">Cairngorm: One-to-One Events and Commands Doesn&#8217;t Make Sense</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-01-17T19:01:00-08:00" pubdate data-updated="true">Jan 17<span>th</span>, 2008</time>
+        
+         | <a href="/2008/01/17/cairngorm-onetoone-events-and-commands-doesnt-make-sense/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I am struggling with a particular concept in Cairngorm. I don&#8217;t understand why
+it is considered best practice that your custom cairngorm events and commands
+are to have a one-to-one ratio. Flex itself is not even modeled this way. For
+example, when a button is clicked, you don&#8217;t listen for a class called
+ButtonClickEvent. Instead, you listen for the ButtonEvent.CLICK or
+ButtonEvent.DOWN or whatever the case is. In Cairngorm, how come you cannot do
+the same thing and list multiple event types in your event classes.</p>
+
+<p>I am not suggesting to put all your types in one event class. But let&#8217;s say
+you have a UserEvent. You could call UserEvent.ADD_USER,
+UserEvent.DELETE_USER, UserEvent.LOGIN_USER, etc. That is all in one class
+instead of having three separate classes. Can someone please explain to me the
+reasoning for the one-to-one ratio please?</p>
+
+<p>Thanks in advance!</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/01/14/farewell-boeing-hello-disney/">Farewell Boeing, Hello Disney</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-01-14T15:01:00-08:00" pubdate data-updated="true">Jan 14<span>th</span>, 2008</time>
+        
+         | <a href="/2008/01/14/farewell-boeing-hello-disney/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>As many of you know, I was very fortunate to finish college and immediately
+have a ColdFusion development position waiting for me at The Boeing Company.
+Additionally, I had the opportunity to work on many large and great projects
+from consisting of ColdFusion as well as Flex.</p>
+
+<p>Thank you to all my co-workers at Boeing as well as my managers who saw my
+potential. I would like to make a special thank you to my latest manager, Bill
+Roberts, for truly understanding me as a developer and my passion for
+technology. I appreciate everything that you did for me while I was at the
+company.</p>
+
+<p>From one great company to another I shall go. I was offered a web development
+position with the Walt Disney Internet Group in North Hollywood. I will be
+working alongside a team of developers on the Disney family network of sites:
+<a href="http://www.family.com">family.com</a>, <a href="http://www.familyfun.com">familyfun.com</a>, <a href="http://www.wondertime.com">wondertime.com</a> (e.g. for more
+information check out <a href="http://corporate.disney.go.com/wdig/broadband_factsheet.html">Disney Online Fact Sheet</a>).</p>
+
+<p>My last day with Boeing is Thursday the 17th. My first day with Disney is
+Tuesday the 22nd.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/01/08/macheist-2-software-bundle-is-finally-here/">MacHeist 2 Software Bundle Is Finally Here</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-01-08T21:01:00-08:00" pubdate data-updated="true">Jan 8<span>th</span>, 2008</time>
+        
+         | <a href="/2008/01/08/macheist-2-software-bundle-is-finally-here/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>For those of us who participated in the MacHeist software bundle last year and
+saved a ton of money on a bundle of really incredible software applications, I
+am happy to tell you that it is here again and the bundle is just as good.</p>
+
+<p>The ten great applications that are on the list this year are:</p>
+
+<p>1password $29.95 CoverSutra $22.00 Cha-Ching $40.00 iStopMotion $49.00 Awaken
+$12.95 TaskPaper $18.95 AppZapper $12.95 CSSEdit $29.95 Snapz Pro X $69.00
+Pixelmator $59.00</p>
+
+<p>As you can see those are valued at $343.75!! You can purchased the bundle for
+only $49. Also, 25% of your purchase will be donated to the charity of your
+choice (from their list). Just like last year, the last three applications
+won&#8217;t be available in the bundles unless the program reaches a certain amount
+of purchases. However, last year that was not an issue and we received all the
+software as promised.</p>
+
+<p>Once you purchase the bundle the serial numbers are immediately generated for
+your enjoyment. Now, go buy that bundle so I can get my CSSEdit!!!! :-)</p>
+
+<p><a href="http://www.macheist.com">GO TO MACHEIST.COM NOW</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/01/06/persisting-an-actionscript-data-model/">Persisting an ActionScript Data Model</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-01-06T17:01:00-08:00" pubdate data-updated="true">Jan 6<span>th</span>, 2008</time>
+        
+         | <a href="/2008/01/06/persisting-an-actionscript-data-model/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>A very common practice in Java when you want to persist or save the current
+state of your application to a physical file is known as serialization or
+serializing an object. What this basically means is that you are taking the
+machine code that represents an object in your application, and converting it
+to a format that can be written to a file.</p>
+
+<p>The benefits of serialization is that you maintain the actual instance of the
+object&#8211;not just a data representation of the object. When you read the
+serialized file back in to the application, it reads in as a native object to
+that application.</p>
+
+<p>Traditionally in web applications, we accommodate this need by writing entries
+in a database. Even when it comes down to session information. For the most
+part, this is fine, works great and I would recommend it for the majority of
+use cases. However, the serialization method described above could be used as
+a more efficient means to storing the state of a rich Internet application.
+Such a method is possible in ActionScript to use in your Flex application.</p>
+
+<p>The high level process is:</p>
+
+<ol>
+<li>Represent your data model as an ActionScript object</li>
+<li>Serialize your data model into the same AMF format that is used to communicate with middle-tiers like ColdFusion</li>
+<li>Send the raw AMF message packet to ColdFusion in a RemoteObject call, or similar</li>
+<li>ColdFusion writes the message packet to a local file on the server</li>
+</ol>
+
+
+<p>Naturally, you would create this functionality in a series of classes and
+CFCs. In ActionScript, you will be using the Flash ByteArray class. This class
+converts any ActionScript object into a ByteArray which is basically
+serializing the object.</p>
+
+<p><code>var bytes:ByteArray = new ByteArray(); bytes.writeObject(myDataModel);</code></p>
+
+<p>From this point, <strong>bytes</strong> can now be sent to ColdFusion to be written to a
+file. If you are using ColdFusion, you will want your service function to be
+expecting an arguments of type=&#8221;Binary&#8221;. From there, ColdFusion can encode the
+Binary into a writable format like Base64. You migh have a function that looks
+something like the following:</p>
+
+<p>`</p>
+
+<p>`</p>
+
+<p>It is really that easy. Once you call the save function you will notice that
+file now exists on the server. If you were to open it, it would just be a
+series of what appears to be random data.</p>
+
+<p>To read that data back into a usable object in Flex, you will need to setup a
+service call to ColdFusion to return the binary data from the file.</p>
+
+<p>On the ColdFusion side, the code would look something like this: `</p>
+
+<p>`</p>
+
+<p>And your ActionScript RemoteObject handler would probably have the following:
+<code>private function myRO_handler(event:ResultEvent):void { var
+myDataModel:Object = ByteArray(event.result).readObject(); }</code></p>
+
+<p>Obviously, the above code is very procedural still since the functionality is
+not encapsulated within well-defined functions. It is only meant to serve as a
+basis for understanding the concept. For your convenience, and quite frankly
+for mine as well, I have created an ActionScript class as well as a set of
+ColdFusion components to encapsulate all this functionality. You may download
+the files below.</p>
+
+<p>The files below are provided as is without any guarantee of support or
+documentation:</p>
+
+<ul>
+<li><a href="/code/Serialization.zip">Serialization.swc (Compiled with the Flex 3 Beta 3 SDK)</a></li>
+<li><a href="/code/cfAMF.zip">ColdFusion AMF Package</a></li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/01/06/please-help-me-make-a-difference/">Please Help Me Make a Difference</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-01-06T07:01:00-08:00" pubdate data-updated="true">Jan 6<span>th</span>, 2008</time>
+        
+         | <a href="/2008/01/06/please-help-me-make-a-difference/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I don&#8217;t normally post off-topic entries but this story hit me hard and I want
+to help. I also want you to help to make a difference for this poor man.</p>
+
+<p>An innocent man and his loving dog were the recent targets of a possible
+deadly threat from two young children in Philadelphia. His dog, Edna, went
+missing on Halloween night. After posting &#8220;Dog Missing&#8221; signs with a $500
+reward, he received a phone call days later at midnight from a child asking
+for a ransom of $600 or he would kill his dog. Bill Whiting heard the collar
+of his dog in the background and some animal yelps. Immediately he agreed to
+the ransom and the kid responded that he was going to kill the dog anyway.</p>
+
+<p>You can read the rest of the story in detail below: <a href="http://www.suburbanchicagonews.com/newssun/news/727940,WA06_edna_s1.article">http://www.suburbanchicag
+onews.com/newssun/news/727940,WA06_edna_s1.article</a></p>
+
+<p>If you want to help me make a difference, please sign this petition:
+<a href="http://www.thepetitionsite.com/1/help-a-kidnapped-dog-in-philadelphia">http://www.thepetitionsite.com/1/help-a-kidnapped-dog-in-philadelphia</a></p>
+
+<p>Out of 5,000 signatures that they need, they have 4,153 at the time of this
+writing.</p>
+
+<p>Thanks!</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/9/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/7/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2011/11/08/switching-to-octopress/">Switching to Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/14/lee-the-patriot/">Lee, the Patriot</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/11/reddpics-bookmarklet/">ReddPics Bookmarklet</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/06/13/its-about-the-customer-service/">It&#8217;s about the customer service</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/03/16/improve-dont-prove/">Improve&#8230;don&#8217;t prove</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Github Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/kylehayes">@kylehayes</a> on Github
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'kylehayes',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("kylehayes", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/kylehayes" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @kylehayes</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Kyle Hayes -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'kylehayes';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://kylehayes.info/blog/page/8/index.html';
+        var disqus_url = 'http://kylehayes.info/blog/page/8/index.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

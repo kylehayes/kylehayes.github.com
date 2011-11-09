@@ -1,0 +1,745 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Kyle Hayes</title>
+  <meta name="author" content="Kyle Hayes">
+
+  
+  <meta name="description" content="I was working on a Flex application yesterday and I wanted to create a textbox
+wih a mask on it, such that the user could see what format they needed &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://kylehayes.info/blog/page/18">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/cfwise" rel="alternate" title="Kyle Hayes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1427925-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Kyle Hayes</a></h1>
+  
+    <h2>Tech, Musings, Life</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/cfwise" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:kylehayes.info" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/03/29/handy-masked-input-component-for-flex/">Handy Masked Input Component for Flex</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-03-29T06:03:00-07:00" pubdate data-updated="true">Mar 29<span>th</span>, 2007</time>
+        
+         | <a href="/2007/03/29/handy-masked-input-component-for-flex/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I was working on a Flex application yesterday and I wanted to create a textbox
+wih a mask on it, such that the user could see what format they needed to
+provide their value in. It seemed to me that I had seen this somewhere in
+Flex. The actual implementation that I was thinking of, was not in Flex, it
+was in C#.</p>
+
+<p>I did some Googling on the idea and pretty quickly found <a href="http://weblogs.macromedia.com/pent/">Peter Ent&#8217;s</a> blog
+and an <a href="http://weblogs.macromedia.com/pent/archives/2006/08/flex_2_componen.cfm">article</a> on a masked text input custom component that he created
+and opened up.</p>
+
+<p>After downloading the component, I immediately found it very useful and easy
+to use! (I {heart} Flex!).</p>
+
+<p>The particular mask I needed to use was the &#8220;A&#8221; mask. This is any character,
+but unlike the other masks (c and C) it would not upper or lower my case based
+on the case of the mask. In addition, it was allowing special characters when
+I only wanted to allow alpha and numeric characters. It was time for a little
+contribution.</p>
+
+<p>I added the ability to use &#8216;a&#8217; or &#8216;A&#8217; and have it follow the proper case for
+that letter. In addition, I added a new mask, &#8216;b&#8217; and &#8216;B&#8217;, which matched only
+numeric and alpha but no special characters (I used a simple regex for this [0
+-9a-zA-Z]). Naturally I kept Peter&#8217;s original style in the code, which was
+quite nice by the way.</p>
+
+<p>Now it works the way I want it to in my application! <a href="http://weblogs.macromedia.com/pent/archives/2006/08/flex_2_componen.cfm">Read more about this
+component at Peter&#8217;s blog.</a></p>
+
+<p>You may download my updated version by clicking <strong>Download</strong> below.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/03/28/i-heart-privatepastecom/">I Heart PrivatePaste.com</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-03-28T13:03:00-07:00" pubdate data-updated="true">Mar 28<span>th</span>, 2007</time>
+        
+         | <a href="/2007/03/28/i-heart-privatepastecom/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I am always looking for a great <strong>no paste</strong> site to share my code with
+colleagues and friends when getting or providing help. For those of you that
+don&#8217;t know what <strong>no paste</strong> is, it is a useful technology that allows
+developers to copy and paste their code to a website that preserves all the
+tabs and in some cases colorizes the code to make it easier to share code with
+other people. It replaces the need to paste to chat and IRC windows.</p>
+
+<p>Lately, I have kept my eye open for a good one that supports many languages. I
+recently had the need for one that would not post the paste publicly or where
+I could encrypt the contents. Sure enough, I found <a href="http://www.privatepaste.com">PrivatePaste.com</a>. They
+fulfilled both of my requirements. Not only do they not post the pastes
+publicly, they allow you to encrypt the paste with many very strong algorithms
+with your own provided password key. They support just about every major
+language except for ColdFusion (Ray, a little help here?). Other than that,
+they are great!</p>
+
+<p>Plus bonus, you can even use your own subdomain to keep pastes restricted to
+that subdomain (e.g. http://mysecretepastes.privatepaste.com). You may also
+use a <strong>Secure HTTP socket</strong> by simply changing the URL to <strong>https</strong>.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/03/23/videos-from-apollo-camp/">Videos From Apollo Camp</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-03-23T06:03:00-07:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2007</time>
+        
+         | <a href="/2007/03/23/videos-from-apollo-camp/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>One by one Adobe is adding <a href="http://labs.adobe.com/wiki/index.php/Apollo:Camp:03162007">videos to the Wiki</a> on labs from <a href="http://apollocamp.eventbrite.com/">Apollo
+Camp</a>. I highly recommend you check these out. Cause one you do, you will
+want to get your hands on the <a href="http://www.adobe.com/go/getapollo">alpha of Apollo</a> and start playing with the
+amazing features. And they are really quite easy to get started. Just ask
+<a href="http://ray.camdenfamily.com">Ray</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/03/23/happy-one-year-of-blogging-to-me/">Happy One Year of Blogging to Me</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-03-23T06:03:00-07:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2007</time>
+        
+         | <a href="/2007/03/23/happy-one-year-of-blogging-to-me/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>It has officially been one year since my first post here at CFWise. It has
+been fun, and it seems longer than that. My goal this year is to gain many
+more subscribers and how I plan on doing that, is writing many more
+interesting and useful articles. Meanwhile, I am eating one year of blogging
+cake, which in fact isn&#8217;t cake at all.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/03/23/iclip-4/">iClip 4</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-03-23T05:03:00-07:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2007</time>
+        
+         | <a href="/2007/03/23/iclip-4/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>iClip 4 is a nifty little OS X clipboard history manager. It&#8217;s user interface
+is good and fits in well with the OS X style. What is nice about it, is that
+at a glance of the iClip toolbar, are the last 8 clipboard copy or cuts that
+you performed in the system as little previews or clips. This can be pretty
+much anything that can fit on a clipboard.</p>
+
+<p>I picked up iClip 4 through the <a href="http://www.macheist.com">MacHeist</a> bundle. I personally don&#8217;t use
+it nearly as much as I thought. Maybe once a week! I have a feeling that the
+reason for that is because, I am still not used to it being on the side of the
+screen and so I forget about it. Furthermore, I am a very big keyboard user,
+and so if my hands stay on the keyboard to do all my copy and pasting (even if
+I have to switch back and forth between my applications) then I will do that.
+It is a great tool and designed well, I simply don&#8217;t actually ever use it.</p>
+
+<p>To find out more information, check it out at <a href="http://inventive.us">http://inventive.us</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/03/19/apollo-camp-keynote-with-kevin-lynch-video/">Apollo Camp Keynote With Kevin Lynch Video</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-03-19T07:03:00-07:00" pubdate data-updated="true">Mar 19<span>th</span>, 2007</time>
+        
+         | <a href="/2007/03/19/apollo-camp-keynote-with-kevin-lynch-video/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The video of the keynote with Kevin Lynch from the Apollo Camp mini-conference
+is now posted up on <a href="http://video.onflex.org/2007/03/19/apollo-camp-keynote-from-kevin-lynch/">video.onflex.org</a>.</p>
+
+<p>More videos of the conference will be posted either today or throughout this
+week.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/03/19/easy-captcha-no-installation-required/">Easy Captcha - No Installation Required</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-03-19T06:03:00-07:00" pubdate data-updated="true">Mar 19<span>th</span>, 2007</time>
+        
+         | <a href="/2007/03/19/easy-captcha-no-installation-required/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://en.wikipedia.org/wiki/Captcha">Captcha</a> is a great tool to minimize spammers and bots from submitting the
+forms on your website with spam and advertisements instead of legitimate
+information. There are many resources out their to get Captcha up and running
+on your forms. For ColdFusion developers, there is <a href="http://alagad.com/index.cfm/name-captcha">Alagad Captcha</a> and
+Peter Farrell&#8217;s <a href="http://lyla.maestropublishing.com/">Lyla Captcha</a>.</p>
+
+<p>Those are all fine if you want to install the product on your server and setup
+the appropriate code to get it going. But there is one other way that is quite
+a bit easier to do, via a WebService.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/03/19/adobe-apollo-on-labs/">Adobe Apollo on Labs</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-03-19T06:03:00-07:00" pubdate data-updated="true">Mar 19<span>th</span>, 2007</time>
+        
+         | <a href="/2007/03/19/adobe-apollo-on-labs/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>As was expected, a couple days after <a href="http://labs.adobe.com/wiki/index.php/Apollo:Camp">Apollo Camp</a>, Adobe put Apollo up on
+<a href="http://labs.adobe.com/technologies/apollo/">Labs</a>! Go download it and start building some powerful RIA desktop
+applications that are guaranteed to run on Mac, Linux, and Windows.</p>
+
+<p>Are you a Flex Developer and wants some help getting started with Apollo, then
+check out this free eBook as well, <a href="http://labs.adobe.com/wiki/index.php/Apollo:Books:Apollo_for_Adobe_Flex_Developers_Pocket_Guide">Apollo for Adobe Flex Developers Pocket
+Guide</a>.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/03/16/apollo-camp-2007/">Apollo Camp 2007</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-03-16T16:03:00-07:00" pubdate data-updated="true">Mar 16<span>th</span>, 2007</time>
+        
+         | <a href="/2007/03/16/apollo-camp-2007/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Just got here at Adobe&#8217;s (former Macromedia&#8217;s) building on Townsend in San
+Francisco. So far looks like a pretty sweet mini-conference!! Walked in and
+with our goody bag, received a <strong>FULL</strong> version of Flex Builder, your choice
+of Mac or PC version. So far the night has started out great.</p>
+
+<p>Looking around there is plenty of pizza, Red Bull, Beer, and Pop Rocks candy!
+Looking forward to an incredible night with one of my favorite companies!</p>
+
+<p>Until later, cheers!</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/03/05/flex-htmltemplate-filetype-to-cfm-instead-of-html/">Flex Html-Template Filetype to CFM Instead of HTML</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-03-05T07:03:00-08:00" pubdate data-updated="true">Mar 5<span>th</span>, 2007</time>
+        
+         | <a href="/2007/03/05/flex-htmltemplate-filetype-to-cfm-instead-of-html/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Thanks to <a href="http://www.morearty">Mike</a>, I was able to change my Flex builder to create a
+ColdFusion HTML-Template in the bin directory, instead of an HTML template. I
+needed to do this to accommodate passing URL or Query values to my Flex
+application.</p>
+
+<p>The <a href="http://www.morearty.com/blog/2006/12/11/changing-the-filenames-in-flex-builder-html-templates/trackback/">solution</a> that Mike provided gets 10 <a href="http://www.urbandictionary.com/define.php?term=cool+points">cool points</a> for using Flex
+Builder&#8217;s built-in <a href="http://www.morearty.com/blog/2007/01/24/macros-that-are-available-in-html-template-files/trackback/">macro functionality</a> to change the default html-
+template output format from HTML to a ColdFusion (CFM) template file!</p>
+
+<p>If you have ever delved into some of the project files that Flex uses you may
+have noticed some variable-like parts of the file that usually look like
+<strong>${some_keyword}</strong>. These items are little macro keywords that Flex Builder
+checks for in specific files to replace them with appropriate data.</p>
+
+<p>Mike said in <a href="http://www.morearty.com/blog/2006/12/11/changing-the-filenames-in-flex-builder-html-templates/trackback/">his post</a> that you cannot simply change the html-template
+extension from <strong>html</strong> to <strong>cfm</strong> because of the way Flex Builder handles
+that file. You need to find the file called <strong>index.template.html</strong> inside of
+your <strong>html-template</strong> folder inside your current project&#8217;s folder. Once you
+have found that file, rename it to:</p>
+
+<p><code>${application}${build_suffix}.template.cfm</code></p>
+
+<p>Next, you need to go to <strong>Project -> Clean</strong> in order for the changes to take
+effect. However, you will be distraught when you go to <strong>Run</strong> your project
+and see that now your browser displays a <strong>Page Cannot Be Found</strong> error. If
+you check the URL that it is attempting to access the template file with an
+<strong>html</strong> extension still. To correct this, close the browser and go into
+<strong>Flex Builder</strong> and click the <strong>submenu arrow</strong> for the <strong>debug toolbar
+button</strong> and <strong>Ctrl + Click</strong> the project you are working on. In the <strong>Debug
+Properties</strong> pane you will notice that the values for the <strong>Debug</strong> and
+<strong>Run</strong> paths are still pointing to an <strong>html</strong> file. Simple update those
+paths to point to a <strong>cfm</strong> file instead. Click <strong>Apply</strong> and then <strong>Close</strong>.</p>
+
+<p>Finally, you need to <strong>Clean</strong> (<strong>Project -> Clean</strong>) your project one more
+time. <strong>Run</strong> your project now and all should be good. Once you have done
+this, you will be able to do cool things like <a href="http://www.kylehayes.info/blog/index.cfm/2007/2/22/Passing-URL-Variables-To-Flex">pass URL or query variables
+into your Flex project</a>.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/19/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/17/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2011/11/08/switching-to-octopress/">Switching to Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/14/lee-the-patriot/">Lee, the Patriot</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/11/reddpics-bookmarklet/">ReddPics Bookmarklet</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/06/13/its-about-the-customer-service/">It&#8217;s about the customer service</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/03/16/improve-dont-prove/">Improve&#8230;don&#8217;t prove</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Github Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/kylehayes">@kylehayes</a> on Github
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'kylehayes',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("kylehayes", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/kylehayes" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @kylehayes</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Kyle Hayes -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'kylehayes';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://kylehayes.info/blog/page/18/index.html';
+        var disqus_url = 'http://kylehayes.info/blog/page/18/index.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
