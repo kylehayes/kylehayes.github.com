@@ -9,8 +9,8 @@
   <meta name="author" content="Kyle Hayes">
 
   
-  <meta name="description" content="Following the lead of some of the folks blogging about what they look like as
-a Simpsons character and being a loyal fan myself and in the spirit of &hellip;">
+  <meta name="description" content="I asked Ted (as well as pulsed the public Pownce) today if there was
+a way to make an image component show up behind another component; similar to &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,6 +75,75 @@ a Simpsons character and being a loyal fan myself and in the spirit of &hellip;"
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/07/16/layering-components-in-your-flex-app/">Layering Components in Your Flex App</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-07-16T15:07:00-07:00" pubdate data-updated="true">Jul 16<span>th</span>, 2007</time>
+        
+         | <a href="/2007/07/16/layering-components-in-your-flex-app/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I asked <a href="http://www.onflex.org/ted/index.php">Ted</a> (as well as <a href="http://pownce.com/kylehayes/notes/221880/">pulsed the public Pownce</a>) today if there was
+a way to make an image component show up behind another component; similar to
+the functionality of &#8220;Send to Back&#8221; in Illustrator without the explicit
+instruction to do so. Happily, he responded that this was definitely possible
+and to use the DisplayList API. He said that children of a displayObject are
+ordered by index in Z order. When you addChild, they are added to the front.</p>
+
+<p>You can also use addChildAt to reposition them. With this information, I asked
+him if you could only reposition at runtime (which I could not have imagined
+being the case as Adobe just doesn&#8217;t overlook things like this). Surely he
+responded that MXML, being the hierarchal language that it is, it sets the
+components in their Z order by order of your component tags.</p>
+
+<p>For example:</p>
+
+<p>`</p>
+
+<p>`</p>
+
+<p>The <strong>button</strong> is on top of the <strong>panel</strong> which is on top of the <strong>image</strong>,
+meaning that the image is in the &#8220;background&#8221; (though not the actual
+background of Application as set forth by the backgroundImage attribute).</p>
+
+<p>Here are some links that Ted provided to learn more about the DisplayList API:</p>
+
+<ul>
+<li><a href="http://www.adobe.com/devnet/actionscript/articles/display_api.html">http://www.adobe.com/devnet/actionscript/articles/display_api.html</a></li>
+<li><a href="http://www.moock.org/blog/archives/000229.html">http://www.moock.org/blog/archives/000229.html</a></li>
+<li><a href="http://livedocs.adobe.com/flash/9.0/ActionScriptLangRefV3/flash/display/DisplayObject.html">http://livedocs.adobe.com/flash/9.0/ActionScriptLangRefV3/ flash/display/DisplayObject.html</a></li>
+<li><a href="http://livedocs.adobe.com/flash/9.0/ActionScriptLangRefV3/flash/display/DisplayObjectContainer.html">http://livedocs.adobe.com/flash/9.0/ ActionScriptLangRefV3/flash/display/DisplayObjectContainer.html</a></li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -501,50 +570,6 @@ classes have started today:</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2007/06/24/safely-arrived-at-north-bethesda-marriott/">Safely Arrived at North Bethesda Marriott</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2007-06-24T19:06:00-07:00" pubdate data-updated="true">Jun 24<span>th</span>, 2007</time>
-        
-         | <a href="/2007/06/24/safely-arrived-at-north-bethesda-marriott/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Yay I made it! This was my first time traveling so far by myself. I had also
-never dealt with any Metro system before. But everything worked out fine and I
-am here safe sound.</p>
-
-<p>Looking forward to Nate Nelson&#8217;s Advanced Database class tomorrow morning!</p>
-
-<p>See you at the conference!</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/15/">&larr; Older</a>
@@ -562,6 +587,10 @@ am here safe sound.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2011/11/13/find-a-place-for-everything/">Find a place for everything</a>
+      </li>
+    
+      <li class="post">
         <a href="/2011/11/08/switching-to-octopress/">Switching to Octopress</a>
       </li>
     
@@ -575,10 +604,6 @@ am here safe sound.</p>
     
       <li class="post">
         <a href="/2011/06/13/its-about-the-customer-service/">It&#8217;s about the customer service</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2011/03/16/improve-dont-prove/">Improve&#8230;don&#8217;t prove</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Kyle Hayes]]></title>
   <link href="http://kylehayes.github.com/atom.xml" rel="self"/>
   <link href="http://kylehayes.github.com/"/>
-  <updated>2011-11-08T20:41:17-08:00</updated>
+  <updated>2011-11-13T17:33:17-08:00</updated>
   <id>http://kylehayes.github.com/</id>
   <author>
     <name><![CDATA[Kyle Hayes]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Find a place for everything]]></title>
+    <link href="http://kylehayes.github.com/2011/11/13/find-a-place-for-everything/"/>
+    <updated>2011-11-13T17:28:00-08:00</updated>
+    <id>http://kylehayes.github.com/2011/11/13/find-a-place-for-everything</id>
+    <content type="html"><![CDATA[<p>I know it sounds like a basic principle, but how many of us follow it? If you find that your workspaces or home are constantly getting filled with clutter every few days, it&#8217;s possible you don&#8217;t have a place for everything!</p>
+
+<p>I spent this whole weekend reorganizing my home office to not only ensure that every object had a place, but also items that are used less often are put in harder to reach spots and items that I use or need more frequently in very easy to reach places. That way, when I&#8217;m done with something that I use often, it immediately gets put back in its spot.</p>
+
+<p>I&#8217;ve also found that the shoebox containers from The Container Store are very nice to have and I highly recommend buying their 20 count box. Pair those with a label maker and you are set off to a great start towards being more organized.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Switching to Octopress]]></title>
@@ -823,88 +836,6 @@ great <a href="http://family.go.com/gapcastingcall/prizes/">prizes</a> and a lot
 <p>On to my next project at work where I get to learn and use GWT. More to come
 in the future I&#8217;m sure. Until then, thanks for staying up to date with me, and
 sorry it has been so long since I&#8217;ve posted.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[OOP + CF Debate Response]]></title>
-    <link href="http://kylehayes.github.com/2009/05/27/oop-cf-debate-response/"/>
-    <updated>2009-05-27T15:40:14-07:00</updated>
-    <id>http://kylehayes.github.com/2009/05/27/oop-cf-debate-response</id>
-    <content type="html"><![CDATA[<p>Reading <a href="https://twitter.com/remotesynth/status/1935994201">Brian&#8217;s tweet</a> this morning, I decided to read more about this
-whole OOP Debate. Unfortunately, I didn&#8217;t really have time, nor the interest
-to read Marc&#8217;s <a href="http://www.advantexllc.com/blog/post.cfm/how-oo-almost-destroyed-my-business">entire post</a>. But I read as far to the point where he comes
-to the epiphany that CF is not Java and that it can&#8217;t handle the same patterns
-the same way that Java can&#8230;um&#8230;duh! I thought this was a known fact about
-ColdFusion / CFML. Rewind many years to the creation of ColdFusion&#8211;that was
-the whole point of coming up with ColdFusion was to have a language that did
-not require the sheer complexity of languages like C and CGIs to connect to
-databases. I think for the most part, ColdFusion has always aimed to be easy
-or easier and less code etc. If you want to program more along the lines of
-what Java supports and the patterns it uses, then use Java. Seriously.
-ColdFusion is not Java and it shouldn&#8217;t be. It should be what it is and do it
-well.</p>
-
-<p>With that, here is my comment to <a href="http://www.remotesynthesis.com/post.cfm/this-oop-debate-isn-t-about-oop-at-all">Brian&#8217;s response</a> to this debate:</p>
-
-<blockquote><p>I agree with you, Brian, in that his post may have been partly about the
-aspect you allude to. However, I also feel there is a real frustration in what
-he is really expressing with OO and CF. I noticed this same type of demeanor
-with some folks over the years when I strongly worked with CF. I myself have a
-Java background and as such tried to make CF follow the patterns and paradigms
-in the way that Java did. At the same time, I also recognized where CF fell
-short and thus worked with CF in it&#8217;s capacity as opposed to trying to get it
-to fit into the same context that Java is in.</p></blockquote>
-
-<p>With that, I encouraged other folks who worked with me to learn the better
-structured concepts of OO and MVC patterns and using the right mix of
-frameworks, such as a MVC, ORM, and IOC framework. The problem is, if you
-don&#8217;t understand these concepts from a fundamental level from the beginning
-without ever mixing CF in, they can be very overwhelming and start to crush
-the positive attitude that a CFML programmer may have.</p>
-
-<p>Much of the time I also felt that parts of the community were pushing the use
-of so many patterns it was ridiculous and I think this is the storm that
-perhaps Marc was feeling.</p>
-
-<p>To reiterate, I do feel that what you mentioned could be an underlying tone
-and perhaps fueling of anger and frustration, but at the same time I know from
-other CFML developers that I used to work with, his feelings at that show on
-the surface are valid and understood.</p>
-
-<p>I think that most of the expert CFML developers in the community know and
-understand the limitations of the technology. Keep in mind, however,
-limitations is defined by what the requirements of a project are. Projects&#8217;
-requirements should be written around the technology being used. Perhaps
-ColdFusion doesn&#8217;t have limitations in the sense of the word when it comes to
-&#8220;industry standard patterns&#8221;. From it&#8217;s beginning, it has always defined it&#8217;s
-own set of patterns that work for the CFML workflow. Developer&#8217;s need to
-understand to not try to redefine something that doens&#8217;t need to be redefined.
-If they have different needs in a project that are strong enough to fully set
-the project&#8217;s scope outside the circle of ColdFusion, then they need to choose
-a different technology.</p>
-
-<p>CF continues to have a strong closely-knit community, something I have always
-enjoyed about it. Embrace the community, but don&#8217;t forget that at the end of
-the day, it&#8217;s up to you how you want to program your applications. And yes
-patterns are good, but don&#8217;t overdo it. Allow yourself to focus on the tasks
-at hand as well as having good design at the same time. True, not EVERYTHING
-needs to be &#8220;OO&#8221;.</p>
-
-<p>Finally, change rarely comes at the perfect time. As web developers, the past
-5 years or so have been changing very rapidly with new languages, patterns,
-frameworks, libraries coming out every day it seems. Don&#8217;t focus on being up
-to date on every single one and figure out how you can use each of them in
-your next project. Pick and choose what you want to learn and learn it well.
-In a time such as now, stick with what you know cause you need to hold on for
-a little bit longer, there are some rough winds up ahead.</p>
-
-<p>I&#8217;m serious when I say don&#8217;t redefine something that is not meant to be that
-in the first place. I always uphold innovation in it&#8217;s highest regards, but
-there is innovation and then there is redefinition. They are NOT the same
-thing, so stop!</p>
-
-<p>:-)</p>
 ]]></content>
   </entry>
   

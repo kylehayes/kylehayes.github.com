@@ -1079,12 +1079,16 @@
         <lastmod>2011-11-08T08:45:27-08:00</lastmod>
     </url>
     <url>
+        <loc>http://kylehayes.github.com/2011/11/13/find-a-place-for-everything/</loc>
+        <lastmod>2011-11-13T17:32:27-08:00</lastmod>
+    </url>
+    <url>
         <loc>http://kylehayes.github.com/about.html</loc>
         <lastmod>2011-11-07T22:03:58-08:00</lastmod>
     </url>
     <url>
         <loc>http://kylehayes.github.com/blog/archives/</loc>
-        <lastmod>2011-11-08T08:45:27-08:00</lastmod>
+        <lastmod>2011-11-13T17:32:27-08:00</lastmod>
     </url>
     <url>
         <loc>http://kylehayes.github.com/contact.html</loc>
@@ -1092,6 +1096,6 @@
     </url>
     <url>
         <loc>http://kylehayes.github.com/</loc>
-        <lastmod>2011-11-08T08:45:27-08:00</lastmod>
+        <lastmod>2011-11-13T17:32:27-08:00</lastmod>
     </url>
 </urlset>

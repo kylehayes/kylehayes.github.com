@@ -9,8 +9,8 @@
   <meta name="author" content="Kyle Hayes">
 
   
-  <meta name="description" content="I was working on a Flex application yesterday and I wanted to create a textbox
-wih a mask on it, such that the user could see what format they needed &hellip;">
+  <meta name="description" content="Apple announced today the release of it&#8217;s newest MacPro which has two quad-
+core (total of 8 cores) Xeon processors. http://www.apple.com/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,6 +75,47 @@ wih a mask on it, such that the user could see what format they needed &hellip;"
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/04/04/unbridled-power-of-an-8-core-xeon-has-been-unleashed/">Unbridled Power of an 8 Core Xeon Has Been Unleashed</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-04-04T06:04:00-07:00" pubdate data-updated="true">Apr 4<span>th</span>, 2007</time>
+        
+         | <a href="/2007/04/04/unbridled-power-of-an-8-core-xeon-has-been-unleashed/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Apple announced today the release of it&#8217;s newest MacPro which has two quad-
+core (total of 8 cores) Xeon processors.</p>
+
+<p><a href="http://www.apple.com/macpro/">http://www.apple.com/macpro/</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -512,80 +553,6 @@ Looking forward to an incredible night with one of my favorite companies!</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2007/03/05/flex-htmltemplate-filetype-to-cfm-instead-of-html/">Flex Html-Template Filetype to CFM Instead of HTML</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2007-03-05T07:03:00-08:00" pubdate data-updated="true">Mar 5<span>th</span>, 2007</time>
-        
-         | <a href="/2007/03/05/flex-htmltemplate-filetype-to-cfm-instead-of-html/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Thanks to <a href="http://www.morearty">Mike</a>, I was able to change my Flex builder to create a
-ColdFusion HTML-Template in the bin directory, instead of an HTML template. I
-needed to do this to accommodate passing URL or Query values to my Flex
-application.</p>
-
-<p>The <a href="http://www.morearty.com/blog/2006/12/11/changing-the-filenames-in-flex-builder-html-templates/trackback/">solution</a> that Mike provided gets 10 <a href="http://www.urbandictionary.com/define.php?term=cool+points">cool points</a> for using Flex
-Builder&#8217;s built-in <a href="http://www.morearty.com/blog/2007/01/24/macros-that-are-available-in-html-template-files/trackback/">macro functionality</a> to change the default html-
-template output format from HTML to a ColdFusion (CFM) template file!</p>
-
-<p>If you have ever delved into some of the project files that Flex uses you may
-have noticed some variable-like parts of the file that usually look like
-<strong>${some_keyword}</strong>. These items are little macro keywords that Flex Builder
-checks for in specific files to replace them with appropriate data.</p>
-
-<p>Mike said in <a href="http://www.morearty.com/blog/2006/12/11/changing-the-filenames-in-flex-builder-html-templates/trackback/">his post</a> that you cannot simply change the html-template
-extension from <strong>html</strong> to <strong>cfm</strong> because of the way Flex Builder handles
-that file. You need to find the file called <strong>index.template.html</strong> inside of
-your <strong>html-template</strong> folder inside your current project&#8217;s folder. Once you
-have found that file, rename it to:</p>
-
-<p><code>${application}${build_suffix}.template.cfm</code></p>
-
-<p>Next, you need to go to <strong>Project -> Clean</strong> in order for the changes to take
-effect. However, you will be distraught when you go to <strong>Run</strong> your project
-and see that now your browser displays a <strong>Page Cannot Be Found</strong> error. If
-you check the URL that it is attempting to access the template file with an
-<strong>html</strong> extension still. To correct this, close the browser and go into
-<strong>Flex Builder</strong> and click the <strong>submenu arrow</strong> for the <strong>debug toolbar
-button</strong> and <strong>Ctrl + Click</strong> the project you are working on. In the <strong>Debug
-Properties</strong> pane you will notice that the values for the <strong>Debug</strong> and
-<strong>Run</strong> paths are still pointing to an <strong>html</strong> file. Simple update those
-paths to point to a <strong>cfm</strong> file instead. Click <strong>Apply</strong> and then <strong>Close</strong>.</p>
-
-<p>Finally, you need to <strong>Clean</strong> (<strong>Project -> Clean</strong>) your project one more
-time. <strong>Run</strong> your project now and all should be good. Once you have done
-this, you will be able to do cool things like <a href="http://www.kylehayes.info/blog/index.cfm/2007/2/22/Passing-URL-Variables-To-Flex">pass URL or query variables
-into your Flex project</a>.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/19/">&larr; Older</a>
@@ -603,6 +570,10 @@ into your Flex project</a>.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2011/11/13/find-a-place-for-everything/">Find a place for everything</a>
+      </li>
+    
+      <li class="post">
         <a href="/2011/11/08/switching-to-octopress/">Switching to Octopress</a>
       </li>
     
@@ -616,10 +587,6 @@ into your Flex project</a>.</p>
     
       <li class="post">
         <a href="/2011/06/13/its-about-the-customer-service/">It&#8217;s about the customer service</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2011/03/16/improve-dont-prove/">Improve&#8230;don&#8217;t prove</a>
       </li>
     
   </ul>

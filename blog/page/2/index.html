@@ -9,8 +9,8 @@
   <meta name="author" content="Kyle Hayes">
 
   
-  <meta name="description" content="I know it is cliché to write a post about trying a new service that posts but
-I gotta do it to give it a swing! I used to be a very frequent blogger &hellip;">
+  <meta name="description" content="We&#8217;ve recently switched one of our big projects at work over to Git from
+Perforce recently. Overall, its been good but has had quite the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,6 +75,73 @@ I gotta do it to give it a swing! I used to be a very frequent blogger &hellip;"
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/11/17/grep-git-log/">Grep Git Log</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-17T17:08:15-08:00" pubdate data-updated="true">Nov 17<span>th</span>, 2010</time>
+        
+         | <a href="/2010/11/17/grep-git-log/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>We&#8217;ve recently switched one of our big projects at work over to Git from
+Perforce recently. Overall, its been good but has had quite the learning curve
+for all of us to shift to this new paradigm. One of the things we&#8217;ve struggled
+with a lot is just being able to easily see what&#8217;s changed in our commits,
+comparing branch to branch etc. I&#8217;m always looking for ways to slice through
+the information that git will report back.</p>
+
+<p>I came across an interesting feature of git log yesterday. It allows you to
+pass a simple grep string to the git log command and only the commits that
+contain that string in their changeset description will be returned. This is
+handy for us since we label all of our descriptions with our Version One story
+or task ID.</p>
+
+<p>The command is straightforward in its usage:</p>
+
+<p>git log —grep=<grep_string></p>
+
+<p>This turns what could be an unwieldy output of git log commits to a simple
+eloquent output of a single (or shorter list) of commits:</p>
+
+<p>$ git log &#8211;grep=B-03725</p>
+
+<p>commit 938ec97072e6689a1065fe4aaf4ae6ae75352491</p>
+
+<p>Author: Kyle Hayes &lt; my_email ></p>
+
+<p>Date:   Mon Nov 15 08:42:15 2010 -0800</p>
+
+<pre><code>FE integration refs: B-03725
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -616,117 +683,6 @@ sorry it has been so long since I&#8217;ve posted.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2009/05/27/oop-cf-debate-response/">OOP + CF Debate Response</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-05-27T15:40:14-07:00" pubdate data-updated="true">May 27<span>th</span>, 2009</time>
-        
-         | <a href="/2009/05/27/oop-cf-debate-response/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Reading <a href="https://twitter.com/remotesynth/status/1935994201">Brian&#8217;s tweet</a> this morning, I decided to read more about this
-whole OOP Debate. Unfortunately, I didn&#8217;t really have time, nor the interest
-to read Marc&#8217;s <a href="http://www.advantexllc.com/blog/post.cfm/how-oo-almost-destroyed-my-business">entire post</a>. But I read as far to the point where he comes
-to the epiphany that CF is not Java and that it can&#8217;t handle the same patterns
-the same way that Java can&#8230;um&#8230;duh! I thought this was a known fact about
-ColdFusion / CFML. Rewind many years to the creation of ColdFusion&#8211;that was
-the whole point of coming up with ColdFusion was to have a language that did
-not require the sheer complexity of languages like C and CGIs to connect to
-databases. I think for the most part, ColdFusion has always aimed to be easy
-or easier and less code etc. If you want to program more along the lines of
-what Java supports and the patterns it uses, then use Java. Seriously.
-ColdFusion is not Java and it shouldn&#8217;t be. It should be what it is and do it
-well.</p>
-
-<p>With that, here is my comment to <a href="http://www.remotesynthesis.com/post.cfm/this-oop-debate-isn-t-about-oop-at-all">Brian&#8217;s response</a> to this debate:</p>
-
-<blockquote><p>I agree with you, Brian, in that his post may have been partly about the
-aspect you allude to. However, I also feel there is a real frustration in what
-he is really expressing with OO and CF. I noticed this same type of demeanor
-with some folks over the years when I strongly worked with CF. I myself have a
-Java background and as such tried to make CF follow the patterns and paradigms
-in the way that Java did. At the same time, I also recognized where CF fell
-short and thus worked with CF in it&#8217;s capacity as opposed to trying to get it
-to fit into the same context that Java is in.</p></blockquote>
-
-<p>With that, I encouraged other folks who worked with me to learn the better
-structured concepts of OO and MVC patterns and using the right mix of
-frameworks, such as a MVC, ORM, and IOC framework. The problem is, if you
-don&#8217;t understand these concepts from a fundamental level from the beginning
-without ever mixing CF in, they can be very overwhelming and start to crush
-the positive attitude that a CFML programmer may have.</p>
-
-<p>Much of the time I also felt that parts of the community were pushing the use
-of so many patterns it was ridiculous and I think this is the storm that
-perhaps Marc was feeling.</p>
-
-<p>To reiterate, I do feel that what you mentioned could be an underlying tone
-and perhaps fueling of anger and frustration, but at the same time I know from
-other CFML developers that I used to work with, his feelings at that show on
-the surface are valid and understood.</p>
-
-<p>I think that most of the expert CFML developers in the community know and
-understand the limitations of the technology. Keep in mind, however,
-limitations is defined by what the requirements of a project are. Projects&#8217;
-requirements should be written around the technology being used. Perhaps
-ColdFusion doesn&#8217;t have limitations in the sense of the word when it comes to
-&#8220;industry standard patterns&#8221;. From it&#8217;s beginning, it has always defined it&#8217;s
-own set of patterns that work for the CFML workflow. Developer&#8217;s need to
-understand to not try to redefine something that doens&#8217;t need to be redefined.
-If they have different needs in a project that are strong enough to fully set
-the project&#8217;s scope outside the circle of ColdFusion, then they need to choose
-a different technology.</p>
-
-<p>CF continues to have a strong closely-knit community, something I have always
-enjoyed about it. Embrace the community, but don&#8217;t forget that at the end of
-the day, it&#8217;s up to you how you want to program your applications. And yes
-patterns are good, but don&#8217;t overdo it. Allow yourself to focus on the tasks
-at hand as well as having good design at the same time. True, not EVERYTHING
-needs to be &#8220;OO&#8221;.</p>
-
-<p>Finally, change rarely comes at the perfect time. As web developers, the past
-5 years or so have been changing very rapidly with new languages, patterns,
-frameworks, libraries coming out every day it seems. Don&#8217;t focus on being up
-to date on every single one and figure out how you can use each of them in
-your next project. Pick and choose what you want to learn and learn it well.
-In a time such as now, stick with what you know cause you need to hold on for
-a little bit longer, there are some rough winds up ahead.</p>
-
-<p>I&#8217;m serious when I say don&#8217;t redefine something that is not meant to be that
-in the first place. I always uphold innovation in it&#8217;s highest regards, but
-there is innovation and then there is redefinition. They are NOT the same
-thing, so stop!</p>
-
-<p>:-)</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -744,6 +700,10 @@ thing, so stop!</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2011/11/13/find-a-place-for-everything/">Find a place for everything</a>
+      </li>
+    
+      <li class="post">
         <a href="/2011/11/08/switching-to-octopress/">Switching to Octopress</a>
       </li>
     
@@ -757,10 +717,6 @@ thing, so stop!</p>
     
       <li class="post">
         <a href="/2011/06/13/its-about-the-customer-service/">It&#8217;s about the customer service</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2011/03/16/improve-dont-prove/">Improve&#8230;don&#8217;t prove</a>
       </li>
     
   </ul>
