@@ -9,8 +9,8 @@
   <meta name="author" content="Kyle Hayes">
 
   
-  <meta name="description" content="Mark Drew just announced he has created a plugin for Eclipse to
-interact with the CodeShare service. CodeShare is a service that allows you to share &hellip;">
+  <meta name="description" content="ColdFusion makes it quite easy to work with what is known in many other
+languages as associative arrays; ColdFusion calls them structs or structures &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,6 +75,123 @@ interact with the CodeShare service. CodeShare is a service that allows you to s
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/02/03/be-informed-on-how-structures-work/">ColdFusion Structures Are Passed by Reference</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-02-03T14:02:00-08:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2007</time>
+        
+         | <a href="/2007/02/03/be-informed-on-how-structures-work/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>ColdFusion makes it quite easy to work with what is known in many other
+languages as associative arrays; ColdFusion calls them structs or structures.
+A structure is a great datatype to work with as long as you know how to use
+it.</p>
+
+<p>One of the things that you must remember about this special datatype is
+something that I ran into today when building a Validation CFC for a form I am
+working on for a client.</p>
+
+<p>First a little background&#8230;</p>
+
+<p>In this component, I call a function called <strong>getData()</strong>. It is called after
+the instantiation of the component when supplied with a <strong>formStruct</strong> which
+contains all the form elements and values that were submitted.</p>
+
+<p>During the course of the Validation process for a given form, I want to store
+a little more information about each form element other than the <strong>name</strong> and
+<strong>value</strong> (which is all that is provided when a user submits a form). My
+getData() function extracts each form element and it&#8217;s value from the
+structure and creates a new structure with attributes <strong>fieldName</strong>, <strong>data</strong>,
+<strong>isValidEntry</strong>. The first two are self-explanatory, however, the third
+attribute is a flag that specifies whether the form element is valid for it&#8217;s
+specified data type (e.g. email, phone number, credit card etc.). This
+attribute is initially set to <strong>true</strong> as it has not been validated just yet.</p>
+
+<p>After the function extracts each form field into a separte structure, it
+places them into an array that will contain all the form element structures.
+This makes it quite easy to loop through all the data and validate it based on
+the form element name.</p>
+
+<p>Now that I have thoroughly introduced my situation, I will tell you about the
+problem I came across. The following code is what my <strong>getData()</strong> function
+looked like inside my Validation component:</p>
+
+<p>`</p>
+
+<p>`</p>
+
+<p>This appears that it would be correct and wouldn&#8217;t have any issues. Indeed
+when I gave it a test, it did not error out, however, when I CFDUMP&#8217;ed the
+array that was created, every single structure contained the EXACT same
+information. In fact, it contained the data for my submit button. But &#8220;Why?&#8221;,
+I asked.</p>
+
+<p>Going back and looking at my code, I saw the line that read:</p>
+
+<p>`</p>
+
+<p>`</p>
+
+<p>It was at this point that it clicked. ColdFusion structures are passed to
+functions <strong>BY REFERENCE</strong>. That means regardless where that structure get&#8217;s
+passed, you are referring the actual structure in memory. No matter where it
+is changed, it changes the original data and all references to it are updated.
+Every time I was looping through each element in the array, I would change the
+data in the original structure. And because I was simply passing the name of
+structure in the arrayAppend function, only a reference to the structure was
+being passed.</p>
+
+<p>Naturally there a couple of ways around this. The first solution was the one I
+went with, I had to rewrite my code as follows, creating a new structure on
+each pass of the loop:</p>
+
+<p>`</p>
+
+<p>`</p>
+
+<p>Whilst writing this post, I realized that I probably could have just changed
+the arrayAppend function to read:</p>
+
+<p>`</p>
+
+<p>`</p>
+
+<p>This would have created a shallow copy (only simple variables and arrays) of
+the temporary structure. I may very well do this afterall.</p>
+
+<p>The lesson here is, be aware of how ColdFusion deals with various data types.
+Ensure that you know which data types are passed by reference and which are
+passed by value.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -500,65 +617,6 @@ months ago and why it was such a good decision for a developer.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2007/01/04/amazon-rank-widget/">Amazon Rank Widget</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2007-01-04T17:01:00-08:00" pubdate data-updated="true">Jan 4<span>th</span>, 2007</time>
-        
-         | <a href="/2007/01/04/amazon-rank-widget/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://blogs.adobe.com/mikepotter/">Mike Potter</a> encouraged me with his post about <a href="http://blogs.adobe.com/mikepotter/2007/01/whats_the_most.html">The Most Popular Flex or
-Actionscript Book</a> to build an online Amazon Ranking application. I wanted
-to know if he was using an existing tool to do this or if he was doing it
-manually. Sure enough, Mike replied that every month he would visit each of
-the product pages and put the rank result into an Excel spreadsheet.</p>
-
-<p>I emailed him back saying that I was interested in creating an online app that
-would streamline the process via <a href="http://www.amazon.com/gp/browse.html?node=12738641">Amazon&#8217;s Ecommerce Service</a>. He replied
-with encouragement to create a Flex widget that could be placed on a webpage
-that would show some books sorted in their Sales Rank order. The user would be
-able to see an image of each item as well as click on it to go the Amazon
-detail page. The owner of the website would specify the list of <a href="http://en.wikipedia.org/wiki/Amazon_">ASIN</a>s or
-ISBNs in an XML file for the widget to lookup.</p>
-
-<p>I am very very new to Flex and have only been working with it on a project at
-work for a few weeks. This afternoon, I couldn&#8217;t wait to take on Mike Potter&#8217;s
-suggestion in beginning the work of this widget. What I am showing below is
-obviously not what the widget is going to look like but rather just the basic
-code that pulls a list of ASINs from an XML file and looks them all up on
-Amazon and displays them here.</p>
-
-<p><a href="http://amazonrank.riaforge.org/"><img src="http://www.kylehayes.info/res/ria-forge-badge.png" alt="" /></a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/21/">&larr; Older</a>
@@ -576,6 +634,10 @@ Amazon and displays them here.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2011/11/13/byword-markdown-editor/">Byword Markdown Editor</a>
+      </li>
+    
+      <li class="post">
         <a href="/2011/11/13/find-a-place-for-everything/">Find a place for everything</a>
       </li>
     
@@ -589,10 +651,6 @@ Amazon and displays them here.</p>
     
       <li class="post">
         <a href="/2011/10/11/reddpics-bookmarklet/">ReddPics Bookmarklet</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2011/06/13/its-about-the-customer-service/">It&#8217;s about the customer service</a>
       </li>
     
   </ul>

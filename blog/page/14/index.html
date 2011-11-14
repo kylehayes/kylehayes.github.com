@@ -9,8 +9,8 @@
   <meta name="author" content="Kyle Hayes">
 
   
-  <meta name="description" content="I asked Ted (as well as pulsed the public Pownce) today if there was
-a way to make an image component show up behind another component; similar to &hellip;">
+  <meta name="description" content="After numerous attempts of interacting with the Pownce API (based on what I
+was digging through in the communications between the AIR client and the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,6 +75,65 @@ a way to make an image component show up behind another component; similar to &h
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/07/17/pownce-api-explained/">Pownce API Explained</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-07-17T06:07:00-07:00" pubdate data-updated="true">Jul 17<span>th</span>, 2007</time>
+        
+         | <a href="/2007/07/17/pownce-api-explained/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>After numerous attempts of interacting with the Pownce API (based on what I
+was digging through in the communications between the AIR client and the
+server) I still was not able to connect and get data. I was able to call
+/api/available/ and get a 200 OK, as well as /api/login/ and get a login token
+as well. But when it came to getting the list of posts via
+/api/notes/for/kylehayes/, I passed in the right information and compiled my
+WSSE passwordDigest as <a href="http://www.xml.com/pub/a/2003/12/17/dive.html">per the instructions</a>, it still did not work.</p>
+
+<p>However, through my Googling, I found someone that was <a href="http://phaedo.cx/archives/2007/07/16/pownce-api-broken/">trying to do exactly
+what I was trying to do</a>, only instead of making the API calls in
+ColdFusion like I was, he was doing it in Python.</p>
+
+<p>Well, Clint was successful last night. He managed to create a some functions
+in Python that are able to send the four different types of messages to the
+public. <a href="http://phaedo.cx/archives/2007/07/16/using-the-pownce-api-very-rough/">His post</a> is rather detailed, but thanks to the simplicity of
+Python, most developers should be able to read it.</p>
+
+<p>He also announced this morning, <a href="http://phaedo.cx/archives/2007/07/17/pypownce-project-on-google-code/">PyPounce on Google code</a>.</p>
+
+<p>Good job, Clint! The community is excited to jump in and get started.</p>
+
+<p>P.S. Clint, listen to your boss&#8230;ColdFusion is a pretty neat language.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -529,47 +588,6 @@ efficient and run quickly.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2007/06/25/cfunited-flickr/">CFUNITED Flickr</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2007-06-25T10:06:00-07:00" pubdate data-updated="true">Jun 25<span>th</span>, 2007</time>
-        
-         | <a href="/2007/06/25/cfunited-flickr/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Photos are already starting to stack up for CFUNITED since the pre-conference
-classes have started today:</p>
-
-<p><a href="http://flickr.com/groups/cfunited/pool/">http://flickr.com/groups/cfunited/pool/</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/15/">&larr; Older</a>
@@ -587,6 +605,10 @@ classes have started today:</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2011/11/13/byword-markdown-editor/">Byword Markdown Editor</a>
+      </li>
+    
+      <li class="post">
         <a href="/2011/11/13/find-a-place-for-everything/">Find a place for everything</a>
       </li>
     
@@ -600,10 +622,6 @@ classes have started today:</p>
     
       <li class="post">
         <a href="/2011/10/11/reddpics-bookmarklet/">ReddPics Bookmarklet</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2011/06/13/its-about-the-customer-service/">It&#8217;s about the customer service</a>
       </li>
     
   </ul>

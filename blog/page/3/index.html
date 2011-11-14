@@ -9,8 +9,8 @@
   <meta name="author" content="Kyle Hayes">
 
   
-  <meta name="description" content="Reading Brian&#8217;s tweet this morning, I decided to read more about this
-whole OOP Debate. Unfortunately, I didn&#8217;t really have time, nor the &hellip;">
+  <meta name="description" content="It&#8217;s been a long time since I&#8217;ve posted, I know it, but I have good excuses!
+The first is still an excuse as I&#8217;m still working on &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,6 +75,62 @@ whole OOP Debate. Unfortunately, I didn&#8217;t really have time, nor the &helli
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/10/01/is-your-kid-the-next-face-of-gap/">Is Your Kid the Next Face of Gap?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-10-01T02:22:01-07:00" pubdate data-updated="true">Oct 1<span>st</span>, 2009</time>
+        
+         | <a href="/2009/10/01/is-your-kid-the-next-face-of-gap/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>It&#8217;s been a long time since I&#8217;ve posted, I know it, but I have good excuses!
+The first is still an excuse as I&#8217;m still working on it, but, I was asked by
+<a href="http://www.apress.com">Apress</a> / <a href="http://www.friendsofed.com">Friends of ED</a> to write a <a href="http://www.amazon.com/gp/product/1430225211?ie=UTF8&amp;tag=cf0d-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1430225211">book</a> on the <a href="http://www.dojotoolkit.org">Dojo JavaScript
+Toolkit</a>. It&#8217;s been quite the journey to say the least. It has been a
+desire of mine in the past few years to publish a technical book. When Apress
+approached me, I couldn&#8217;t resist. It&#8217;s been a lot of work but it&#8217;s almost
+done. You can check it out and pre-order it on Amazon.com! Needless to say
+I&#8217;ve had my head in Dojo quite a bit the past few months.</p>
+
+<p>With that, I&#8217;ve also been working on a very large project at work that I&#8217;m one
+of the technical leads on. That project is the <a href="http://family.go.com/gapcastingcall/">Gap Casting Call</a> which is
+a contest that Gap runs every year to find the next faces of BabyGap and
+GapKids. They partnered with us at Family.com to build and host the online
+photo contest. Enter your kids to get a chance at winning! There are a lot of
+great <a href="http://family.go.com/gapcastingcall/prizes/">prizes</a> and a lot of great <a href="http://family.go.com/gapcastingcall/galleries/">entries</a>!</p>
+
+<p>On to my next project at work where I get to learn and use GWT. More to come
+in the future I&#8217;m sure. Until then, thanks for staying up to date with me, and
+sorry it has been so long since I&#8217;ve posted.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -873,82 +929,6 @@ lightning deals as they happen:</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2008/11/13/spry-empty-option-in-datasetcontrolled-select/">Spry: Empty Option in Dataset-controlled Select</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-11-13T21:11:00-08:00" pubdate data-updated="true">Nov 13<span>th</span>, 2008</time>
-        
-         | <a href="/2008/11/13/spry-empty-option-in-datasetcontrolled-select/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>With <a href="http://labs.adobe.com/technologies/spry/">Adobe Spry</a>, you can dynamically populate a select box (aka.
-dropdown) with a dataset very easily:</p>
-
-<p>`</p>
-
-<p>var ds = new Spry.Data.JSONDataSet(&#8220;/some/jsonobject.js&#8221;);</p>
-
-<p>{ds::name}</p>
-
-<p>`</p>
-
-<p>If you are familiar with Spry, than the above makes complete sense. I came
-across a problem this evening, however, when using very similar code as a
-filter mechanism for a separate dataset. The problem with the above code is
-that once it is populated, the select box will by default choose the first
-value as selected. If you are filtering data, you want the initial/reset state
-to be blank and not have any values.</p>
-
-<p>Since I am using spry:repeatchildren to repeat my option tags, I cannot simply
-drop in a blank option tag above the current one because than it would also
-repeat for all the other rows in the dataset.</p>
-
-<p>Thanks to the <a href="http://www.coldfusionjedi.com/index.cfm/2006/11/1/Spry-builtin-variables-for-Datasets">built in variables</a> for each dataset, we can get special
-information during the loop of the dataset rows. This is valuable information
-since we technically need to drop the blank option just above the first row of
-the dataset.</p>
-
-<p>We modify the above code to be the following instead:</p>
-
-<p>`</p>
-
-<p>var ds = new Spry.Data.JSONDataSet(&#8220;/some/jsonobject.js&#8221;);</p>
-
-<p>{ds::name}</p>
-
-<p>`</p>
-
-<p>The spry:if simply checks if the loop is on row number 0 and if it is, it will
-drop in that option tag. Otherwise, it gets left out on all of the other rows.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -966,6 +946,10 @@ drop in that option tag. Otherwise, it gets left out on all of the other rows.</
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2011/11/13/byword-markdown-editor/">Byword Markdown Editor</a>
+      </li>
+    
+      <li class="post">
         <a href="/2011/11/13/find-a-place-for-everything/">Find a place for everything</a>
       </li>
     
@@ -979,10 +963,6 @@ drop in that option tag. Otherwise, it gets left out on all of the other rows.</
     
       <li class="post">
         <a href="/2011/10/11/reddpics-bookmarklet/">ReddPics Bookmarklet</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2011/06/13/its-about-the-customer-service/">It&#8217;s about the customer service</a>
       </li>
     
   </ul>

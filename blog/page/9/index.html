@@ -9,8 +9,8 @@
   <meta name="author" content="Kyle Hayes">
 
   
-  <meta name="description" content="I don&#8217;t normally post off-topic entries but this story hit me hard and I want
-to help. I also want you to help to make a difference for this &hellip;">
+  <meta name="description" content="A very common practice in Java when you want to persist or save the current
+state of your application to a physical file is known as serialization or &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,6 +75,118 @@ to help. I also want you to help to make a difference for this &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/01/06/persisting-an-actionscript-data-model/">Persisting an ActionScript Data Model</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-01-06T17:01:00-08:00" pubdate data-updated="true">Jan 6<span>th</span>, 2008</time>
+        
+         | <a href="/2008/01/06/persisting-an-actionscript-data-model/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>A very common practice in Java when you want to persist or save the current
+state of your application to a physical file is known as serialization or
+serializing an object. What this basically means is that you are taking the
+machine code that represents an object in your application, and converting it
+to a format that can be written to a file.</p>
+
+<p>The benefits of serialization is that you maintain the actual instance of the
+object&#8211;not just a data representation of the object. When you read the
+serialized file back in to the application, it reads in as a native object to
+that application.</p>
+
+<p>Traditionally in web applications, we accommodate this need by writing entries
+in a database. Even when it comes down to session information. For the most
+part, this is fine, works great and I would recommend it for the majority of
+use cases. However, the serialization method described above could be used as
+a more efficient means to storing the state of a rich Internet application.
+Such a method is possible in ActionScript to use in your Flex application.</p>
+
+<p>The high level process is:</p>
+
+<ol>
+<li>Represent your data model as an ActionScript object</li>
+<li>Serialize your data model into the same AMF format that is used to communicate with middle-tiers like ColdFusion</li>
+<li>Send the raw AMF message packet to ColdFusion in a RemoteObject call, or similar</li>
+<li>ColdFusion writes the message packet to a local file on the server</li>
+</ol>
+
+
+<p>Naturally, you would create this functionality in a series of classes and
+CFCs. In ActionScript, you will be using the Flash ByteArray class. This class
+converts any ActionScript object into a ByteArray which is basically
+serializing the object.</p>
+
+<p><code>var bytes:ByteArray = new ByteArray(); bytes.writeObject(myDataModel);</code></p>
+
+<p>From this point, <strong>bytes</strong> can now be sent to ColdFusion to be written to a
+file. If you are using ColdFusion, you will want your service function to be
+expecting an arguments of type=&#8221;Binary&#8221;. From there, ColdFusion can encode the
+Binary into a writable format like Base64. You migh have a function that looks
+something like the following:</p>
+
+<p>`</p>
+
+<p>`</p>
+
+<p>It is really that easy. Once you call the save function you will notice that
+file now exists on the server. If you were to open it, it would just be a
+series of what appears to be random data.</p>
+
+<p>To read that data back into a usable object in Flex, you will need to setup a
+service call to ColdFusion to return the binary data from the file.</p>
+
+<p>On the ColdFusion side, the code would look something like this: `</p>
+
+<p>`</p>
+
+<p>And your ActionScript RemoteObject handler would probably have the following:
+<code>private function myRO_handler(event:ResultEvent):void { var
+myDataModel:Object = ByteArray(event.result).readObject(); }</code></p>
+
+<p>Obviously, the above code is very procedural still since the functionality is
+not encapsulated within well-defined functions. It is only meant to serve as a
+basis for understanding the concept. For your convenience, and quite frankly
+for mine as well, I have created an ActionScript class as well as a set of
+ColdFusion components to encapsulate all this functionality. You may download
+the files below.</p>
+
+<p>The files below are provided as is without any guarantee of support or
+documentation:</p>
+
+<ul>
+<li><a href="/code/Serialization.zip">Serialization.swc (Compiled with the Flex 3 Beta 3 SDK)</a></li>
+<li><a href="/code/cfAMF.zip">ColdFusion AMF Package</a></li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -539,80 +651,6 @@ Firefox 2 on the Mac has been fixed.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2007/11/20/first-look-firefox-30-beta-on-my-mac/">First Look: Firefox 3.0 Beta on My Mac</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2007-11-20T17:11:00-08:00" pubdate data-updated="true">Nov 20<span>th</span>, 2007</time>
-        
-         | <a href="/2007/11/20/first-look-firefox-30-beta-on-my-mac/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="http://myskitch.com/kylehayes/mozilla.org_-_home_of_the_mozilla_project-20071120-171327.jpg/preview.jpg" alt="Mozilla Firefox 3.0 Beta" /></p>
-
-<p>I just read in the news that Firefox 3.0 Beta was released today. I have been
-keeping an eye on this release for quite some time as it will contain some
-improvements that I, as a Mac user, have been wanting and asking for for a
-long time.</p>
-
-<p>The foremost reason why I have been watching this release is the simple fact
-that pre-3.0 versions of Firefox have just been plain out ugly amongst the
-gorgeous Aqua faÃ§ade of Mac OS X. Such things like any form widgets: buttons,
-textboxes, select boxes, etc. These widgets were great boxy and very Netscape
-1.0ish in my opinion. This issue was due to the very fact that the version of
-Firefox for the Mac, did not use the native Cocoa framework to display widgets
-on a webpage.</p>
-
-<p>I believe about a year ago, it was finally announced that Firefox 3.0 was
-going to be using the native Cocoa library on OS X to display any kind of page
-widget. This immediately made me extremely happy.</p>
-
-<p>In addition to the page widgets, the application in it&#8217;s entirety still looked
-out of place. I think this had to do with the clear division of the toolbar
-and the buttons below the toolbar.</p>
-
-<p>For about six months now, I have been running Firefox (Minefield) 3.0a to keep
-an eye on any changes. It was still fairly slow and lacked some other things
-but it did have the native page widgets. I never liked it enough to switched
-it to my default browser and continued to stick with Safari&#8211;especially when
-Safari 3.0b came out.</p>
-
-<p>Well, I just now <a href="http://developer.mozilla.org/devnews/index.php/2007/11/19/firefox-3-beta-1-now-available-for-download/">downloaded Firefox 3.0 Beta from Mozilla&#8217;s website</a> and I
-must say, I am presently impressed with the work they have accomplished thus
-far. The page widgets look great, there is a new unified toolbar at the top,
-and its seems to be pretty responsive and fast.</p>
-
-<p>I will attempt to use it as my default browser for as long as possible. Now
-that the user interface things have been added, my main comparison will be
-speed. I truly feel that Safari has Firefox beat on that one.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/10/">&larr; Older</a>
@@ -630,6 +668,10 @@ speed. I truly feel that Safari has Firefox beat on that one.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2011/11/13/byword-markdown-editor/">Byword Markdown Editor</a>
+      </li>
+    
+      <li class="post">
         <a href="/2011/11/13/find-a-place-for-everything/">Find a place for everything</a>
       </li>
     
@@ -643,10 +685,6 @@ speed. I truly feel that Safari has Firefox beat on that one.</p>
     
       <li class="post">
         <a href="/2011/10/11/reddpics-bookmarklet/">ReddPics Bookmarklet</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2011/06/13/its-about-the-customer-service/">It&#8217;s about the customer service</a>
       </li>
     
   </ul>

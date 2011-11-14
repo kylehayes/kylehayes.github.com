@@ -9,8 +9,8 @@
   <meta name="author" content="Kyle Hayes">
 
   
-  <meta name="description" content="My wife and I are finally at the end of escrow on our home in Chino Hills,
-California. We should be closing any day now. We&#8217;ve been extremely &hellip;">
+  <meta name="description" content="Any programmer worth his salt knows that when you perform even the most
+minimal validation on a set of input textboxes for a form, that you need to &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,6 +75,70 @@ California. We should be closing any day now. We&#8217;ve been extremely &hellip
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/06/18/frontend-tip-trim-strings/">JavaScript Tip: Trim Strings With YUI</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-06-18T09:06:00-07:00" pubdate data-updated="true">Jun 18<span>th</span>, 2008</time>
+        
+         | <a href="/2008/06/18/frontend-tip-trim-strings/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Any programmer worth his salt knows that when you perform even the most
+minimal validation on a set of input textboxes for a form, that you need to
+wrap some kind of trim function around the string. So many times, I see
+developers write the following as a validation rule:</p>
+
+<p><code>var validate = function(foo) { if(foo=="") alert('Please provide a value for
+"foo"'); }</code></p>
+
+<p>Clearly, all the user would have to do is provide a value with either a space
+or line break to make the value valid. The whole point of checking the value
+to ensure it is not empty is to ensure that the user did not provide only non-
+characters as well!!! The way to accomplish this type of validation would be
+simply to use the common programming function known as trim. The basics is
+that the function will shave off any spaces at the beginning and end of a
+given string to ensure the string is not padded. In the case of value that has
+only a space, this would make the string appear as completely empty.</p>
+
+<p>Well for those attempting to accomplish the above in JavaScript will be out of
+luck unless they write the function themselves. Now, simply searching for
+&#8220;JavaScript trim&#8221; provide a plethora of results that will work just fine.
+However, being a proponent of YUI, I prefer to use the built-in tools and
+functions it offers if available. Sure enough, simply searching for YUI Trim
+in Google yielded that the function does indeed exist and, of course, is quite
+easy to use:</p>
+
+<p><code>function validate(this) { if(YAHOO.lang.trim(this)=="") alert('Please
+provide a value for "this"); }</code> `</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -590,49 +654,6 @@ developers</a></p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2008/04/24/race-your-typing-skills-live-against-others/">Race Your Typing Skills Live Against Others</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-04-24T10:04:00-07:00" pubdate data-updated="true">Apr 24<span>th</span>, 2008</time>
-        
-         | <a href="/2008/04/24/race-your-typing-skills-live-against-others/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Normally I am against link spamming but this game is just simply too much fun.
-It is also a novel and unique concept I have to share it:
-<a href="http://play.typeracer.com/">http://play.typeracer.com/</a></p>
-
-<p>You are competing against a set of people in real time to see who can type the
-fastest! Very fun!</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/6/">&larr; Older</a>
@@ -650,6 +671,10 @@ fastest! Very fun!</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2011/11/13/byword-markdown-editor/">Byword Markdown Editor</a>
+      </li>
+    
+      <li class="post">
         <a href="/2011/11/13/find-a-place-for-everything/">Find a place for everything</a>
       </li>
     
@@ -663,10 +688,6 @@ fastest! Very fun!</p>
     
       <li class="post">
         <a href="/2011/10/11/reddpics-bookmarklet/">ReddPics Bookmarklet</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2011/06/13/its-about-the-customer-service/">It&#8217;s about the customer service</a>
       </li>
     
   </ul>

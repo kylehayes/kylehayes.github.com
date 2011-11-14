@@ -9,8 +9,8 @@
   <meta name="author" content="Kyle Hayes">
 
   
-  <meta name="description" content="Adobe AIR not only makes developers more productive by allowing them to write
-a single code-base for multiple distribution platforms, but it also &hellip;">
+  <meta name="description" content="With Adobe Spry, you can dynamically populate a select box (aka.
+dropdown) with a dataset very easily: ` var ds = new Spry.Data.JSONDataSet(&#8220;/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,6 +75,82 @@ a single code-base for multiple distribution platforms, but it also &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/11/13/spry-empty-option-in-datasetcontrolled-select/">Spry: Empty Option in Dataset-controlled Select</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-11-13T21:11:00-08:00" pubdate data-updated="true">Nov 13<span>th</span>, 2008</time>
+        
+         | <a href="/2008/11/13/spry-empty-option-in-datasetcontrolled-select/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>With <a href="http://labs.adobe.com/technologies/spry/">Adobe Spry</a>, you can dynamically populate a select box (aka.
+dropdown) with a dataset very easily:</p>
+
+<p>`</p>
+
+<p>var ds = new Spry.Data.JSONDataSet(&#8220;/some/jsonobject.js&#8221;);</p>
+
+<p>{ds::name}</p>
+
+<p>`</p>
+
+<p>If you are familiar with Spry, than the above makes complete sense. I came
+across a problem this evening, however, when using very similar code as a
+filter mechanism for a separate dataset. The problem with the above code is
+that once it is populated, the select box will by default choose the first
+value as selected. If you are filtering data, you want the initial/reset state
+to be blank and not have any values.</p>
+
+<p>Since I am using spry:repeatchildren to repeat my option tags, I cannot simply
+drop in a blank option tag above the current one because than it would also
+repeat for all the other rows in the dataset.</p>
+
+<p>Thanks to the <a href="http://www.coldfusionjedi.com/index.cfm/2006/11/1/Spry-builtin-variables-for-Datasets">built in variables</a> for each dataset, we can get special
+information during the loop of the dataset rows. This is valuable information
+since we technically need to drop the blank option just above the first row of
+the dataset.</p>
+
+<p>We modify the above code to be the following instead:</p>
+
+<p>`</p>
+
+<p>var ds = new Spry.Data.JSONDataSet(&#8220;/some/jsonobject.js&#8221;);</p>
+
+<p>{ds::name}</p>
+
+<p>`</p>
+
+<p>The spry:if simply checks if the loop is on row number 0 and if it is, it will
+drop in that option tag. Otherwise, it gets left out on all of the other rows.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -766,70 +842,6 @@ family. Then invite other friends and family to join as well!</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2008/06/18/frontend-tip-trim-strings/">JavaScript Tip: Trim Strings With YUI</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-06-18T09:06:00-07:00" pubdate data-updated="true">Jun 18<span>th</span>, 2008</time>
-        
-         | <a href="/2008/06/18/frontend-tip-trim-strings/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Any programmer worth his salt knows that when you perform even the most
-minimal validation on a set of input textboxes for a form, that you need to
-wrap some kind of trim function around the string. So many times, I see
-developers write the following as a validation rule:</p>
-
-<p><code>var validate = function(foo) { if(foo=="") alert('Please provide a value for
-"foo"'); }</code></p>
-
-<p>Clearly, all the user would have to do is provide a value with either a space
-or line break to make the value valid. The whole point of checking the value
-to ensure it is not empty is to ensure that the user did not provide only non-
-characters as well!!! The way to accomplish this type of validation would be
-simply to use the common programming function known as trim. The basics is
-that the function will shave off any spaces at the beginning and end of a
-given string to ensure the string is not padded. In the case of value that has
-only a space, this would make the string appear as completely empty.</p>
-
-<p>Well for those attempting to accomplish the above in JavaScript will be out of
-luck unless they write the function themselves. Now, simply searching for
-&#8220;JavaScript trim&#8221; provide a plethora of results that will work just fine.
-However, being a proponent of YUI, I prefer to use the built-in tools and
-functions it offers if available. Sure enough, simply searching for YUI Trim
-in Google yielded that the function does indeed exist and, of course, is quite
-easy to use:</p>
-
-<p><code>function validate(this) { if(YAHOO.lang.trim(this)=="") alert('Please
-provide a value for "this"); }</code> `</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/5/">&larr; Older</a>
@@ -847,6 +859,10 @@ provide a value for "this"); }</code> `</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2011/11/13/byword-markdown-editor/">Byword Markdown Editor</a>
+      </li>
+    
+      <li class="post">
         <a href="/2011/11/13/find-a-place-for-everything/">Find a place for everything</a>
       </li>
     
@@ -860,10 +876,6 @@ provide a value for "this"); }</code> `</p>
     
       <li class="post">
         <a href="/2011/10/11/reddpics-bookmarklet/">ReddPics Bookmarklet</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2011/06/13/its-about-the-customer-service/">It&#8217;s about the customer service</a>
       </li>
     
   </ul>

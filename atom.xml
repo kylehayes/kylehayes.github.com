@@ -4,7 +4,7 @@
   <title><![CDATA[Kyle Hayes]]></title>
   <link href="http://kylehayes.github.com/atom.xml" rel="self"/>
   <link href="http://kylehayes.github.com/"/>
-  <updated>2011-11-13T20:01:39-08:00</updated>
+  <updated>2011-11-13T22:51:51-08:00</updated>
   <id>http://kylehayes.github.com/</id>
   <author>
     <name><![CDATA[Kyle Hayes]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Byword Markdown Editor]]></title>
+    <link href="http://kylehayes.github.com/2011/11/13/byword-markdown-editor/"/>
+    <updated>2011-11-13T22:48:00-08:00</updated>
+    <id>http://kylehayes.github.com/2011/11/13/byword-markdown-editor</id>
+    <content type="html"><![CDATA[<p>This is a test, a test of text, in my new markdown editor, <a href="http://bywordapp.com/">Byword</a>. Since I switched over my blog from Wordpress to <a href="http://octopress.org/">Octopress</a>, I&#8217;ve had to start becoming familiar with <a href="http://daringfireball.net/projects/markdown/">markdown</a>. With this, I wanted a basic text editor that not only supported previewing markdown text (to make sure links and images are inserted properly) but also just a good plain-text editor for distraction-free writing.</p>
+
+<p>I believe I may have purchased <a href="http://www.hogbaysoftware.com/products/writeroom">WriteRoom</a> at one time and if I did, I must not have liked it since I can hardly remember using it much. Nonetheless, I found <a href="http://donaldjenkins.net/2011/06/why-i-switched-to-byword-from-writeroom-for-my-mac-text-editing/">a nice article</a> describing how Byword was much more up with the times, especially in terms of markdown editing for the Mac. After Byword&#8217;s website and glossing over the screenshots, I was sold and purchased it at the <a href="http://itunes.apple.com/us/app/byword/id420212497?mt=12">Mac App Store.</a></p>
+
+<p>So far, I like it. I just changed from the dark background to the light background to see if I prefer typing with this <em>color</em> scheme. It&#8217;s a very minimalistic app which I very much appreciate. The preferences are a single, simple pane of options, yet the functionality of the app is enough to make really useful. For instance, it has a couple of tools to help you focus; one of them is called the paragraph focus mode which actually dims all the other text except for the paragraph you are currently typing. You can also set this up for individual lines. These little details make it a worthy and appropriate Mac app as well as one I will enjoy writing in.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Find a place for everything]]></title>
@@ -500,7 +513,7 @@ irresponsible hands.</p>
     <id>http://kylehayes.github.com/2011/01/22/diy-desktop-stand-for-notebooks</id>
     <content type="html"><![CDATA[<p>After converting a white MacBook to our home media center, I decided the
 footprint was too large to lay flat with the clamshell closed on our TV stand.
-I came across the <a href="http://www.amazon.com/gp/product/B002LARBWM?ie=UTF8&amp;tag=cf0d-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B002LARBWM">Twelve South BookArc</a> <img class="left" src="http://www.twelvesouth.com/static/assets/products/product/main_left_image/productImage_bapro.jpg"> and thought it would be the
+I came across the <a href="http://www.amazon.com/gp/product/B002LARBWM?ie=UTF8&amp;tag=cf0d-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B002LARBWM">Twelve South BookArc</a> <img class="left" src="http://www.twelvesouth.com/static/assets/products/product/main_left_image/productImage_bapro.jpg" width="50"> and thought it would be the
 perfect solution to stand the MacBook on end to take up less space. However,
 at $50, I felt the price was a bit steep.</p>
 
@@ -809,33 +822,6 @@ new items after they sell out throughout the day.</p>
 <p><a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2FBlack-Friday-After-Thanksgiving-Sale%2Fb%3Fie%3DUTF8%26node%3D384082011%26ref_%3Dpe%255F67050%255F13524000%255Fpe%255Fbtn&amp;tag=cf0d-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=390957" title="Amazon.com's Black Friday Deals">Visit Amazon.com&#8217;s Black Friday Deals</a></p>
 
 <p><a href="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&amp;MarketPlace=US&amp;ID=V20070822%2FUS%2Fcf0d-20%2F8001%2F8c30b9d4-988a-4a90-8d1b-88eee45f908e&amp;Operation=NoScript">Amazon.com Widgets</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Is Your Kid the Next Face of Gap?]]></title>
-    <link href="http://kylehayes.github.com/2009/10/01/is-your-kid-the-next-face-of-gap/"/>
-    <updated>2009-10-01T02:22:01-07:00</updated>
-    <id>http://kylehayes.github.com/2009/10/01/is-your-kid-the-next-face-of-gap</id>
-    <content type="html"><![CDATA[<p>It&#8217;s been a long time since I&#8217;ve posted, I know it, but I have good excuses!
-The first is still an excuse as I&#8217;m still working on it, but, I was asked by
-<a href="http://www.apress.com">Apress</a> / <a href="http://www.friendsofed.com">Friends of ED</a> to write a <a href="http://www.amazon.com/gp/product/1430225211?ie=UTF8&amp;tag=cf0d-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1430225211">book</a> on the <a href="http://www.dojotoolkit.org">Dojo JavaScript
-Toolkit</a>. It&#8217;s been quite the journey to say the least. It has been a
-desire of mine in the past few years to publish a technical book. When Apress
-approached me, I couldn&#8217;t resist. It&#8217;s been a lot of work but it&#8217;s almost
-done. You can check it out and pre-order it on Amazon.com! Needless to say
-I&#8217;ve had my head in Dojo quite a bit the past few months.</p>
-
-<p>With that, I&#8217;ve also been working on a very large project at work that I&#8217;m one
-of the technical leads on. That project is the <a href="http://family.go.com/gapcastingcall/">Gap Casting Call</a> which is
-a contest that Gap runs every year to find the next faces of BabyGap and
-GapKids. They partnered with us at Family.com to build and host the online
-photo contest. Enter your kids to get a chance at winning! There are a lot of
-great <a href="http://family.go.com/gapcastingcall/prizes/">prizes</a> and a lot of great <a href="http://family.go.com/gapcastingcall/galleries/">entries</a>!</p>
-
-<p>On to my next project at work where I get to learn and use GWT. More to come
-in the future I&#8217;m sure. Until then, thanks for staying up to date with me, and
-sorry it has been so long since I&#8217;ve posted.</p>
 ]]></content>
   </entry>
   

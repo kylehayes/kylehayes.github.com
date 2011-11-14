@@ -9,8 +9,8 @@
   <meta name="author" content="Kyle Hayes">
 
   
-  <meta name="description" content="I haven&#8217;t blogged in a while because I have been so busy getting ready for the
-wedding and things with my new job at Boeing as well. Which is &hellip;">
+  <meta name="description" content="If you are interested in executing multiple SQL statements inside a single
+cfquery block and posting them to a SQL Server database, then you are in &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,6 +75,56 @@ wedding and things with my new job at Boeing as well. Which is &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/07/10/multiple-sql-statements/">Multiple SQL Statements</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-07-10T10:07:00-07:00" pubdate data-updated="true">Jul 10<span>th</span>, 2006</time>
+        
+         | <a href="/2006/07/10/multiple-sql-statements/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If you are interested in executing multiple SQL statements inside a single
+cfquery block and posting them to a SQL Server database, then you are in luck.
+While attempting to create an install file for an application I am working on
+for work, I went into Sql Server Enterprise Manager to have it create the SQL
+for creating the various tables that my application needs. After copying the
+code directly from the file that Enterprise Manager created and copying it
+into my cfquery block, the page failed to execute.</p>
+
+<p>Much searching produced no results on why this was happening. What I finally
+figured out by process of elimination is that you cannot use the GO keyword
+that SQL Server uses in its SQL statements to combine multiple statements,
+instead, simply replace all GO keywords with a semi-colon at the end of each
+of your statements and you will be good to go.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -519,57 +569,6 @@ download them below:</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2006/04/28/feed-icons/">Feed Icons</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-04-28T07:04:00-07:00" pubdate data-updated="true">Apr 28<span>th</span>, 2006</time>
-        
-         | <a href="/2006/04/28/feed-icons/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="/blog/res/feed-icon-128x128.jpg" alt="" />&#8220;A new standard is being established to identify syndicated content.&#8221; I
-am sure you are all aware of the small feed icon that shows up in Firefox when
-viewing a page that contains syndicated content. This little orange icon is
-the new standard graphic to let visitors to your site know that they can stay
-updated with you and your site by you providing syndication.</p>
-
-<p>By having a standard, people will be groomed into seeing this icon and
-immediately know what it means. A new web site called <a href="http://www.feedicons.com">FeedIcons.com</a> was
-launched to promote this new standard. Here you can download the feed-icons in
-various formats all in one archive such as: Various sized PSD files, Legacy
-AI, Legacy EPS, AI, EPS, PDF, SVG and slew of standard image files. From this
-site, you can also &#8220;Stay in the loop&#8221; by signing for new feature notifications
-straight to your email inbox. Get ahead of the game and provide the new
-syndication standard on your website!</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/24/">&larr; Older</a>
@@ -587,6 +586,10 @@ syndication standard on your website!</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2011/11/13/byword-markdown-editor/">Byword Markdown Editor</a>
+      </li>
+    
+      <li class="post">
         <a href="/2011/11/13/find-a-place-for-everything/">Find a place for everything</a>
       </li>
     
@@ -600,10 +603,6 @@ syndication standard on your website!</p>
     
       <li class="post">
         <a href="/2011/10/11/reddpics-bookmarklet/">ReddPics Bookmarklet</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2011/06/13/its-about-the-customer-service/">It&#8217;s about the customer service</a>
       </li>
     
   </ul>

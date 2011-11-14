@@ -9,8 +9,8 @@
   <meta name="author" content="Kyle Hayes">
 
   
-  <meta name="description" content="This morning as I was catching up on the daily news, I decided to re-visit a
-fond childhood memory of the good ol&#8217; Duncan yo-yo brand. Sure &hellip;">
+  <meta name="description" content="Datagrids in Flex 2 are great because of how flexible they are in allowing you
+to display your data pretty much however you want, while keeping the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,6 +75,62 @@ fond childhood memory of the good ol&#8217; Duncan yo-yo brand. Sure &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/10/09/when-to-use-labelfunction-versus-itemrenderer/">When to Use labelFunction Versus ItemRenderer</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-10-09T10:10:00-07:00" pubdate data-updated="true">Oct 9<span>th</span>, 2007</time>
+        
+         | <a href="/2007/10/09/when-to-use-labelfunction-versus-itemrenderer/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Datagrids in Flex 2 are great because of how flexible they are in allowing you
+to display your data pretty much however you want, while keeping the
+consistent format of a grid with columns and rows.</p>
+
+<p>Two of the features of the DataGridColumn objects in the DataGrid tag are
+ItemRenderer and labelFunction. Both allow you to change how the data is
+displayed to the user in the grid. Use <em>labelFunction</em> when you want to simply
+format the text (i.e. a phone number, product ID). Use an itemRenderer when
+you actually want to use an object of some sort in place of the label and text
+that is used by default (i.e. a checkbox, or button, or a custom component
+that you created).</p>
+
+<p>Here is how you would use a labelFunction to format a phone number: `</p>
+
+<p>`</p>
+
+<p>Notice that I also took into a account if I had multiple phone numbers in the
+object and still used a single function. You may be able to do this somewhat
+dynamically but I chose not to for ease of use and understanding.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -504,56 +560,6 @@ smile on my face.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2007/09/19/intel-mac-folks-vmware-fusion-for-40/">Intel Mac Folks: VMWare Fusion for $40</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2007-09-19T08:09:00-07:00" pubdate data-updated="true">Sep 19<span>th</span>, 2007</time>
-        
-         | <a href="/2007/09/19/intel-mac-folks-vmware-fusion-for-40/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="http://g-ec2.images-amazon.com/images/I/41G9fY5S8fL._AA280_.jpg" alt="" />Hey all you happy Intel Mac folk, I highly recommend if you are
-currently using Parallels or if you need a virtual machine solution for your
-Mac to run Windows and other operating systems on top of your Mac to check out
-VMWare Fusion. I am don&#8217;t know what the technical differences are from
-Parallels, but what I do know is that just using it, I like the way it
-performs a lot better.</p>
-
-<p>Right now is a great time to buy, I was browsing Amazon and noticed that it
-was at a really great price. It normally retails at about $80, but Amazon&#8217;s
-price is about $60. Amazon also has a $20 rebate on the product right now,
-bringing it down to just over $40.</p>
-
-<p>Check it out at Amazon!</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/12/">&larr; Older</a>
@@ -571,6 +577,10 @@ bringing it down to just over $40.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2011/11/13/byword-markdown-editor/">Byword Markdown Editor</a>
+      </li>
+    
+      <li class="post">
         <a href="/2011/11/13/find-a-place-for-everything/">Find a place for everything</a>
       </li>
     
@@ -584,10 +594,6 @@ bringing it down to just over $40.</p>
     
       <li class="post">
         <a href="/2011/10/11/reddpics-bookmarklet/">ReddPics Bookmarklet</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2011/06/13/its-about-the-customer-service/">It&#8217;s about the customer service</a>
       </li>
     
   </ul>
